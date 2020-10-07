@@ -14,7 +14,17 @@ public class businessCustomer extends Customer{
     @Override
     public void purchaseRolls(){
         for (int i = 0; i < numRollsToBuy; i++) {
-            addRoll(pickRoll(i));
+            rolls.Roll temp = pickRoll(i);
+            for(int j =0; j < rolls.Roll.getNumExtraSauce(); j++){
+                temp = new rolls.Sauce(temp);
+            }
+            for(int j =0; j < rolls.Roll.getNumExtraFillings(); j++){
+                temp = new rolls.Filling(temp);
+            }
+            for(int j =0; j < rolls.Roll.getNumExtraToppings(); j++){
+                temp = new rolls.Topping(temp);
+            }
+            addRoll(temp);
         }
     }
 

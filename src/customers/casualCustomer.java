@@ -1,5 +1,7 @@
 package customers;
 
+import rolls.Topping;
+
 import java.util.Random;
 
 public class casualCustomer extends Customer{
@@ -7,6 +9,8 @@ public class casualCustomer extends Customer{
     private int numRollUpperBound = 3;
     private int numRollTypes = 5;
     private Random rand = new Random();
+
+
     public casualCustomer() {
         super();
 
@@ -14,9 +18,19 @@ public class casualCustomer extends Customer{
     @Override
     public void purchaseRolls(){
         int numRolls = rand.nextInt(numRollUpperBound) + 1;
-        System.out.println(numRolls);
+
         for (int i = 0; i < numRolls; i++) {
-            addRoll(pickRoll());
+            rolls.Roll temp = pickRoll();
+            for(int j =0; j < rolls.Roll.getNumExtraSauce(); j++){
+                temp = new rolls.Sauce(temp);
+            }
+            for(int j =0; j < rolls.Roll.getNumExtraFillings(); j++){
+                temp = new rolls.Filling(temp);
+            }
+            for(int j =0; j < rolls.Roll.getNumExtraToppings(); j++){
+                temp = new rolls.Topping(temp);
+            }
+            addRoll(temp);
         }
     }
     @Override

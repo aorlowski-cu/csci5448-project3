@@ -24,17 +24,20 @@ public class Main {
         roll3 = new Topping(roll3);
         System.out.println(outputRoll(roll3));
 
+        //Casual customer
         Customer cust1 = new casualCustomer();
         cust1.purchaseRolls();
         cust1.printPurchasedRolls();
         System.out.println(cust1.costOfOrder());
 
+        //Business customer
         System.out.println();
         Customer cust2 = new businessCustomer();
         cust2.purchaseRolls();
         cust2.printPurchasedRolls();
         System.out.println(cust2.costOfOrder());
 
+        //Catering customer
         System.out.println();
         Customer cust3 = new cateringCustomer();
         cust3.purchaseRolls();

@@ -1,8 +1,11 @@
 package customers;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 public abstract class Customer {
+
+    Random rand = new Random();
 
     private ArrayList<rolls.Roll> rollsPurchased = new ArrayList<>();
     public Customer(){
@@ -19,7 +22,7 @@ public abstract class Customer {
 
     public void printPurchasedRolls(){
         for(int i =0; i < rollsPurchased.size(); i++){
-            System.out.println(rollsPurchased.get(i).getDescription());
+            System.out.println(rolls.Roll.outputRoll(rollsPurchased.get(i)));
         }
     }
 

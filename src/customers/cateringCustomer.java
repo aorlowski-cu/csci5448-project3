@@ -22,13 +22,23 @@ public class cateringCustomer extends Customer{
 
         while(list.size() > 3) {
             int index = rand.nextInt(list.size());
-            System.out.println("Selected: "+list.remove(index));
+            list.remove(index);
         }
 
         for(int j =0; j < 3; j++) {
             //int type = rand.nextInt(3) + 1;
             for (int i = 0; i < 5; i++) {
-                addRoll(pickRoll(list.get(j)));
+                rolls.Roll temp = pickRoll(list.get(j));
+                for(int k =0; k < rolls.Roll.getNumExtraSauce(); k++){
+                    temp = new rolls.Sauce(temp);
+                }
+                for(int k =0; k < rolls.Roll.getNumExtraFillings(); k++){
+                    temp = new rolls.Filling(temp);
+                }
+                for(int k =0; k < rolls.Roll.getNumExtraToppings(); k++){
+                    temp = new rolls.Topping(temp);
+                }
+                addRoll(temp);
             }
         }
     }
