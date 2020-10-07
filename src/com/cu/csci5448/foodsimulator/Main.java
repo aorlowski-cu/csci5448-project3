@@ -1,6 +1,7 @@
 package com.cu.csci5448.foodsimulator;
 
 import rolls.*;
+import customers.*;
 
 public class Main {
 
@@ -22,6 +23,24 @@ public class Main {
         roll3 = new Topping(roll3);
         roll3 = new Topping(roll3);
         System.out.println(outputRoll(roll3));
+
+        Customer cust1 = new casualCustomer();
+        cust1.purchaseRolls();
+        cust1.printPurchasedRolls();
+        System.out.println(cust1.costOfOrder());
+
+        System.out.println();
+        Customer cust2 = new businessCustomer();
+        cust2.purchaseRolls();
+        cust2.printPurchasedRolls();
+        System.out.println(cust2.costOfOrder());
+
+        System.out.println();
+        Customer cust3 = new cateringCustomer();
+        cust3.purchaseRolls();
+        cust3.printPurchasedRolls();
+        System.out.println(cust3.costOfOrder());
+
 
     }
 }
