@@ -19,12 +19,10 @@ public class cateringCustomer extends Customer{
         for(int i = 0; i < numRollTypes; i++) {
             list.add(i);
         }
-
         while(list.size() > 3) {
             int index = rand.nextInt(list.size());
             list.remove(index);
         }
-
         for(int j =0; j < 3; j++) {
             //int type = rand.nextInt(3) + 1;
             for (int i = 0; i < 5; i++) {
