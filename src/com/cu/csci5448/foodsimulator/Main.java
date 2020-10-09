@@ -3,6 +3,10 @@ package com.cu.csci5448.foodsimulator;
 import rolls.*;
 import customers.*;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+
 public class Main {
 
     public static String outputRoll(Roll roll) {
@@ -44,6 +48,13 @@ public class Main {
         cust3.printPurchasedRolls();
         System.out.println(cust3.costOfOrder());
 
+
+        RollFactory factory = new RollFactory();
+        RollStore store = new RollStore(factory);
+
+        CustomerFactory customerFactory = new CustomerFactory();
+        List<Customer> customers = customerFactory.generateCustomers();
+        System.out.println(customers);
 
     }
 }

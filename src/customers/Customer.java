@@ -10,7 +10,7 @@ public abstract class Customer {
     private ArrayList<rolls.Roll> rollsPurchased = new ArrayList<>();
     public Customer(){
     }
-    public void purchaseRolls(){}
+    public abstract void purchaseRolls();
 
     public rolls.Roll pickRoll(){
         return null;
