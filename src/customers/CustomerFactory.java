@@ -13,13 +13,13 @@ public class CustomerFactory {
         int numOfCateringCustomers = rand.nextInt(3) + 1;
 
         for (int i = 0; i < numOfCasualCustomers; i++) {
-            customers.add(new casualCustomer());
+            customers.add(new CasualCustomer());
         }
         for (int i = 0; i < numOfBusinessCustomers; i++) {
-            customers.add(new businessCustomer());
+            customers.add(new BusinessCustomer());
         }
         for (int i = 0; i < numOfCateringCustomers; i++) {
-            customers.add(new cateringCustomer());
+            customers.add(new CateringCustomer());
         }
 
         // https://www.geeksforgeeks.org/shuffle-or-randomize-a-list-in-java/

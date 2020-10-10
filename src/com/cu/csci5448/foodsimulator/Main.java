@@ -3,8 +3,6 @@ package com.cu.csci5448.foodsimulator;
 import rolls.*;
 import customers.*;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 
 public class Main {
@@ -29,21 +27,21 @@ public class Main {
         System.out.println(outputRoll(roll3));
 
         //Casual customer
-        Customer cust1 = new casualCustomer();
+        Customer cust1 = new CasualCustomer();
         cust1.purchaseRolls();
         cust1.printPurchasedRolls();
         System.out.println(cust1.costOfOrder());
 
         //Business customer
         System.out.println();
-        Customer cust2 = new businessCustomer();
+        Customer cust2 = new BusinessCustomer();
         cust2.purchaseRolls();
         cust2.printPurchasedRolls();
         System.out.println(cust2.costOfOrder());
 
         //Catering customer
         System.out.println();
-        Customer cust3 = new cateringCustomer();
+        Customer cust3 = new CateringCustomer();
         cust3.purchaseRolls();
         cust3.printPurchasedRolls();
         System.out.println(cust3.costOfOrder());

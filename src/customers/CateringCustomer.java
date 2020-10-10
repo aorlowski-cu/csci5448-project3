@@ -3,12 +3,12 @@ package customers;
 import java.util.ArrayList;
 import java.util.Random;
 
-public class cateringCustomer extends Customer{
+public class CateringCustomer extends Customer{
 
     private int numRollsToBuy = 15;
     private int numRollTypes = 5;
     private Random rand = new Random();
-    public cateringCustomer() {
+    public CateringCustomer() {
         super();
 
     }

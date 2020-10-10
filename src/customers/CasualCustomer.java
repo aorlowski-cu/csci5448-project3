@@ -4,14 +4,14 @@ import rolls.Topping;
 
 import java.util.Random;
 
-public class casualCustomer extends Customer{
+public class CasualCustomer extends Customer{
 
     private int numRollUpperBound = 3;
     private int numRollTypes = 5;
     private Random rand = new Random();
 
 
-    public casualCustomer() {
+    public CasualCustomer() {
         super();
 
     }

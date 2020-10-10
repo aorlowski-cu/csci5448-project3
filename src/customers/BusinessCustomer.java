@@ -2,12 +2,12 @@ package customers;
 
 import java.util.Random;
 
-public class businessCustomer extends Customer{
+public class BusinessCustomer extends Customer{
 
     private int numRollsToBuy = 10;
     private int numRollTypes = 5;
     private Random rand = new Random();
-    public businessCustomer() {
+    public BusinessCustomer() {
         super();
     }
 
