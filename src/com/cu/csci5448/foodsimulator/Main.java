@@ -57,6 +57,7 @@ public class Main {
         int numOfDays = 5;
         for (int i = 1; i < numOfDays+1; i++) {
             System.out.println("Day number: " + i);
+            store.open();
             for (Customer customer: customers) {
                 if (store.isOutOfStock()) {
                     System.out.println("Store is out of stock today. Will shut it down and refill it tomorrow.");
@@ -64,6 +65,7 @@ public class Main {
                 }
 
             }
+            store.close();
             if (store.isOutOfStock()) {
                 store.refillStock();
             }

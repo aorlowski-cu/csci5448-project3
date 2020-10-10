@@ -12,6 +12,7 @@ public class RollStore {
     private int totalRollOutage;
 
     private Map<String, Integer> stock = new HashMap<>();
+    private Map<String, Integer> rollsSoldByType = new HashMap<>();
     private Map<String, Double> earningByCustomerType = new HashMap<>();
     public int numRollTypes;
 
@@ -20,23 +21,32 @@ public class RollStore {
     }
 
     public void open() {
-
+        earningByCustomerType.put("casual", 0.0);
+        earningByCustomerType.put("business", 0.0);
+        earningByCustomerType.put("catering", 0.0);
+        rollsSoldByType.put("SpringRoll", 0);
+        rollsSoldByType.put("EggRoll", 0);
+        rollsSoldByType.put("JellyRoll", 0);
+        rollsSoldByType.put("SausageRoll", 0);
+        rollsSoldByType.put("PastryRoll", 0);
     }
 
     public void close() {
-
+        // Observer pattern to report to logging class
     }
 
     public RollStore(RollFactory factory) {
         this.factory = factory;
         this.numRollTypes = factory.numRollTypes;
         refillStock();
-        earningByCustomerType.put("casual", 0.0);
-        earningByCustomerType.put("business", 0.0);
-        earningByCustomerType.put("catering", 0.0);
         totalEarningByCustomerType.put("casual", 0.0);
         totalEarningByCustomerType.put("business", 0.0);
         totalEarningByCustomerType.put("catering", 0.0);
+        totalRollsSoldByType.put("SpringRoll", 0);
+        totalRollsSoldByType.put("EggRoll", 0);
+        totalRollsSoldByType.put("JellyRoll", 0);
+        totalRollsSoldByType.put("SausageRoll", 0);
+        totalRollsSoldByType.put("PastryRoll", 0);
     }
 
     private boolean isAvailable(String type) {
@@ -45,10 +55,10 @@ public class RollStore {
         return false;
     }
 
-    public Roll orderRoll(Customer customer, String type, int numExtraSauce, int numExtraFillings, int numExtraToppings) {
+    public Roll orderRoll(Customer customer, String rollType, int numExtraSauce, int numExtraFillings, int numExtraToppings) {
         Roll roll = null;
-        if (isAvailable(type)) {
-            roll = factory.createRoll(type);
+        if (isAvailable(rollType)) {
+            roll = factory.createRoll(rollType);
             for (int i = 0; i < numExtraSauce; i++) {
                 roll = new Sauce(roll);
             }
@@ -62,10 +72,14 @@ public class RollStore {
                     earningByCustomerType.get(customer.type) + roll.cost());
             totalEarningByCustomerType.put(customer.type,
                     totalEarningByCustomerType.get(customer.type) + roll.cost());
-            stock.put(type, stock.get(type) - 1);
+            totalRollsSoldByType.put(rollType,
+                    totalRollsSoldByType.get(rollType) + 1);
+            rollsSoldByType.put(rollType,
+                    rollsSoldByType.get(rollType) + 1);
+            stock.put(rollType, stock.get(rollType) - 1);
         } else {
             // unavailable..
-            System.out.println("Requested roll " + type + " is unavailable..");
+            System.out.println("Requested roll " + rollType + " is unavailable..");
         }
         return roll;
     }
