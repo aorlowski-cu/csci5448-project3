@@ -7,7 +7,7 @@ public abstract class Customer {
 
     Random rand = new Random();
 
-    private ArrayList<rolls.Roll> rollsPurchased = new ArrayList<>();
+    public ArrayList<rolls.Roll> rollsPurchased = new ArrayList<>();
     public Customer(){
     }
     public abstract void purchaseRolls();
