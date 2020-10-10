@@ -70,6 +70,10 @@ public class RollStore {
         return roll;
     }
 
+    public Map<String, Integer> getStoreInventory() {
+        return stock;
+    }
+
     public boolean isOutOfStock() {
         // https://stackoverflow.com/questions/46898/how-do-i-efficiently-iterate-over-each-entry-in-a-java-map
         boolean outOfStock = true;
