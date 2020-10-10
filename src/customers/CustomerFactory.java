@@ -3,9 +3,10 @@ package customers;
 import java.util.*;
 
 public class CustomerFactory {
-    Random rand = new Random();
-    public List<Customer> generateCustomers() {
-        List<Customer> customers = new ArrayList<>();
+
+    static Random rand = new Random();
+    public static List<Customer> generateCustomers() {
+        List<Customer> customers = new LinkedList<>();
 
         // upper bound is exclusive
         int numOfCasualCustomers = rand.nextInt(12) + 1;

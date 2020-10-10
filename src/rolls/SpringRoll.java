@@ -3,7 +3,7 @@ package rolls;
 public class SpringRoll extends Roll{
 
     public SpringRoll() {
-        this.description = "Spring Roll";
+        this.description = "SpringRoll";
     }
 
     public double cost() {

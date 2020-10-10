@@ -1,5 +1,7 @@
 package customers;
 
+import rolls.Roll;
+import rolls.RollStore;
 import rolls.Topping;
 
 import java.util.Random;
@@ -13,8 +15,22 @@ public class CasualCustomer extends Customer{
 
     public CasualCustomer() {
         super();
-
+        type = "casual";
     }
+
+    public void purchaseRolls_v2(RollStore store) {
+        int numRolls = rand.nextInt(numRollUpperBound) + 1;
+        for (int i = 0; i < numRolls; i++) {
+            int rollIdx = rand.nextInt(numRollTypes);
+            String rollType = pickRoll_v2(rollIdx);
+            int numExtraSauce = getNumExtraSauce();
+            int numExtraFillings = getNumExtraFillings();
+            int numExtraToppings = getNumExtraToppings();
+            Roll roll = store.orderRoll(this, rollType, numExtraSauce, numExtraFillings, numExtraToppings);
+            addRoll(roll);
+        }
+    }
+
     @Override
     public void purchaseRolls(){
         int numRolls = rand.nextInt(numRollUpperBound) + 1;

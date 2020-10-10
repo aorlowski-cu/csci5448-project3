@@ -2,7 +2,7 @@ package rolls;
 
 public class PastryRoll extends Roll{
     public PastryRoll() {
-        this.description = "Pastry Roll";
+        this.description = "PastryRoll";
     }
 
     public double cost() {

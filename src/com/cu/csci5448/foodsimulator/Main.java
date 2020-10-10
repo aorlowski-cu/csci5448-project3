@@ -54,5 +54,21 @@ public class Main {
         List<Customer> customers = customerFactory.generateCustomers();
         System.out.println(customers);
 
+        int numOfDays = 5;
+        for (int i = 1; i < numOfDays+1; i++) {
+            System.out.println("Day number: " + i);
+            for (Customer customer: customers) {
+                if (store.isOutOfStock()) {
+                    System.out.println("Store is out of stock today. Will shut it down and refill it tomorrow.");
+                    break;
+                }
+
+            }
+            if (store.isOutOfStock()) {
+                store.refillStock();
+            }
+        }
+
+
     }
 }

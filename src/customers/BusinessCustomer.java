@@ -1,14 +1,28 @@
 package customers;
 
+import rolls.Roll;
+import rolls.RollStore;
+
 import java.util.Random;
 
 public class BusinessCustomer extends Customer{
 
     private int numRollsToBuy = 10;
-    private int numRollTypes = 5;
     private Random rand = new Random();
     public BusinessCustomer() {
         super();
+        type = "business";
+    }
+
+    public void purchaseRolls_v2(RollStore store) {
+        for (int i = 0; i < numRollsToBuy; i++) {
+            String rollType = pickRoll_v2(store.numRollTypes);
+            int numExtraSauce = getNumExtraSauce();
+            int numExtraFillings = getNumExtraFillings();
+            int numExtraToppings = getNumExtraToppings();
+            Roll roll = store.orderRoll(this, rollType, numExtraSauce, numExtraFillings, numExtraToppings);
+            addRoll(roll);
+        }
     }
 
     @Override

@@ -1,5 +1,8 @@
 package customers;
 
+import rolls.Roll;
+import rolls.RollStore;
+
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -10,8 +13,32 @@ public class CateringCustomer extends Customer{
     private Random rand = new Random();
     public CateringCustomer() {
         super();
-
+        type = "catering";
     }
+
+    public void purchaseRolls_v2(RollStore store) {
+        ArrayList<Integer> rollIdxList = new ArrayList<Integer>(numRollTypes);
+        //Generating random numbers with no duplicates: https://stackoverflow.com/questions/4040001/creating-random-numbers-with-no-duplicates
+        for(int i = 0; i < numRollTypes; i++) {
+            rollIdxList.add(i);
+        }
+        while(rollIdxList.size() > 3) {
+            int index = rand.nextInt(rollIdxList.size());
+            rollIdxList.remove(index);
+        }
+
+        for (int i = 0; i < rollIdxList.size(); i++) {
+            for (int j = 0; j < 5; j++) {
+                String rollType = pickRoll_v2(rollIdxList.get(i));
+                int numExtraSauce = getNumExtraSauce();
+                int numExtraFillings = getNumExtraFillings();
+                int numExtraToppings = getNumExtraToppings();
+                Roll roll = store.orderRoll(this, rollType, numExtraSauce, numExtraFillings, numExtraToppings);
+                addRoll(roll);
+            }
+        }
+    }
+
     @Override
     public void purchaseRolls(){
         ArrayList<Integer> list = new ArrayList<Integer>(numRollTypes);

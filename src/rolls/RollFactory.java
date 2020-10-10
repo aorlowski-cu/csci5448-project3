@@ -3,6 +3,8 @@ package rolls;
 import java.util.Map;
 
 public class RollFactory {
+    public int numRollTypes = 5;
+
     public Roll createRoll(String type) {
         Roll roll = null;
 
