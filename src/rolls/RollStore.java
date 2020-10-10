@@ -34,6 +34,9 @@ public class RollStore {
         earningByCustomerType.put("casual", 0.0);
         earningByCustomerType.put("business", 0.0);
         earningByCustomerType.put("catering", 0.0);
+        totalEarningByCustomerType.put("casual", 0.0);
+        totalEarningByCustomerType.put("business", 0.0);
+        totalEarningByCustomerType.put("catering", 0.0);
     }
 
     private boolean isAvailable(String type) {

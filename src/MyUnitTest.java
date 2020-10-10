@@ -66,17 +66,19 @@ public class MyUnitTest {
 
     @Test
     public void RollStore_JellyRollCanBeOrdered(){
+        Customer customer = new CasualCustomer();
         var factory = new RollFactory();
         var store = new RollStore(factory);
-        var result = store.orderRoll("JellyRoll");
+        var result = store.orderRoll(customer, "JellyRoll", 0, 0, 0);
         assertTrue(result.cost() > 0);
     }
 
     @Test
     public void RollStore_SpringRollCanBeOrdered(){
+        Customer customer = new CasualCustomer();
         var factory = new RollFactory();
         var store = new RollStore(factory);
-        var result = store.orderRoll("SpringRoll");
+        var result = store.orderRoll(customer, "SpringRoll", 0, 0, 0);
         assertTrue(result.cost() > 0);
     }
 }
