@@ -69,6 +69,7 @@ public class MyUnitTest {
         Customer customer = new CasualCustomer();
         var factory = new RollFactory();
         var store = new RollStore(factory);
+        store.open();
         var result = store.orderRoll(customer, "JellyRoll", 0, 0, 0);
         assertTrue(result.cost() > 0);
     }
@@ -78,6 +79,7 @@ public class MyUnitTest {
         Customer customer = new CasualCustomer();
         var factory = new RollFactory();
         var store = new RollStore(factory);
+        store.open();
         var result = store.orderRoll(customer, "SpringRoll", 0, 0, 0);
         assertTrue(result.cost() > 0);
     }
