@@ -4,6 +4,8 @@ import rolls.Roll;
 import rolls.RollStore;
 import rolls.Topping;
 
+import java.beans.PropertyChangeListener;
+import java.beans.PropertyChangeSupport;
 import java.util.Random;
 
 public class CasualCustomer extends Customer{
@@ -13,13 +15,33 @@ public class CasualCustomer extends Customer{
     private Random rand = new Random();
 
 
+    private PropertyChangeSupport casualCustomerObservable;
+    private String toBeObserved;
+
+    //Adding an observable to each customer, this code and next three methods from:
+    // https://www.baeldung.com/java-observer-pattern
+
+    //Part of the observer pattern
+
+    //This method is part of the Observer pattern, allows the customer to alert the store of purchases
+    public void showPurchase(String value) {
+        casualCustomerObservable.firePropertyChange("casualCustomer", this.toBeObserved, value);
+        this.toBeObserved = value;
+    }
+
     public CasualCustomer() {
         super();
+        casualCustomerObservable = new PropertyChangeSupport(this);
         type = "casual";
     }
 
+    //Part of the observer pattern
+    public void addPropertyChangeListener(PropertyChangeListener pcl) {casualCustomerObservable.addPropertyChangeListener(pcl); }
+    public void removePropertyChangeListener(PropertyChangeListener pcl) { casualCustomerObservable.removePropertyChangeListener(pcl); }
+
     public void purchaseRolls_v2(RollStore store) {
         int numRolls = rand.nextInt(numRollUpperBound) + 1;
+        String out = "";
         for (int i = 0; i < numRolls; i++) {
             int rollIdx = rand.nextInt(numRollTypes);
             String rollType = pickRoll_v2(rollIdx);
@@ -27,8 +49,10 @@ public class CasualCustomer extends Customer{
             int numExtraFillings = getNumExtraFillings();
             int numExtraToppings = getNumExtraToppings();
             Roll roll = store.orderRoll(this, rollType, numExtraSauce, numExtraFillings, numExtraToppings);
-            addRoll(roll);
+            out = out + "Roll number: " + (i+1) + " " + roll.getDescription() + "\n";
         }
+        this.showPurchase(out);
+        out = "";
     }
 
     @Override

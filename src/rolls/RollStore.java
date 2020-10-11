@@ -2,10 +2,13 @@ package rolls;
 
 import customers.Customer;
 
+import java.beans.PropertyChangeEvent;
+import java.beans.PropertyChangeListener;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-public class RollStore {
+public class RollStore implements PropertyChangeListener {
     RollFactory factory;
     private Map<String, Double> totalEarningByCustomerType = new HashMap<>();
     private Map<String, Integer> totalRollsSoldByType = new HashMap<>();
@@ -14,13 +17,17 @@ public class RollStore {
     private Map<String, Integer> stock = new HashMap<>();
     private Map<String, Integer> rollsSoldByType = new HashMap<>();
     private Map<String, Double> earningByCustomerType = new HashMap<>();
+    private ArrayList<String> orderForTheDay = new ArrayList<>();
     public int numRollTypes;
+
 
     public void refillStock() {
         factory.refillStock(stock);
     }
 
     public void open() {
+        System.out.println("Inventory at the beginning of the day: ");
+        printInventory();
         earningByCustomerType.put("casual", 0.0);
         earningByCustomerType.put("business", 0.0);
         earningByCustomerType.put("catering", 0.0);
@@ -32,6 +39,15 @@ public class RollStore {
     }
 
     public void close() {
+        System.out.println("Inventory at the end of the day: ");
+        printInventory();
+        for(String s : orderForTheDay){
+            System.out.println(s);
+        }
+        orderForTheDay.clear();
+        for(String s : orderForTheDay){
+            System.out.println("After clear" + s);
+        }
         // Observer pattern to report to logging class
     }
 
@@ -91,7 +107,7 @@ public class RollStore {
     public boolean isOutOfStock() {
         // https://stackoverflow.com/questions/46898/how-do-i-efficiently-iterate-over-each-entry-in-a-java-map
         boolean outOfStock = true;
-        for (Map.Entry<String, Integer> entry: stock.entrySet()) {
+        for (Map.Entry<String, Integer> entry : stock.entrySet()) {
             if (entry.getValue() != 0) {
                 outOfStock = false;
             }
@@ -101,7 +117,7 @@ public class RollStore {
 
     public Double totalEarning() {
         Double total = 0.0;
-        for (Map.Entry<String, Double> entry: earningByCustomerType.entrySet()) {
+        for (Map.Entry<String, Double> entry : earningByCustomerType.entrySet()) {
             total += entry.getValue();
         }
         return total;
@@ -110,4 +126,34 @@ public class RollStore {
     public void incrementRollOutage(int numOfOutage) {
         totalRollOutage += numOfOutage;
     }
+
+    public void printInventory(){
+        System.out.println(stock.toString());
+    }
+
+    @Override
+    public void propertyChange(PropertyChangeEvent evt) {
+        this.setOutput(evt.getPropertyName(), (String) evt.getNewValue());
+    }
+
+    private void setOutput(String name, String value) {
+
+        switch (name) {
+            case "casualCustomer":
+                orderForTheDay.add("Casual Customer's order: " + "\n"  + value );
+                //System.out.println("Casual Customer's roll:" + value);
+                break;
+            case "businessCustomer":
+                orderForTheDay.add("Business Customer's roll: " + value);
+                //System.out.println(value);
+                break;
+            case "cateringCustomer":
+                orderForTheDay.add("Catering Customer's roll: " + value);
+                //System.out.println(value);
+                break;
+            default:
+                break;
+        }
+    }
+
 }

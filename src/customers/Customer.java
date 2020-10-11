@@ -3,15 +3,35 @@ package customers;
 import rolls.Roll;
 import rolls.RollStore;
 
+import java.beans.PropertyChangeListener;
+import java.beans.PropertyChangeSupport;
 import java.util.ArrayList;
 import java.util.Random;
 
 public abstract class Customer {
 
+    private PropertyChangeSupport customerObservable;
+    private String toBeObserved;
+
+    //Adding an observable to each customer, this code and next three methods from:
+    // https://www.baeldung.com/java-observer-pattern
+
+    //Part of the observer pattern
+    public void addPropertyChangeListener(PropertyChangeListener pcl) {customerObservable.addPropertyChangeListener(pcl); }
+    public void removePropertyChangeListener(PropertyChangeListener pcl) { customerObservable.removePropertyChangeListener(pcl); }
+
+    //This method is part of the Observer pattern, allows the customer to alert the store of purchases
+    public void showPurchase(String value) {
+        customerObservable.firePropertyChange("customer", this.toBeObserved, value);
+        this.toBeObserved = value;
+    }
+
     Random rand = new Random();
 
     public ArrayList<rolls.Roll> rollsPurchased = new ArrayList<>();
-    public Customer(){}
+    public Customer(){
+        //customerObservable = new PropertyChangeSupport(this);
+    }
     public String type;
     public abstract void purchaseRolls();
 

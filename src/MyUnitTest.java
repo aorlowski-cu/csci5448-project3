@@ -1,9 +1,12 @@
 import customers.*;
-import org.junit.Assert;
-import org.junit.Test;
+//import org.junit.Assert;
+//import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import rolls.*;
 
-import static org.junit.Assert.assertTrue;
+
+//import static org.junit.Assert.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 /**
  * Test file for all tests. In a bigger project we would have test files for every class to help manage
