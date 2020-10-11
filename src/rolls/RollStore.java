@@ -13,6 +13,7 @@ public class RollStore implements PropertyChangeListener {
     private Map<String, Double> totalEarningByCustomerType = new HashMap<>();
     private Map<String, Integer> totalRollsSoldByType = new HashMap<>();
     private int totalRollOutage;
+    private String didClose = "";
 
     private Map<String, Integer> stock = new HashMap<>();
     private Map<String, Integer> rollsSoldByType = new HashMap<>();
@@ -45,10 +46,32 @@ public class RollStore implements PropertyChangeListener {
             System.out.println(s);
         }
         orderForTheDay.clear();
-        for(String s : orderForTheDay){
-            System.out.println("After clear" + s);
-        }
+        System.out.println("Total payment for order by customer type up to the end of today: " + totalEarningByCustomerType.toString());
+        System.out.println("Total payment for order by customer type for today only: " + earningByCustomerType.toString());
+        System.out.println("Total rolls sold by type up to the end of today: " + totalRollsSoldByType.toString());
+        System.out.println("Total rolls sold by type up for today only: " + rollsSoldByType.toString());
+        //System.out.println("Number of roll orders impacted by outages: " + ) //to be done
+        //System.out.println("Number of times inventory had to be filled for each roll up to this point: " + ); //to be done
+        System.out.println("The store " + didClose + " close today for no inventory.");
+        System.out.println("-------------------------------------------------------------------");
         // Observer pattern to report to logging class
+    }
+
+    public void printInventory(){
+        System.out.println(stock.toString());
+    }
+
+    public void printTotalResults(){
+        System.out.println("End of simulation statistics:");
+        System.out.println("Total rolls sold: " + totalRollsSoldByType.toString());
+        System.out.println("Total earnings: " + totalEarningByCustomerType.toString());
+        double sum = 0.0;
+        for(double i : totalEarningByCustomerType.values()){
+            sum+=i;
+        }
+        System.out.println("Total earnings summed " + sum);
+        //System.out.println("Total number of roll outage impacts: " + ); //To be done
+        System.out.println("-------------------------------------------------------------------");
     }
 
     public RollStore(RollFactory factory) {
@@ -106,9 +129,11 @@ public class RollStore implements PropertyChangeListener {
 
     public boolean isOutOfStock() {
         // https://stackoverflow.com/questions/46898/how-do-i-efficiently-iterate-over-each-entry-in-a-java-map
+        didClose = "did";
         boolean outOfStock = true;
         for (Map.Entry<String, Integer> entry : stock.entrySet()) {
             if (entry.getValue() != 0) {
+                didClose = "didn't";
                 outOfStock = false;
             }
         }
@@ -125,10 +150,6 @@ public class RollStore implements PropertyChangeListener {
 
     public void incrementRollOutage(int numOfOutage) {
         totalRollOutage += numOfOutage;
-    }
-
-    public void printInventory(){
-        System.out.println(stock.toString());
     }
 
     @Override

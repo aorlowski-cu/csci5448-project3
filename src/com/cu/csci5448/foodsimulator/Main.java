@@ -74,8 +74,6 @@ public class Main {
                 store.refillStock();
             }
         }
-
-
-
+        store.printTotalResults();
     }
 }
