@@ -21,8 +21,6 @@ public class CasualCustomer extends Customer{
     //Adding an observable to each customer, this code and next three methods from:
     // https://www.baeldung.com/java-observer-pattern
 
-    //Part of the observer pattern
-
     //This method is part of the Observer pattern, allows the customer to alert the store of purchases
     public void showPurchase(String value) {
         casualCustomerObservable.firePropertyChange("casualCustomer", this.toBeObserved, value);
@@ -49,10 +47,11 @@ public class CasualCustomer extends Customer{
             int numExtraFillings = getNumExtraFillings();
             int numExtraToppings = getNumExtraToppings();
             Roll roll = store.orderRoll(this, rollType, numExtraSauce, numExtraFillings, numExtraToppings);
+            addRoll(roll);
             out = out + "Roll number: " + (i+1) + " " + roll.getDescription() + "\n";
         }
+        out = out + "Total cost: " + costOfOrder() + "\n";
         this.showPurchase(out);
-        out = "";
     }
 
     @Override

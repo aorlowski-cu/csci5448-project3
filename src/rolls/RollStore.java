@@ -162,15 +162,12 @@ public class RollStore implements PropertyChangeListener {
         switch (name) {
             case "casualCustomer":
                 orderForTheDay.add("Casual Customer's order: " + "\n"  + value );
-                //System.out.println("Casual Customer's roll:" + value);
                 break;
             case "businessCustomer":
-                orderForTheDay.add("Business Customer's roll: " + value);
-                //System.out.println(value);
+                orderForTheDay.add("Business Customer's roll: " + "\n"  + value );
                 break;
             case "cateringCustomer":
-                orderForTheDay.add("Catering Customer's roll: " + value);
-                //System.out.println(value);
+                orderForTheDay.add("Catering Customer's roll: " + "\n"  + value );
                 break;
             default:
                 break;

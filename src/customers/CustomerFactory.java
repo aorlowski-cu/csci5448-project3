@@ -10,8 +10,8 @@ public class CustomerFactory {
 
         // upper bound is exclusive
         int numOfCasualCustomers = rand.nextInt(12) + 1;
-        int numOfBusinessCustomers = 0;//rand.nextInt(3) + 1;
-        int numOfCateringCustomers = 0;//rand.nextInt(3) + 1;
+        int numOfBusinessCustomers = rand.nextInt(3) + 1;
+        int numOfCateringCustomers = rand.nextInt(3) + 1;
 
         for (int i = 0; i < numOfCasualCustomers; i++) {
             customers.add(new CasualCustomer());

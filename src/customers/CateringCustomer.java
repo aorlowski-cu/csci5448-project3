@@ -2,21 +2,39 @@ package customers;
 
 import rolls.Roll;
 import rolls.RollStore;
-
 import java.util.ArrayList;
 import java.util.Random;
+import java.beans.PropertyChangeListener;
+import java.beans.PropertyChangeSupport;
 
 public class CateringCustomer extends Customer{
 
     private int numRollsToBuy = 15;
     private int numRollTypes = 5;
     private Random rand = new Random();
+
+    private PropertyChangeSupport cateringCustomerObservable;
+    private String toBeObserved;
+
+    //Adding an observable to each customer, this code and next three methods from:
+    // https://www.baeldung.com/java-observer-pattern
+
+    //This method is part of the Observer pattern, allows the customer to alert the store of purchases
+    public void showPurchase(String value) {
+        cateringCustomerObservable.firePropertyChange("cateringCustomer", this.toBeObserved, value);
+        this.toBeObserved = value;
+    }
+    public void addPropertyChangeListener(PropertyChangeListener pcl) {cateringCustomerObservable.addPropertyChangeListener(pcl); }
+    public void removePropertyChangeListener(PropertyChangeListener pcl) { cateringCustomerObservable.removePropertyChangeListener(pcl); }
+
     public CateringCustomer() {
         super();
+        cateringCustomerObservable = new PropertyChangeSupport(this);
         type = "catering";
     }
 
     public void purchaseRolls_v2(RollStore store) {
+
         ArrayList<Integer> rollIdxList = new ArrayList<Integer>(numRollTypes);
         //Generating random numbers with no duplicates: https://stackoverflow.com/questions/4040001/creating-random-numbers-with-no-duplicates
         for(int i = 0; i < numRollTypes; i++) {
@@ -27,6 +45,7 @@ public class CateringCustomer extends Customer{
             rollIdxList.remove(index);
         }
 
+        String out = "";
         for (int i = 0; i < rollIdxList.size(); i++) {
             for (int j = 0; j < 5; j++) {
                 String rollType = pickRoll_v2(rollIdxList.get(i));
@@ -35,8 +54,11 @@ public class CateringCustomer extends Customer{
                 int numExtraToppings = getNumExtraToppings();
                 Roll roll = store.orderRoll(this, rollType, numExtraSauce, numExtraFillings, numExtraToppings);
                 addRoll(roll);
+                out = out + "Roll number: " + (j+(i*5)+1) + " " + roll.getDescription() + "\n";
             }
         }
+        out = out + "Total cost: " + costOfOrder() + "\n";
+        this.showPurchase(out);
     }
 
     @Override
