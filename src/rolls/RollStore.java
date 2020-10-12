@@ -174,7 +174,7 @@ public class RollStore implements PropertyChangeListener {
 
     private void setOutput(String name, String value) {
 
-        if(value.equals("Total cost: 0.0")){
+        if(value.equals("Total cost: 0.0" + "\n")){
             return;
         }
         switch (name) {
