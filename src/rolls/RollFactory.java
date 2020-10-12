@@ -21,12 +21,4 @@ public class RollFactory {
         }
         return roll;
     }
-
-    public void refillStock(Map<String, Integer> stock) {
-        stock.put("SpringRoll", 30);
-        stock.put("EggRoll", 30);
-        stock.put("JellyRoll", 30);
-        stock.put("SausageRoll", 30);
-        stock.put("PastryRoll", 30);
-    }
 }

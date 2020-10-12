@@ -54,6 +54,7 @@ public class CateringCustomer extends Customer{
                 int numExtraToppings = getNumExtraToppings();
                 Roll roll = store.orderRoll(this, rollType, numExtraSauce, numExtraFillings, numExtraToppings);
                 addRoll(roll);
+                //TODO: handle null roll for out of stock scenario
                 out = out + "Roll number: " + (j+(i*5)+1) + " " + roll.getDescription() + "\n";
             }
         }

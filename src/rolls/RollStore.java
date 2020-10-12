@@ -23,7 +23,21 @@ public class RollStore implements PropertyChangeListener {
 
 
     public void refillStock() {
-        factory.refillStock(stock);
+        if (!isAvailable("SpringRoll")) {
+            stock.put("SpringRoll", 30);
+        }
+        if (!isAvailable("EggRoll")) {
+            stock.put("EggRoll", 30);
+        }
+        if (!isAvailable("JellyRoll")) {
+            stock.put("JellyRoll", 30);
+        }
+        if (!isAvailable("SausageRoll")) {
+            stock.put("SausageRoll", 30);
+        }
+        if (!isAvailable("PastryRoll")) {
+            stock.put("PastryRoll", 30);
+        }
     }
 
     public void open() {
@@ -42,7 +56,7 @@ public class RollStore implements PropertyChangeListener {
     public void close() {
         System.out.println("Inventory at the end of the day: ");
         printInventory();
-        for(String s : orderForTheDay){
+        for (String s : orderForTheDay) {
             System.out.println(s);
         }
         orderForTheDay.clear();
@@ -57,17 +71,17 @@ public class RollStore implements PropertyChangeListener {
         // Observer pattern to report to logging class
     }
 
-    public void printInventory(){
+    public void printInventory() {
         System.out.println(stock.toString());
     }
 
-    public void printTotalResults(){
+    public void printTotalResults() {
         System.out.println("End of simulation statistics:");
         System.out.println("Total rolls sold: " + totalRollsSoldByType.toString());
         System.out.println("Total earnings: " + totalEarningByCustomerType.toString());
         double sum = 0.0;
-        for(double i : totalEarningByCustomerType.values()){
-            sum+=i;
+        for (double i : totalEarningByCustomerType.values()) {
+            sum += i;
         }
         System.out.println("Total earnings summed " + sum);
         //System.out.println("Total number of roll outage impacts: " + ); //To be done
@@ -77,7 +91,7 @@ public class RollStore implements PropertyChangeListener {
     public RollStore(RollFactory factory) {
         this.factory = factory;
         this.numRollTypes = factory.numRollTypes;
-        refillStock();
+        initStock();
         totalEarningByCustomerType.put("casual", 0.0);
         totalEarningByCustomerType.put("business", 0.0);
         totalEarningByCustomerType.put("catering", 0.0);
@@ -161,17 +175,25 @@ public class RollStore implements PropertyChangeListener {
 
         switch (name) {
             case "casualCustomer":
-                orderForTheDay.add("Casual Customer's order: " + "\n"  + value );
+                orderForTheDay.add("Casual Customer's order: " + "\n" + value);
                 break;
             case "businessCustomer":
-                orderForTheDay.add("Business Customer's roll: " + "\n"  + value );
+                orderForTheDay.add("Business Customer's roll: " + "\n" + value);
                 break;
             case "cateringCustomer":
-                orderForTheDay.add("Catering Customer's roll: " + "\n"  + value );
+                orderForTheDay.add("Catering Customer's roll: " + "\n" + value);
                 break;
             default:
                 break;
         }
+    }
+
+    private void initStock() {
+        stock.put("SpringRoll", 30);
+        stock.put("EggRoll", 30);
+        stock.put("JellyRoll", 30);
+        stock.put("SausageRoll", 30);
+        stock.put("PastryRoll", 30);
     }
 
 }
