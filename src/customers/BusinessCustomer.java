@@ -2,7 +2,8 @@ package customers;
 
 import rolls.Roll;
 import rolls.RollStore;
-import java.util.Random;
+
+import java.util.*;
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;
 
@@ -31,8 +32,27 @@ public class BusinessCustomer extends Customer{
 
     public void purchaseRolls_v2(RollStore store) {
         String out = "";
+
+        Map<String, Integer> storeStock = new HashMap<>(store.getStoreInventory());
+        List<String> rollsToBuy = new ArrayList<>();
+
         for (int i = 0; i < numRollsToBuy; i++) {
             String rollType = pickRoll_v2(i%5);
+            if (storeStock.getOrDefault(rollType, 0) > 0) {
+                storeStock.put(rollType, storeStock.get(rollType) - 1);
+                rollsToBuy.add(rollType);
+            }
+            else {
+                // business customer will not buy if any request is not met
+                store.incrementRollOutage(numRollsToBuy);
+                // https://www.geeksforgeeks.org/arraylist-clear-java-examples/
+                rollsToBuy.clear();
+                break;
+            }
+        }
+
+        for (int i = 0; i < rollsToBuy.size(); i++) {
+            String rollType = rollsToBuy.get(i);
             int numExtraSauce = getNumExtraSauce();
             int numExtraFillings = getNumExtraFillings();
             int numExtraToppings = getNumExtraToppings();
@@ -40,6 +60,7 @@ public class BusinessCustomer extends Customer{
             addRoll(roll);
             out = out + "Roll number: " + (i+1) + " " + roll.getDescription() + "\n";
         }
+
         out = out + "Total cost: " + costOfOrder() + "\n";
         this.showPurchase(out);
     }

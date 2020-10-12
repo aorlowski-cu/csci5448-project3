@@ -2,8 +2,8 @@ package customers;
 
 import rolls.Roll;
 import rolls.RollStore;
-import java.util.ArrayList;
-import java.util.Random;
+
+import java.util.*;
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;
 
@@ -34,6 +34,7 @@ public class CateringCustomer extends Customer{
     }
 
     public void purchaseRolls_v2(RollStore store) {
+        String out = "";
 
         ArrayList<Integer> rollIdxList = new ArrayList<Integer>(numRollTypes);
         //Generating random numbers with no duplicates: https://stackoverflow.com/questions/4040001/creating-random-numbers-with-no-duplicates
@@ -45,19 +46,45 @@ public class CateringCustomer extends Customer{
             rollIdxList.remove(index);
         }
 
-        String out = "";
+        Map<String, Integer> storeStock = new HashMap<>(store.getStoreInventory());
+        List<String> rollsToBuy = new ArrayList<>();
+
         for (int i = 0; i < rollIdxList.size(); i++) {
             for (int j = 0; j < 5; j++) {
                 String rollType = pickRoll_v2(rollIdxList.get(i));
-                int numExtraSauce = getNumExtraSauce();
-                int numExtraFillings = getNumExtraFillings();
-                int numExtraToppings = getNumExtraToppings();
-                Roll roll = store.orderRoll(this, rollType, numExtraSauce, numExtraFillings, numExtraToppings);
-                addRoll(roll);
-                //TODO: handle null roll for out of stock scenario
-                out = out + "Roll number: " + (j+(i*5)+1) + " " + roll.getDescription() + "\n";
+                if (storeStock.getOrDefault(rollType, 0) > 0) {
+                    storeStock.put(rollType, storeStock.get(rollType) - 1);
+                    rollsToBuy.add(rollType);
+                } else {
+                    // select alternative type of roll
+                    String backup = null;
+                    for (String type: storeStock.keySet()) {
+                        if (storeStock.get(type) > 0) {
+                            backup = type;
+                            break;
+                        }
+                    }
+                    if (backup == null) {
+                        store.incrementRollOutage(1);
+                    }
+                    else {
+                        storeStock.put(backup, storeStock.get(backup) - 1);
+                        rollsToBuy.add(backup);
+                    }
+                }
             }
         }
+
+        for (int i = 0; i < rollsToBuy.size(); i++) {
+            String rollType = rollsToBuy.get(i);
+            int numExtraSauce = getNumExtraSauce();
+            int numExtraFillings = getNumExtraFillings();
+            int numExtraToppings = getNumExtraToppings();
+            Roll roll = store.orderRoll(this, rollType, numExtraSauce, numExtraFillings, numExtraToppings);
+            addRoll(roll);
+            out = out + "Roll number: " + (i+1) + " " + roll.getDescription() + "\n";
+        }
+
         out = out + "Total cost: " + costOfOrder() + "\n";
         this.showPurchase(out);
     }
