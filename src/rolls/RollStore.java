@@ -41,6 +41,7 @@ public class RollStore implements PropertyChangeListener {
     }
 
     public void open() {
+        refillStock();
         System.out.println("Inventory at the beginning of the day: ");
         printInventory();
         earningByCustomerType.put("casual", 0.0);
@@ -173,15 +174,18 @@ public class RollStore implements PropertyChangeListener {
 
     private void setOutput(String name, String value) {
 
+        if(value.equals("Total cost: 0.0")){
+            return;
+        }
         switch (name) {
             case "casualCustomer":
                 orderForTheDay.add("Casual Customer's order: " + "\n" + value);
                 break;
             case "businessCustomer":
-                orderForTheDay.add("Business Customer's roll: " + "\n" + value);
+                orderForTheDay.add("Business Customer's order: " + "\n" + value);
                 break;
             case "cateringCustomer":
-                orderForTheDay.add("Catering Customer's roll: " + "\n" + value);
+                orderForTheDay.add("Catering Customer's order: " + "\n" + value);
                 break;
             default:
                 break;
