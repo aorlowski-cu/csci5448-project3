@@ -12,30 +12,38 @@ public class RollStore implements PropertyChangeListener {
     RollFactory factory;
     private Map<String, Double> totalEarningByCustomerType = new HashMap<>();
     private Map<String, Integer> totalRollsSoldByType = new HashMap<>();
-    private int totalRollOutage;
+    private Map<String, Integer> totalRollOutageByType = new HashMap<>();
+
     private String didClose = "";
 
     private Map<String, Integer> stock = new HashMap<>();
     private Map<String, Integer> rollsSoldByType = new HashMap<>();
     private Map<String, Double> earningByCustomerType = new HashMap<>();
+    private Map<String, Integer> dailyRollOutageByType = new HashMap<>();
     private ArrayList<String> orderForTheDay = new ArrayList<>();
+    private Map<String, Integer> numInventoryOrders = new HashMap<>();
     public int numRollTypes;
 
 
     public void refillStock() {
         if (!isAvailable("SpringRoll")) {
+            numInventoryOrders.put("SpringRoll", numInventoryOrders.get("SpringRoll") + 1);
             stock.put("SpringRoll", 30);
         }
         if (!isAvailable("EggRoll")) {
+            numInventoryOrders.put("EggRoll", numInventoryOrders.get("EggRoll") + 1);
             stock.put("EggRoll", 30);
         }
         if (!isAvailable("JellyRoll")) {
+            numInventoryOrders.put("JellyRoll", numInventoryOrders.get("JellyRoll") + 1);
             stock.put("JellyRoll", 30);
         }
         if (!isAvailable("SausageRoll")) {
+            numInventoryOrders.put("SausageRoll", numInventoryOrders.get("SausageRoll") + 1);
             stock.put("SausageRoll", 30);
         }
         if (!isAvailable("PastryRoll")) {
+            numInventoryOrders.put("PastryRoll", numInventoryOrders.get("PastryRoll") + 1);
             stock.put("PastryRoll", 30);
         }
     }
@@ -52,6 +60,9 @@ public class RollStore implements PropertyChangeListener {
         rollsSoldByType.put("JellyRoll", 0);
         rollsSoldByType.put("SausageRoll", 0);
         rollsSoldByType.put("PastryRoll", 0);
+        dailyRollOutageByType.put("casual", 0);
+        dailyRollOutageByType.put("business", 0);
+        dailyRollOutageByType.put("catering",0);
     }
 
     public void close() {
@@ -65,11 +76,10 @@ public class RollStore implements PropertyChangeListener {
         System.out.println("Total payment for order by customer type for today only: " + earningByCustomerType.toString());
         System.out.println("Total rolls sold by type up to the end of today: " + totalRollsSoldByType.toString());
         System.out.println("Total rolls sold by type up for today only: " + rollsSoldByType.toString());
-        //System.out.println("Number of roll orders impacted by outages: " + ) //to be done
-        //System.out.println("Number of times inventory had to be filled for each roll up to this point: " + ); //to be done
+        System.out.println("Number of roll orders impacted by outages today: " + dailyRollOutageByType.toString());
+        System.out.println("Number of times inventory had to be filled for each roll up to this point: " + numInventoryOrders.toString()); //to be done
         System.out.println("The store " + didClose + " close today for no inventory.");
         System.out.println("-------------------------------------------------------------------");
-        // Observer pattern to report to logging class
     }
 
     public void printInventory() {
@@ -80,12 +90,8 @@ public class RollStore implements PropertyChangeListener {
         System.out.println("End of simulation statistics:");
         System.out.println("Total rolls sold: " + totalRollsSoldByType.toString());
         System.out.println("Total earnings: " + totalEarningByCustomerType.toString());
-        double sum = 0.0;
-        for (double i : totalEarningByCustomerType.values()) {
-            sum += i;
-        }
-        System.out.println("Total earnings summed " + sum);
-        //System.out.println("Total number of roll outage impacts: " + ); //To be done
+        System.out.println("Total earnings summed:" + totalEarning());
+        System.out.println("Total number of roll outage impacts by type: " + totalRollOutageByType.toString());
         System.out.println("-------------------------------------------------------------------");
     }
 
@@ -101,6 +107,14 @@ public class RollStore implements PropertyChangeListener {
         totalRollsSoldByType.put("JellyRoll", 0);
         totalRollsSoldByType.put("SausageRoll", 0);
         totalRollsSoldByType.put("PastryRoll", 0);
+        totalRollOutageByType.put("casual", 0);
+        totalRollOutageByType.put("business", 0);
+        totalRollOutageByType.put("catering", 0);
+        numInventoryOrders.put("SpringRoll", 0);
+        numInventoryOrders.put("EggRoll", 0);
+        numInventoryOrders.put("JellyRoll", 0);
+        numInventoryOrders.put("SausageRoll", 0);
+        numInventoryOrders.put("PastryRoll", 0);
     }
 
     private boolean isAvailable(String type) {
@@ -157,15 +171,33 @@ public class RollStore implements PropertyChangeListener {
 
     public Double totalEarning() {
         Double total = 0.0;
-        for (Map.Entry<String, Double> entry : earningByCustomerType.entrySet()) {
+        for (Map.Entry<String, Double> entry : totalEarningByCustomerType.entrySet()) {
             total += entry.getValue();
         }
         return total;
     }
 
-    public void incrementRollOutage(int numOfOutage) {
-        totalRollOutage += numOfOutage;
+
+    public void incrementRollOutage(String type, int numOfOutage) {
+
+        switch (type) {
+            case "casual":
+                totalRollOutageByType.put(type, totalRollOutageByType.get(type) + numOfOutage);
+                dailyRollOutageByType.put(type, dailyRollOutageByType.get(type) + numOfOutage);
+                break;
+            case "business":
+                totalRollOutageByType.put(type, totalRollOutageByType.get(type) + numOfOutage);
+                dailyRollOutageByType.put(type, dailyRollOutageByType.get(type) + numOfOutage);
+                break;
+            case "catering":
+                totalRollOutageByType.put(type, totalRollOutageByType.get(type) + numOfOutage);
+                dailyRollOutageByType.put(type, dailyRollOutageByType.get(type) + numOfOutage);
+                break;
+            default:
+                break;
+        }
     }
+
 
     @Override
     public void propertyChange(PropertyChangeEvent evt) {

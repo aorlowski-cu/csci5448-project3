@@ -40,23 +40,29 @@ public class MyUnitTest {
 
     @Test
     public void BusinessCustomer_Buys10Rolls() {
+        RollFactory factory = new RollFactory();
+        RollStore store = new RollStore(factory);
         BusinessCustomer customer = new BusinessCustomer();
-        customer.purchaseRolls();
+        customer.purchaseRolls_v2(store);
         assertTrue(customer.rollsPurchased.size() == 10);
     }
 
     @Test
     public void CasualCustomer_Buys1To3Rolls() {
+        RollFactory factory = new RollFactory();
+        RollStore store = new RollStore(factory);
         CasualCustomer customer = new CasualCustomer();
-        customer.purchaseRolls();
+        customer.purchaseRolls_v2(store);
         int result = customer.rollsPurchased.size();
         assertTrue(result <= 3 && result > 0);
     }
 
     @Test
     public void CateringCustomer_Buys15Rolls() {
+        RollFactory factory = new RollFactory();
+        RollStore store = new RollStore(factory);
         CateringCustomer customer = new CateringCustomer();
-        customer.purchaseRolls();
+        customer.purchaseRolls_v2(store);
         assertTrue(customer.rollsPurchased.size() == 15);
     }
 

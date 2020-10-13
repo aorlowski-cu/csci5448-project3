@@ -33,13 +33,8 @@ public abstract class Customer {
         //customerObservable = new PropertyChangeSupport(this);
     }
     public String type;
-    public abstract void purchaseRolls();
 
     public abstract void purchaseRolls_v2(RollStore store);
-
-    public rolls.Roll pickRoll(){
-        return null;
-    }
 
     public String pickRoll_v2(int rollIdx) {
         switch (rollIdx) {
