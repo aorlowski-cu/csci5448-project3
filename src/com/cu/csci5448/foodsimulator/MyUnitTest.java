@@ -1,3 +1,5 @@
+package com.cu.csci5448.foodsimulator;
+
 import customers.*;
 //import org.junit.Assert;
 //import org.junit.Test;
