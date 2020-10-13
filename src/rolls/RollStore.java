@@ -9,12 +9,14 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class RollStore implements PropertyChangeListener {
+    //Instance variables and datastructures
     RollFactory factory;
     private Map<String, Double> totalEarningByCustomerType = new HashMap<>();
     private Map<String, Integer> totalRollsSoldByType = new HashMap<>();
     private Map<String, Integer> totalRollOutageByType = new HashMap<>();
-
     private String didClose = "";
+    private final int amountOfRolls = 60;
+    public boolean isTest = false; //Used to eliminate print statements during JUnit tests, so the results appear cleaner
 
     private Map<String, Integer> stock = new HashMap<>();
     private Map<String, Integer> rollsSoldByType = new HashMap<>();
@@ -25,33 +27,37 @@ public class RollStore implements PropertyChangeListener {
     public int numRollTypes;
 
 
+    //Public method to refill stock based on if any of the rolls are unavailable
     public void refillStock() {
         if (!isAvailable("SpringRoll")) {
             numInventoryOrders.put("SpringRoll", numInventoryOrders.get("SpringRoll") + 1);
-            stock.put("SpringRoll", 30);
+            stock.put("SpringRoll", amountOfRolls);
         }
         if (!isAvailable("EggRoll")) {
             numInventoryOrders.put("EggRoll", numInventoryOrders.get("EggRoll") + 1);
-            stock.put("EggRoll", 30);
+            stock.put("EggRoll", amountOfRolls);
         }
         if (!isAvailable("JellyRoll")) {
             numInventoryOrders.put("JellyRoll", numInventoryOrders.get("JellyRoll") + 1);
-            stock.put("JellyRoll", 30);
+            stock.put("JellyRoll", amountOfRolls);
         }
         if (!isAvailable("SausageRoll")) {
             numInventoryOrders.put("SausageRoll", numInventoryOrders.get("SausageRoll") + 1);
-            stock.put("SausageRoll", 30);
+            stock.put("SausageRoll", amountOfRolls);
         }
         if (!isAvailable("PastryRoll")) {
             numInventoryOrders.put("PastryRoll", numInventoryOrders.get("PastryRoll") + 1);
-            stock.put("PastryRoll", 30);
+            stock.put("PastryRoll", amountOfRolls);
         }
     }
 
+    //Method to run every day when the store opens
     public void open() {
         refillStock();
-        System.out.println("Inventory at the beginning of the day: ");
-        printInventory();
+        if(isTest == false) {
+            System.out.println("Inventory at the beginning of the day: ");
+            printInventory();
+        }
         earningByCustomerType.put("casual", 0.0);
         earningByCustomerType.put("business", 0.0);
         earningByCustomerType.put("catering", 0.0);
@@ -65,6 +71,7 @@ public class RollStore implements PropertyChangeListener {
         dailyRollOutageByType.put("catering",0);
     }
 
+    //Method to run everyday when the store closes
     public void close() {
         System.out.println("Inventory at the end of the day: ");
         printInventory();
@@ -82,10 +89,12 @@ public class RollStore implements PropertyChangeListener {
         System.out.println("-------------------------------------------------------------------");
     }
 
+    //Method to print the inventory
     public void printInventory() {
         System.out.println(stock.toString());
     }
 
+    //Method to print all the necessary information at the end of the simulation
     public void printTotalResults() {
         System.out.println("End of simulation statistics:");
         System.out.println("Total rolls sold: " + totalRollsSoldByType.toString());
@@ -95,6 +104,7 @@ public class RollStore implements PropertyChangeListener {
         System.out.println("-------------------------------------------------------------------");
     }
 
+    //Constructor, initializing values
     public RollStore(RollFactory factory) {
         this.factory = factory;
         this.numRollTypes = factory.numRollTypes;
@@ -117,12 +127,14 @@ public class RollStore implements PropertyChangeListener {
         numInventoryOrders.put("PastryRoll", 0);
     }
 
+    //Method to check if the rolls are in stock
     private boolean isAvailable(String type) {
         if (stock.get(type) > 0)
             return true;
         return false;
     }
 
+    //Method to order a roll
     public Roll orderRoll(Customer customer, String rollType, int numExtraSauce, int numExtraFillings, int numExtraToppings) {
         Roll roll = null;
         if (isAvailable(rollType)) {
@@ -152,10 +164,12 @@ public class RollStore implements PropertyChangeListener {
         return roll;
     }
 
+    //Method to get the inventory
     public Map<String, Integer> getStoreInventory() {
         return stock;
     }
 
+    //Method to determine if the store is out of stock, and if it did to alert the results
     public boolean isOutOfStock() {
         // https://stackoverflow.com/questions/46898/how-do-i-efficiently-iterate-over-each-entry-in-a-java-map
         didClose = "did";
@@ -169,6 +183,7 @@ public class RollStore implements PropertyChangeListener {
         return outOfStock;
     }
 
+    //Method to calculate the total Earnings for the whole simulation
     public Double totalEarning() {
         Double total = 0.0;
         for (Map.Entry<String, Double> entry : totalEarningByCustomerType.entrySet()) {
@@ -178,6 +193,7 @@ public class RollStore implements PropertyChangeListener {
     }
 
 
+    //Method to handle keeping track of roll outage scenarios
     public void incrementRollOutage(String type, int numOfOutage) {
 
         switch (type) {
@@ -199,11 +215,14 @@ public class RollStore implements PropertyChangeListener {
     }
 
 
+    //Observer pattern methods
     @Override
     public void propertyChange(PropertyChangeEvent evt) {
         this.setOutput(evt.getPropertyName(), (String) evt.getNewValue());
     }
 
+    //Adding to the arraylist each customers order for the day,
+    // so that the simulation can print them nicely when required
     private void setOutput(String name, String value) {
 
         if(value.equals("Total cost: 0.0" + "\n")){
@@ -224,12 +243,13 @@ public class RollStore implements PropertyChangeListener {
         }
     }
 
+    //Private method to start the stock
     private void initStock() {
-        stock.put("SpringRoll", 30);
-        stock.put("EggRoll", 30);
-        stock.put("JellyRoll", 30);
-        stock.put("SausageRoll", 30);
-        stock.put("PastryRoll", 30);
+        stock.put("SpringRoll", amountOfRolls);
+        stock.put("EggRoll", amountOfRolls);
+        stock.put("JellyRoll", amountOfRolls);
+        stock.put("SausageRoll", amountOfRolls);
+        stock.put("PastryRoll", amountOfRolls);
     }
 
 }

@@ -23,60 +23,82 @@ public class MyUnitTest {
     @Test
     public void EggRollCostsNine() {
         EggRoll roll = new EggRoll();
+        System.out.println("Egg roll costing nine JUnit test...");
         assertTrue(roll.cost() == 9);
+        System.out.println("Test completed.  Test passed.");
     }
 
     @Test
     public void JellyRollCostsEight() {
         JellyRoll roll = new JellyRoll();
+        System.out.println("Jelly roll costing eight JUnit test...");
         assertTrue(roll.cost() == 8);
+        System.out.println("Test completed.  Test passed.");
     }
 
     @Test
     public void SausageRollCosts14Point5() {
         SausageRoll roll = new SausageRoll();
+        System.out.println("Sausage roll costing 14.5 JUnit test...");
         assertTrue(roll.cost() == 14.5);
+        System.out.println("Test completed.  Test passed.");
     }
 
     @Test
     public void SpringRollCostsTwelve() {
         SpringRoll roll = new SpringRoll();
+        System.out.println("Spring roll costing 12 JUnit test...");
         assertTrue(roll.cost() == 12);
+        System.out.println("Test completed.  Test passed.");
     }
 
     @Test
     public void BusinessCustomer_Buys10Rolls() {
-        RollFactory factory = new RollFactory();
-        RollStore store = new RollStore(factory);
+        var factory = new RollFactory();
+        var store = new RollStore(factory);
         BusinessCustomer customer = new BusinessCustomer();
+        store.isTest = true;
+        store.open();
         customer.purchaseRolls_v2(store);
+        System.out.println("Business Customer buys 10 rolls JUnit test...");
         assertTrue(customer.rollsPurchased.size() == 10);
+        System.out.println("Test completed.  Test passed.");
     }
 
     @Test
     public void CasualCustomer_Buys1To3Rolls() {
-        RollFactory factory = new RollFactory();
-        RollStore store = new RollStore(factory);
+        var factory = new RollFactory();
+        var store = new RollStore(factory);
         CasualCustomer customer = new CasualCustomer();
+        store.isTest = true;
+        store.open();
         customer.purchaseRolls_v2(store);
         int result = customer.rollsPurchased.size();
+        System.out.println("Casual customer buys 1 to 3 rolls JUnit test...");
         assertTrue(result <= 3 && result > 0);
+        System.out.println("Test completed.  Test passed.");
     }
 
     @Test
     public void CateringCustomer_Buys15Rolls() {
-        RollFactory factory = new RollFactory();
-        RollStore store = new RollStore(factory);
+        var factory = new RollFactory();
+        var store = new RollStore(factory);
         CateringCustomer customer = new CateringCustomer();
+        store.isTest = true;
+        store.open();
         customer.purchaseRolls_v2(store);
+        System.out.println("Catering customer buys 15 rolls JUnit test...");
         assertTrue(customer.rollsPurchased.size() == 15);
+        System.out.println("Test completed.  Test passed.");
     }
 
     @Test
     public void CustomerFactory_CreatesLessThan19Customers() {
         var factory = new CustomerFactory();
         var result = factory.generateCustomers();
+        System.out.println("Customer factory creates less than 19 customers JUnit test...");
         assertTrue(result.size() < 19);
+        System.out.println("Test completed.  Test passed.");
     }
 
     @Test
@@ -84,9 +106,12 @@ public class MyUnitTest {
         Customer customer = new CasualCustomer();
         var factory = new RollFactory();
         var store = new RollStore(factory);
+        store.isTest = true;
         store.open();
         var result = store.orderRoll(customer, "JellyRoll", 0, 0, 0);
+        System.out.println("Jelly roll can be ordered from the roll store JUnit test...");
         assertTrue(result.cost() > 0);
+        System.out.println("Test completed.  Test passed.");
     }
 
     @Test
@@ -94,8 +119,28 @@ public class MyUnitTest {
         Customer customer = new CasualCustomer();
         var factory = new RollFactory();
         var store = new RollStore(factory);
+        store.isTest = true;
         store.open();
         var result = store.orderRoll(customer, "SpringRoll", 0, 0, 0);
+        System.out.println("Spring roll can be ordered from the roll store JUnit test...");
         assertTrue(result.cost() > 0);
+        System.out.println("Test completed.  Test passed.");
+    }
+
+    public void runTests(){
+        System.out.println("-------------------------------------------------------------------");
+        System.out.println("Commencing JUnit test methods: ");
+        EggRollCostsNine();
+        JellyRollCostsEight();
+        SausageRollCosts14Point5();
+        SpringRollCostsTwelve();
+        BusinessCustomer_Buys10Rolls();
+        CasualCustomer_Buys1To3Rolls();
+        CateringCustomer_Buys15Rolls();
+        CustomerFactory_CreatesLessThan19Customers();
+        RollStore_JellyRollCanBeOrdered();
+        RollStore_SpringRollCanBeOrdered();
+        System.out.println("JUnit test methods completed.");
+        System.out.println("-------------------------------------------------------------------");
     }
 }

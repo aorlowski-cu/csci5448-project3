@@ -38,6 +38,7 @@ public class CateringCustomer extends Customer{
 
         ArrayList<Integer> rollIdxList = new ArrayList<Integer>(numRollTypes);
         //Generating random numbers with no duplicates: https://stackoverflow.com/questions/4040001/creating-random-numbers-with-no-duplicates
+        //Creates a list of numbers tha are randomly chosen to be the types of rolls
         for(int i = 0; i < numRollTypes; i++) {
             rollIdxList.add(i);
         }
@@ -49,7 +50,7 @@ public class CateringCustomer extends Customer{
         Map<String, Integer> storeStock = new HashMap<>(store.getStoreInventory());
         List<String> rollsToBuy = new ArrayList<>();
 
-        for (int i = 0; i < rollIdxList.size(); i++) {
+        for (int i = 0; i < rollIdxList.size(); i++) { //For each roll
             for (int j = 0; j < 5; j++) {
                 String rollType = pickRoll_v2(rollIdxList.get(i));
                 if (storeStock.getOrDefault(rollType, 0) > 0) {
@@ -57,6 +58,7 @@ public class CateringCustomer extends Customer{
                     rollsToBuy.add(rollType);
                 } else {
                     // select alternative type of roll
+                    store.incrementRollOutage("catering",1);
                     String backup = null;
                     for (String type: storeStock.keySet()) {
                         if (storeStock.get(type) > 0) {
@@ -65,10 +67,10 @@ public class CateringCustomer extends Customer{
                         }
                     }
                     if (backup == null) {
-                        store.incrementRollOutage("catering",1);
+                        //store.incrementRollOutage("catering",1);
                     }
                     else {
-                        store.incrementRollOutage("catering",1);
+                        ;
                         storeStock.put(backup, storeStock.get(backup) - 1);
                         rollsToBuy.add(backup);
                     }

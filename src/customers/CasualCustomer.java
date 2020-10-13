@@ -44,14 +44,15 @@ public class CasualCustomer extends Customer{
         Map<String, Integer> storeStock = new HashMap<>(store.getStoreInventory());
         List<String> rollsToBuy = new ArrayList<>();
 
-        for (int i = 0; i < numRolls; i++) {
+        for (int i = 0; i < numRolls; i++) { //Run for each roll
             int rollIdx = rand.nextInt(numRollTypes);
             String rollType = pickRoll_v2(rollIdx);
-            if (storeStock.getOrDefault(rollType, 0) > 0) {
+            if (storeStock.getOrDefault(rollType, 0) > 0) { //If the roll is in stock
                 storeStock.put(rollType, storeStock.get(rollType) - 1);
                 rollsToBuy.add(rollType);
             }
-            else {
+            else { //if the roll isn't in stock
+                store.incrementRollOutage("casual", numRolls - i);
                 // randomly pick one of the other rolls
                 String backup = null;
                 for (String type: storeStock.keySet()) {
@@ -62,11 +63,9 @@ public class CasualCustomer extends Customer{
                 }
                 if (backup == null) {
                     // out of stock
-                    store.incrementRollOutage("casual", numRolls - i);
                     break;
                 }
                 else {
-                    store.incrementRollOutage("casual", numRolls - i);
                     storeStock.put(backup, storeStock.get(backup) - 1);
                     rollsToBuy.add(backup);
                 }

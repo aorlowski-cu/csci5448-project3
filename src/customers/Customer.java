@@ -12,6 +12,7 @@ public abstract class Customer {
 
     private PropertyChangeSupport customerObservable;
     private String toBeObserved;
+    public String type;
 
     //Adding an observable to each customer, this code and next three methods from:
     // https://www.baeldung.com/java-observer-pattern
@@ -32,10 +33,11 @@ public abstract class Customer {
     public Customer(){
         //customerObservable = new PropertyChangeSupport(this);
     }
-    public String type;
 
+    //Abstract purchase method
     public abstract void purchaseRolls_v2(RollStore store);
 
+    //Method to switch the roll type on pick
     public String pickRoll_v2(int rollIdx) {
         switch (rollIdx) {
             case 0: //Egg roll
@@ -58,12 +60,14 @@ public abstract class Customer {
         rollsPurchased.add(roll);
     }
 
+    //Method to print the rolls that were purchases, mainly used for debugging
     public void printPurchasedRolls(){
         for(int i =0; i < rollsPurchased.size(); i++){
             System.out.println(rolls.Roll.outputRoll(rollsPurchased.get(i)));
         }
     }
 
+    //Method to calculate the cost of an order
     public double costOfOrder(){
         double sum = 0.0;
         for(int i =0; i < rollsPurchased.size(); i++){
@@ -72,6 +76,7 @@ public abstract class Customer {
         return sum;
     }
 
+    //Getter methods for private instance variables (also setting them randomly each time)
     public int getNumExtraSauce(){ return rand.nextInt(4); }
     public int getNumExtraFillings(){ return rand.nextInt(2); }
     public int getNumExtraToppings(){ return rand.nextInt(3); }

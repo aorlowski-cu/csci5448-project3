@@ -9,17 +9,15 @@ import java.io.PrintStream;
 
 public class Main {
 
-    public static String outputRoll(Roll roll) {
-        return "My Roll: " + roll.getDescription() + ", cost: " + roll.cost();
-    }
-
     public static void main(String[] args) throws IOException {
 
         // https://www.tutorialspoint.com/redirecting-system-out-println-output-to-a-file-in-java#:~:text=Instantiate%20a%20PrintStream%20class%20by,created%20in%20the%20first%20step.
         // Direct output stream to file 'out.txt'
-        File file = new File("30DaysOutput.txt");
+        File file = new File("60RollsMaxOutput.txt");
         PrintStream stream = new PrintStream(file);
         System.setOut(stream);
+        MyUnitTest mUT = new MyUnitTest();
+        mUT.runTests();
 
         final int numOfDays = 30;
         RollFactory factory = new RollFactory();
@@ -47,5 +45,7 @@ public class Main {
             }
         }
         store.printTotalResults();
+
     }
+
 }

@@ -1,0 +1,2689 @@
+-------------------------------------------------------------------
+Commencing JUnit test methods: 
+Egg roll costing nine JUnit test...
+Test completed.  Test passed.
+Jelly roll costing eight JUnit test...
+Test completed.  Test passed.
+Sausage roll costing 14.5 JUnit test...
+Test completed.  Test passed.
+Spring roll costing 12 JUnit test...
+Test completed.  Test passed.
+Business Customer buys 10 rolls JUnit test...
+Test completed.  Test passed.
+Casual customer buys 1 to 3 rolls JUnit test...
+Test completed.  Test passed.
+Catering customer buys 15 rolls JUnit test...
+Test completed.  Test passed.
+Customer factory creates less than 19 customers JUnit test...
+Test completed.  Test passed.
+Jelly roll can be ordered from the roll store JUnit test...
+Test completed.  Test passed.
+Spring roll can be ordered from the roll store JUnit test...
+Test completed.  Test passed.
+JUnit test methods completed.
+-------------------------------------------------------------------
+Day number: 1
+Amount of customers: 4
+Inventory at the beginning of the day: 
+{JellyRoll=30, EggRoll=30, PastryRoll=30, SpringRoll=30, SausageRoll=30}
+Inventory at the end of the day: 
+{JellyRoll=20, EggRoll=25, PastryRoll=26, SpringRoll=21, SausageRoll=21}
+Casual Customer's order: 
+Roll number: 1 JellyRoll, extra sauce, extra sauce, extra sauce
+Roll number: 2 EggRoll, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Total cost: 30.0
+
+Business Customer's order: 
+Roll number: 1 EggRoll, extra sauce, extra sauce, extra sauce, extra filling
+Roll number: 2 JellyRoll, extra sauce, extra topping
+Roll number: 3 SpringRoll, extra sauce, extra sauce, extra sauce
+Roll number: 4 PastryRoll, extra filling, extra topping, extra topping
+Roll number: 5 SausageRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 6 EggRoll, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 7 JellyRoll, extra sauce, extra sauce, extra filling
+Roll number: 8 SpringRoll
+Roll number: 9 PastryRoll, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 10 SausageRoll, extra sauce, extra filling, extra topping
+Total cost: 167.25
+
+Business Customer's order: 
+Roll number: 1 EggRoll, extra sauce, extra filling, extra topping
+Roll number: 2 JellyRoll, extra sauce, extra sauce, extra sauce
+Roll number: 3 SpringRoll, extra sauce, extra filling
+Roll number: 4 PastryRoll, extra sauce, extra sauce, extra topping
+Roll number: 5 SausageRoll, extra sauce, extra filling, extra topping
+Roll number: 6 EggRoll, extra sauce, extra sauce
+Roll number: 7 JellyRoll, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 8 SpringRoll, extra filling, extra topping
+Roll number: 9 PastryRoll, extra sauce, extra sauce
+Roll number: 10 SausageRoll, extra sauce, extra topping
+Total cost: 156.75
+
+Catering Customer's order: 
+Roll number: 1 JellyRoll, extra sauce, extra sauce, extra sauce, extra filling
+Roll number: 2 JellyRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 3 JellyRoll, extra sauce, extra sauce, extra sauce
+Roll number: 4 JellyRoll, extra sauce, extra sauce, extra sauce, extra topping
+Roll number: 5 JellyRoll, extra sauce
+Roll number: 6 SpringRoll, extra sauce, extra topping
+Roll number: 7 SpringRoll, extra sauce, extra sauce, extra sauce, extra filling
+Roll number: 8 SpringRoll, extra sauce, extra sauce, extra sauce
+Roll number: 9 SpringRoll, extra sauce, extra filling, extra topping, extra topping
+Roll number: 10 SpringRoll
+Roll number: 11 SausageRoll
+Roll number: 12 SausageRoll
+Roll number: 13 SausageRoll, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 14 SausageRoll
+Roll number: 15 SausageRoll
+Total cost: 229.25
+
+Total payment for order by customer type up to the end of today: {business=324.0, casual=30.0, catering=229.25}
+Total payment for order by customer type for today only: {business=324.0, casual=30.0, catering=229.25}
+Total rolls sold by type up to the end of today: {JellyRoll=10, EggRoll=5, PastryRoll=4, SpringRoll=9, SausageRoll=9}
+Total rolls sold by type up for today only: {JellyRoll=10, EggRoll=5, PastryRoll=4, SpringRoll=9, SausageRoll=9}
+Number of roll orders impacted by outages today: {business=0, casual=0, catering=0}
+Number of times inventory had to be filled for each roll up to this point: {JellyRoll=0, EggRoll=0, PastryRoll=0, SpringRoll=0, SausageRoll=0}
+The store didn't close today for no inventory.
+-------------------------------------------------------------------
+Day number: 2
+Amount of customers: 7
+Inventory at the beginning of the day: 
+{JellyRoll=20, EggRoll=25, PastryRoll=26, SpringRoll=21, SausageRoll=21}
+Inventory at the end of the day: 
+{JellyRoll=6, EggRoll=20, PastryRoll=11, SpringRoll=9, SausageRoll=11}
+Casual Customer's order: 
+Roll number: 1 PastryRoll, extra sauce, extra topping
+Roll number: 2 SpringRoll, extra sauce, extra topping
+Total cost: 32.0
+
+Casual Customer's order: 
+Roll number: 1 SpringRoll, extra sauce, extra sauce, extra sauce, extra filling
+Roll number: 2 EggRoll, extra sauce, extra topping
+Total cost: 30.75
+
+Casual Customer's order: 
+Roll number: 1 SausageRoll, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 2 SpringRoll, extra sauce, extra sauce, extra filling
+Total cost: 38.25
+
+Catering Customer's order: 
+Roll number: 1 JellyRoll, extra filling, extra topping, extra topping
+Roll number: 2 JellyRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 3 JellyRoll, extra topping, extra topping
+Roll number: 4 JellyRoll, extra sauce, extra sauce, extra topping
+Roll number: 5 JellyRoll
+Roll number: 6 SpringRoll, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 7 SpringRoll, extra sauce, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 8 SpringRoll, extra filling, extra topping, extra topping
+Roll number: 9 SpringRoll, extra sauce, extra topping
+Roll number: 10 SpringRoll, extra topping, extra topping
+Roll number: 11 PastryRoll, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 12 PastryRoll, extra topping, extra topping
+Roll number: 13 PastryRoll, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 14 PastryRoll, extra sauce, extra sauce, extra topping
+Roll number: 15 PastryRoll, extra sauce, extra filling, extra topping
+Total cost: 243.0
+
+Business Customer's order: 
+Roll number: 1 EggRoll, extra sauce, extra sauce, extra sauce, extra filling
+Roll number: 2 JellyRoll, extra filling, extra topping, extra topping
+Roll number: 3 SpringRoll, extra filling, extra topping
+Roll number: 4 PastryRoll, extra topping
+Roll number: 5 SausageRoll, extra sauce
+Roll number: 6 EggRoll, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 7 JellyRoll, extra topping
+Roll number: 8 SpringRoll, extra topping
+Roll number: 9 PastryRoll, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 10 SausageRoll, extra filling, extra topping
+Total cost: 155.25
+
+Catering Customer's order: 
+Roll number: 1 JellyRoll, extra topping
+Roll number: 2 JellyRoll, extra sauce, extra sauce, extra sauce
+Roll number: 3 JellyRoll, extra sauce, extra sauce
+Roll number: 4 JellyRoll, extra filling, extra topping, extra topping
+Roll number: 5 JellyRoll, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 6 PastryRoll, extra sauce, extra filling, extra topping, extra topping
+Roll number: 7 PastryRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 8 PastryRoll, extra sauce, extra sauce, extra sauce, extra topping
+Roll number: 9 PastryRoll, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 10 PastryRoll, extra topping
+Roll number: 11 SausageRoll, extra filling, extra topping
+Roll number: 12 SausageRoll, extra sauce, extra sauce
+Roll number: 13 SausageRoll, extra sauce, extra sauce, extra sauce, extra topping
+Roll number: 14 SausageRoll, extra sauce, extra filling
+Roll number: 15 SausageRoll, extra sauce, extra sauce, extra topping
+Total cost: 258.0
+
+Business Customer's order: 
+Roll number: 1 EggRoll, extra filling, extra topping, extra topping
+Roll number: 2 JellyRoll, extra sauce, extra topping, extra topping
+Roll number: 3 SpringRoll, extra topping, extra topping
+Roll number: 4 PastryRoll, extra filling, extra topping
+Roll number: 5 SausageRoll, extra topping
+Roll number: 6 EggRoll, extra sauce, extra sauce, extra filling
+Roll number: 7 JellyRoll, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 8 SpringRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 9 PastryRoll, extra sauce, extra filling
+Roll number: 10 SausageRoll, extra sauce, extra sauce, extra sauce, extra topping
+Total cost: 165.0
+
+Total payment for order by customer type up to the end of today: {business=644.25, casual=131.0, catering=730.25}
+Total payment for order by customer type for today only: {business=320.25, casual=101.0, catering=501.0}
+Total rolls sold by type up to the end of today: {JellyRoll=24, EggRoll=10, PastryRoll=19, SpringRoll=21, SausageRoll=19}
+Total rolls sold by type up for today only: {JellyRoll=14, EggRoll=5, PastryRoll=15, SpringRoll=12, SausageRoll=10}
+Number of roll orders impacted by outages today: {business=0, casual=0, catering=0}
+Number of times inventory had to be filled for each roll up to this point: {JellyRoll=0, EggRoll=0, PastryRoll=0, SpringRoll=0, SausageRoll=0}
+The store didn't close today for no inventory.
+-------------------------------------------------------------------
+Day number: 3
+Amount of customers: 5
+Inventory at the beginning of the day: 
+{JellyRoll=6, EggRoll=20, PastryRoll=11, SpringRoll=9, SausageRoll=11}
+Inventory at the end of the day: 
+{JellyRoll=0, EggRoll=10, PastryRoll=11, SpringRoll=0, SausageRoll=0}
+Catering Customer's order: 
+Roll number: 1 EggRoll, extra sauce, extra filling, extra topping, extra topping
+Roll number: 2 EggRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 3 EggRoll, extra filling
+Roll number: 4 EggRoll
+Roll number: 5 EggRoll, extra sauce, extra sauce, extra sauce
+Roll number: 6 JellyRoll, extra sauce, extra sauce, extra filling
+Roll number: 7 JellyRoll, extra topping
+Roll number: 8 JellyRoll, extra sauce, extra topping, extra topping
+Roll number: 9 JellyRoll, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 10 JellyRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 11 SausageRoll, extra sauce, extra sauce, extra sauce, extra topping
+Roll number: 12 SausageRoll, extra sauce, extra filling
+Roll number: 13 SausageRoll, extra sauce, extra filling
+Roll number: 14 SausageRoll, extra sauce, extra sauce, extra sauce
+Roll number: 15 SausageRoll, extra topping
+Total cost: 229.0
+
+Casual Customer's order: 
+Roll number: 1 SpringRoll, extra sauce, extra sauce, extra topping
+Roll number: 2 SausageRoll
+Roll number: 3 SpringRoll, extra topping
+Total cost: 45.0
+
+Catering Customer's order: 
+Roll number: 1 JellyRoll, extra topping
+Roll number: 2 EggRoll, extra sauce, extra sauce, extra sauce, extra filling
+Roll number: 3 EggRoll, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 4 EggRoll, extra sauce, extra filling, extra topping
+Roll number: 5 EggRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 6 SpringRoll, extra sauce, extra sauce
+Roll number: 7 SpringRoll, extra filling, extra topping, extra topping
+Roll number: 8 SpringRoll, extra filling, extra topping, extra topping
+Roll number: 9 SpringRoll, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 10 SpringRoll, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 11 SausageRoll, extra sauce, extra sauce
+Roll number: 12 SausageRoll, extra sauce, extra sauce, extra sauce
+Roll number: 13 SausageRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 14 SausageRoll, extra topping
+Roll number: 15 SausageRoll, extra filling
+Total cost: 255.25
+
+Casual Customer's order: 
+Roll number: 1 SpringRoll, extra sauce, extra sauce, extra topping
+Roll number: 2 SpringRoll, extra filling, extra topping
+Roll number: 3 EggRoll, extra filling, extra topping, extra topping
+Total cost: 47.0
+
+Total payment for order by customer type up to the end of today: {business=644.25, casual=223.0, catering=1214.5}
+Total payment for order by customer type for today only: {business=0.0, casual=92.0, catering=484.25}
+Total rolls sold by type up to the end of today: {JellyRoll=30, EggRoll=20, PastryRoll=19, SpringRoll=30, SausageRoll=30}
+Total rolls sold by type up for today only: {JellyRoll=6, EggRoll=10, PastryRoll=0, SpringRoll=9, SausageRoll=11}
+Number of roll orders impacted by outages today: {business=10, casual=1, catering=4}
+Number of times inventory had to be filled for each roll up to this point: {JellyRoll=0, EggRoll=0, PastryRoll=0, SpringRoll=0, SausageRoll=0}
+The store didn't close today for no inventory.
+-------------------------------------------------------------------
+Day number: 4
+Amount of customers: 8
+Inventory at the beginning of the day: 
+{JellyRoll=30, EggRoll=10, PastryRoll=11, SpringRoll=30, SausageRoll=30}
+Inventory at the end of the day: 
+{JellyRoll=14, EggRoll=0, PastryRoll=0, SpringRoll=24, SausageRoll=18}
+Casual Customer's order: 
+Roll number: 1 SausageRoll, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 2 JellyRoll, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Total cost: 37.5
+
+Catering Customer's order: 
+Roll number: 1 JellyRoll, extra sauce, extra sauce, extra sauce, extra topping
+Roll number: 2 JellyRoll, extra sauce, extra filling
+Roll number: 3 JellyRoll, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 4 JellyRoll, extra sauce, extra filling, extra topping
+Roll number: 5 JellyRoll, extra sauce, extra sauce, extra filling
+Roll number: 6 PastryRoll, extra sauce, extra sauce, extra sauce, extra topping
+Roll number: 7 PastryRoll, extra sauce, extra filling, extra topping, extra topping
+Roll number: 8 PastryRoll, extra sauce, extra sauce, extra sauce, extra filling
+Roll number: 9 PastryRoll, extra sauce, extra topping, extra topping
+Roll number: 10 PastryRoll, extra topping, extra topping
+Roll number: 11 SausageRoll, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 12 SausageRoll, extra sauce, extra sauce, extra sauce
+Roll number: 13 SausageRoll, extra sauce, extra filling, extra topping
+Roll number: 14 SausageRoll, extra sauce, extra filling, extra topping, extra topping
+Roll number: 15 SausageRoll, extra topping
+Total cost: 262.0
+
+Catering Customer's order: 
+Roll number: 1 EggRoll, extra sauce, extra sauce, extra sauce, extra filling
+Roll number: 2 EggRoll, extra filling
+Roll number: 3 EggRoll, extra filling, extra topping, extra topping
+Roll number: 4 EggRoll, extra sauce, extra sauce, extra filling
+Roll number: 5 EggRoll, extra sauce, extra filling
+Roll number: 6 JellyRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 7 JellyRoll, extra topping
+Roll number: 8 JellyRoll, extra filling, extra topping, extra topping
+Roll number: 9 JellyRoll, extra sauce, extra sauce, extra sauce, extra topping
+Roll number: 10 JellyRoll
+Roll number: 11 SpringRoll, extra sauce, extra sauce, extra filling
+Roll number: 12 SpringRoll, extra sauce
+Roll number: 13 SpringRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 14 SpringRoll, extra sauce, extra filling, extra topping
+Roll number: 15 SpringRoll, extra sauce, extra sauce, extra sauce, extra filling
+Total cost: 217.5
+
+Casual Customer's order: 
+Roll number: 1 JellyRoll, extra topping, extra topping
+Roll number: 2 SausageRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping
+Total cost: 34.25
+
+Catering Customer's order: 
+Roll number: 1 EggRoll, extra sauce, extra sauce
+Roll number: 2 EggRoll, extra sauce, extra sauce, extra sauce, extra filling
+Roll number: 3 EggRoll
+Roll number: 4 EggRoll, extra sauce, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 5 EggRoll, extra filling
+Roll number: 6 PastryRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 7 PastryRoll, extra sauce, extra sauce, extra filling
+Roll number: 8 PastryRoll, extra sauce, extra filling
+Roll number: 9 PastryRoll, extra sauce, extra topping
+Roll number: 10 PastryRoll, extra topping, extra topping
+Roll number: 11 SausageRoll, extra sauce, extra sauce
+Roll number: 12 SausageRoll, extra topping, extra topping
+Roll number: 13 SausageRoll, extra filling
+Roll number: 14 SausageRoll, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 15 SausageRoll, extra sauce, extra sauce, extra sauce, extra filling
+Total cost: 249.75
+
+Casual Customer's order: 
+Roll number: 1 JellyRoll, extra sauce
+Roll number: 2 JellyRoll, extra sauce, extra sauce, extra sauce, extra topping
+Roll number: 3 PastryRoll, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Total cost: 45.75
+
+Casual Customer's order: 
+Roll number: 1 SpringRoll, extra filling, extra topping, extra topping
+Roll number: 2 JellyRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 3 JellyRoll, extra sauce, extra sauce, extra filling, extra topping
+Total cost: 50.25
+
+Total payment for order by customer type up to the end of today: {business=644.25, casual=390.75, catering=1943.75}
+Total payment for order by customer type for today only: {business=0.0, casual=167.75, catering=729.25}
+Total rolls sold by type up to the end of today: {JellyRoll=46, EggRoll=30, PastryRoll=30, SpringRoll=36, SausageRoll=42}
+Total rolls sold by type up for today only: {JellyRoll=16, EggRoll=10, PastryRoll=11, SpringRoll=6, SausageRoll=12}
+Number of roll orders impacted by outages today: {business=10, casual=7, catering=0}
+Number of times inventory had to be filled for each roll up to this point: {JellyRoll=1, EggRoll=0, PastryRoll=0, SpringRoll=1, SausageRoll=1}
+The store didn't close today for no inventory.
+-------------------------------------------------------------------
+Day number: 5
+Amount of customers: 12
+Inventory at the beginning of the day: 
+{JellyRoll=14, EggRoll=30, PastryRoll=30, SpringRoll=24, SausageRoll=18}
+Inventory at the end of the day: 
+{JellyRoll=0, EggRoll=13, PastryRoll=14, SpringRoll=11, SausageRoll=5}
+Casual Customer's order: 
+Roll number: 1 EggRoll, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 2 PastryRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping
+Total cost: 39.25
+
+Casual Customer's order: 
+Roll number: 1 PastryRoll
+Total cost: 13.5
+
+Casual Customer's order: 
+Roll number: 1 EggRoll, extra sauce, extra sauce
+Total cost: 12.0
+
+Casual Customer's order: 
+Roll number: 1 PastryRoll, extra sauce, extra sauce, extra sauce
+Roll number: 2 JellyRoll
+Total cost: 26.0
+
+Business Customer's order: 
+Roll number: 1 EggRoll, extra sauce, extra sauce
+Roll number: 2 JellyRoll, extra filling
+Roll number: 3 SpringRoll, extra sauce, extra sauce, extra topping
+Roll number: 4 PastryRoll, extra sauce, extra filling, extra topping, extra topping
+Roll number: 5 SausageRoll, extra topping, extra topping
+Roll number: 6 EggRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 7 JellyRoll, extra sauce, extra sauce, extra sauce, extra topping
+Roll number: 8 SpringRoll, extra sauce, extra topping, extra topping
+Roll number: 9 PastryRoll, extra filling
+Roll number: 10 SausageRoll, extra sauce, extra sauce, extra sauce, extra filling
+Total cost: 162.25
+
+Casual Customer's order: 
+Roll number: 1 EggRoll, extra sauce
+Roll number: 2 PastryRoll, extra sauce, extra sauce, extra sauce, extra topping
+Roll number: 3 SpringRoll, extra sauce, extra sauce, extra filling
+Total cost: 47.25
+
+Business Customer's order: 
+Roll number: 1 EggRoll, extra sauce, extra sauce, extra sauce, extra filling
+Roll number: 2 JellyRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 3 SpringRoll, extra sauce, extra topping
+Roll number: 4 PastryRoll, extra sauce, extra filling
+Roll number: 5 SausageRoll, extra sauce, extra topping, extra topping
+Roll number: 6 EggRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 7 JellyRoll, extra topping, extra topping
+Roll number: 8 SpringRoll, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 9 PastryRoll, extra sauce, extra filling, extra topping, extra topping
+Roll number: 10 SausageRoll, extra sauce, extra filling
+Total cost: 173.0
+
+Catering Customer's order: 
+Roll number: 1 JellyRoll, extra sauce, extra sauce, extra sauce, extra filling
+Roll number: 2 JellyRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 3 JellyRoll, extra sauce, extra sauce
+Roll number: 4 JellyRoll, extra sauce, extra sauce
+Roll number: 5 JellyRoll, extra sauce, extra sauce
+Roll number: 6 PastryRoll, extra sauce, extra sauce, extra filling
+Roll number: 7 PastryRoll, extra sauce, extra sauce, extra filling
+Roll number: 8 PastryRoll, extra sauce, extra filling
+Roll number: 9 PastryRoll, extra topping, extra topping
+Roll number: 10 PastryRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 11 SausageRoll, extra sauce, extra topping
+Roll number: 12 SausageRoll, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 13 SausageRoll, extra sauce, extra topping
+Roll number: 14 SausageRoll, extra sauce, extra topping
+Roll number: 15 SausageRoll, extra sauce, extra sauce, extra filling
+Total cost: 252.0
+
+Business Customer's order: 
+Roll number: 1 EggRoll, extra sauce, extra filling
+Roll number: 2 JellyRoll, extra filling, extra topping, extra topping
+Roll number: 3 SpringRoll, extra sauce
+Roll number: 4 PastryRoll, extra sauce, extra sauce
+Roll number: 5 SausageRoll, extra sauce, extra sauce, extra sauce, extra topping
+Roll number: 6 EggRoll, extra sauce, extra sauce
+Roll number: 7 JellyRoll, extra sauce, extra sauce, extra filling
+Roll number: 8 SpringRoll, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 9 PastryRoll, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 10 SausageRoll, extra sauce, extra filling, extra topping
+Total cost: 162.0
+
+Casual Customer's order: 
+Roll number: 1 SpringRoll, extra sauce, extra sauce, extra topping
+Total cost: 16.75
+
+Catering Customer's order: 
+Roll number: 1 EggRoll, extra filling, extra topping
+Roll number: 2 EggRoll, extra filling, extra topping, extra topping
+Roll number: 3 EggRoll, extra sauce, extra sauce, extra sauce, extra filling
+Roll number: 4 EggRoll, extra sauce, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 5 EggRoll, extra sauce, extra topping, extra topping
+Roll number: 6 JellyRoll, extra sauce, extra sauce, extra topping
+Roll number: 7 JellyRoll, extra sauce, extra filling
+Roll number: 8 EggRoll
+Roll number: 9 EggRoll, extra sauce, extra filling, extra topping, extra topping
+Roll number: 10 EggRoll, extra sauce, extra filling
+Roll number: 11 SpringRoll, extra sauce, extra filling, extra topping
+Roll number: 12 SpringRoll, extra sauce, extra topping, extra topping
+Roll number: 13 SpringRoll, extra sauce, extra sauce, extra filling
+Roll number: 14 SpringRoll, extra filling
+Roll number: 15 SpringRoll, extra topping
+Total cost: 214.5
+
+Casual Customer's order: 
+Roll number: 1 SausageRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 2 PastryRoll, extra topping
+Roll number: 3 SausageRoll, extra sauce, extra sauce, extra topping
+Total cost: 59.0
+
+Total payment for order by customer type up to the end of today: {business=1141.5, casual=604.5, catering=2410.25}
+Total payment for order by customer type for today only: {business=497.25, casual=213.75, catering=466.5}
+Total rolls sold by type up to the end of today: {JellyRoll=60, EggRoll=47, PastryRoll=46, SpringRoll=49, SausageRoll=55}
+Total rolls sold by type up for today only: {JellyRoll=14, EggRoll=17, PastryRoll=16, SpringRoll=13, SausageRoll=13}
+Number of roll orders impacted by outages today: {business=0, casual=0, catering=3}
+Number of times inventory had to be filled for each roll up to this point: {JellyRoll=1, EggRoll=1, PastryRoll=1, SpringRoll=1, SausageRoll=1}
+The store didn't close today for no inventory.
+-------------------------------------------------------------------
+Day number: 6
+Amount of customers: 16
+Inventory at the beginning of the day: 
+{JellyRoll=30, EggRoll=13, PastryRoll=14, SpringRoll=11, SausageRoll=5}
+Inventory at the end of the day: 
+{JellyRoll=7, EggRoll=0, PastryRoll=7, SpringRoll=2, SausageRoll=0}
+Business Customer's order: 
+Roll number: 1 EggRoll, extra sauce, extra sauce
+Roll number: 2 JellyRoll, extra sauce, extra filling, extra topping, extra topping
+Roll number: 3 SpringRoll, extra sauce
+Roll number: 4 PastryRoll, extra sauce, extra sauce, extra sauce
+Roll number: 5 SausageRoll, extra sauce, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 6 EggRoll
+Roll number: 7 JellyRoll, extra sauce, extra sauce
+Roll number: 8 SpringRoll, extra sauce, extra sauce, extra sauce, extra filling
+Roll number: 9 PastryRoll, extra sauce, extra sauce, extra sauce
+Roll number: 10 SausageRoll, extra filling, extra topping, extra topping
+Total cost: 157.5
+
+Casual Customer's order: 
+Roll number: 1 EggRoll, extra sauce, extra sauce, extra sauce
+Roll number: 2 JellyRoll, extra sauce, extra topping, extra topping
+Total cost: 26.5
+
+Business Customer's order: 
+Roll number: 1 EggRoll, extra sauce, extra sauce, extra sauce, extra topping
+Roll number: 2 JellyRoll, extra sauce, extra filling, extra topping
+Roll number: 3 SpringRoll, extra topping, extra topping
+Roll number: 4 PastryRoll, extra sauce, extra sauce, extra sauce
+Roll number: 5 SausageRoll, extra topping
+Roll number: 6 EggRoll, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 7 JellyRoll, extra sauce, extra filling, extra topping
+Roll number: 8 SpringRoll, extra sauce, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 9 PastryRoll, extra filling
+Roll number: 10 SausageRoll, extra sauce, extra sauce, extra filling, extra topping
+Total cost: 164.0
+
+Casual Customer's order: 
+Roll number: 1 EggRoll, extra sauce, extra topping
+Total cost: 12.25
+
+Casual Customer's order: 
+Roll number: 1 SausageRoll, extra sauce, extra sauce, extra sauce, extra topping
+Roll number: 2 SpringRoll, extra filling, extra topping
+Roll number: 3 EggRoll, extra filling, extra topping
+Total cost: 49.25
+
+Casual Customer's order: 
+Roll number: 1 PastryRoll, extra sauce, extra sauce
+Roll number: 2 SpringRoll, extra topping, extra topping
+Total cost: 32.0
+
+Catering Customer's order: 
+Roll number: 1 EggRoll, extra sauce, extra sauce, extra sauce, extra topping
+Roll number: 2 EggRoll, extra sauce, extra sauce, extra topping
+Roll number: 3 EggRoll, extra topping
+Roll number: 4 EggRoll, extra sauce, extra sauce, extra topping
+Roll number: 5 EggRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 6 JellyRoll, extra topping, extra topping
+Roll number: 7 JellyRoll, extra sauce, extra sauce, extra topping
+Roll number: 8 JellyRoll, extra sauce, extra topping, extra topping
+Roll number: 9 JellyRoll, extra sauce, extra sauce
+Roll number: 10 JellyRoll, extra sauce, extra filling, extra topping, extra topping
+Roll number: 11 JellyRoll, extra sauce, extra sauce
+Roll number: 12 JellyRoll, extra topping
+Roll number: 13 JellyRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 14 JellyRoll, extra sauce, extra topping
+Roll number: 15 JellyRoll, extra sauce, extra sauce, extra filling
+Total cost: 195.25
+
+Casual Customer's order: 
+Roll number: 1 JellyRoll, extra sauce, extra topping
+Total cost: 11.25
+
+Casual Customer's order: 
+Roll number: 1 SpringRoll, extra sauce, extra sauce, extra topping
+Roll number: 2 JellyRoll, extra sauce
+Roll number: 3 SpringRoll, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Total cost: 46.75
+
+Casual Customer's order: 
+Roll number: 1 SpringRoll, extra topping, extra topping
+Total cost: 15.5
+
+Casual Customer's order: 
+Roll number: 1 PastryRoll, extra filling, extra topping
+Roll number: 2 EggRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Total cost: 36.25
+
+Casual Customer's order: 
+Roll number: 1 JellyRoll, extra sauce, extra sauce, extra filling
+Total cost: 13.0
+
+Casual Customer's order: 
+Roll number: 1 PastryRoll, extra topping, extra topping
+Roll number: 2 JellyRoll, extra topping, extra topping
+Total cost: 28.5
+
+Casual Customer's order: 
+Roll number: 1 JellyRoll, extra sauce, extra sauce, extra sauce, extra filling
+Roll number: 2 JellyRoll, extra sauce, extra sauce, extra topping, extra topping
+Total cost: 29.0
+
+Casual Customer's order: 
+Roll number: 1 JellyRoll, extra filling
+Roll number: 2 JellyRoll, extra sauce, extra sauce, extra sauce, extra topping, extra topping
+Total cost: 26.0
+
+Total payment for order by customer type up to the end of today: {business=1463.0, casual=930.75, catering=2605.5}
+Total payment for order by customer type for today only: {business=321.5, casual=326.25, catering=195.25}
+Total rolls sold by type up to the end of today: {JellyRoll=83, EggRoll=60, PastryRoll=53, SpringRoll=58, SausageRoll=60}
+Total rolls sold by type up for today only: {JellyRoll=23, EggRoll=13, PastryRoll=7, SpringRoll=9, SausageRoll=5}
+Number of roll orders impacted by outages today: {business=10, casual=6, catering=5}
+Number of times inventory had to be filled for each roll up to this point: {JellyRoll=2, EggRoll=1, PastryRoll=1, SpringRoll=1, SausageRoll=1}
+The store didn't close today for no inventory.
+-------------------------------------------------------------------
+Day number: 7
+Amount of customers: 8
+Inventory at the beginning of the day: 
+{JellyRoll=7, EggRoll=30, PastryRoll=7, SpringRoll=2, SausageRoll=30}
+Inventory at the end of the day: 
+{JellyRoll=0, EggRoll=6, PastryRoll=0, SpringRoll=0, SausageRoll=20}
+Catering Customer's order: 
+Roll number: 1 JellyRoll, extra filling, extra topping
+Roll number: 2 JellyRoll, extra sauce, extra filling
+Roll number: 3 JellyRoll, extra sauce, extra filling
+Roll number: 4 JellyRoll, extra sauce, extra sauce, extra sauce, extra filling
+Roll number: 5 JellyRoll, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 6 SpringRoll, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 7 SpringRoll, extra sauce, extra filling, extra topping, extra topping
+Roll number: 8 JellyRoll, extra sauce, extra filling, extra topping
+Roll number: 9 JellyRoll, extra sauce, extra filling, extra topping
+Roll number: 10 EggRoll, extra sauce, extra sauce, extra sauce
+Roll number: 11 PastryRoll, extra sauce, extra filling, extra topping
+Roll number: 12 PastryRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 13 PastryRoll, extra sauce, extra sauce, extra sauce
+Roll number: 14 PastryRoll, extra filling, extra topping, extra topping
+Roll number: 15 PastryRoll, extra sauce, extra sauce, extra topping
+Total cost: 237.5
+
+Catering Customer's order: 
+Roll number: 1 EggRoll
+Roll number: 2 EggRoll, extra sauce, extra filling, extra topping, extra topping
+Roll number: 3 EggRoll, extra filling, extra topping, extra topping
+Roll number: 4 EggRoll, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 5 EggRoll, extra filling, extra topping, extra topping
+Roll number: 6 PastryRoll, extra sauce, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 7 PastryRoll, extra sauce, extra filling, extra topping
+Roll number: 8 EggRoll, extra sauce, extra sauce, extra topping
+Roll number: 9 EggRoll, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 10 EggRoll, extra sauce, extra sauce, extra filling
+Roll number: 11 SausageRoll, extra filling, extra topping
+Roll number: 12 SausageRoll, extra sauce
+Roll number: 13 SausageRoll, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 14 SausageRoll, extra sauce, extra filling
+Roll number: 15 SausageRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping
+Total cost: 249.0
+
+Catering Customer's order: 
+Roll number: 1 EggRoll, extra sauce, extra sauce, extra filling
+Roll number: 2 EggRoll, extra filling, extra topping
+Roll number: 3 EggRoll, extra sauce, extra sauce, extra sauce, extra topping
+Roll number: 4 EggRoll, extra sauce, extra sauce, extra sauce, extra topping
+Roll number: 5 EggRoll
+Roll number: 6 EggRoll, extra sauce, extra filling, extra topping, extra topping
+Roll number: 7 EggRoll, extra filling
+Roll number: 8 EggRoll
+Roll number: 9 EggRoll, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 10 EggRoll, extra sauce, extra filling, extra topping
+Roll number: 11 SausageRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 12 SausageRoll, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 13 SausageRoll, extra sauce, extra sauce
+Roll number: 14 SausageRoll, extra sauce, extra topping, extra topping
+Roll number: 15 SausageRoll, extra sauce, extra filling, extra topping, extra topping
+Total cost: 240.0
+
+Casual Customer's order: 
+Roll number: 1 EggRoll, extra sauce, extra topping, extra topping
+Roll number: 2 EggRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping
+Total cost: 31.25
+
+Casual Customer's order: 
+Roll number: 1 EggRoll, extra sauce
+Roll number: 2 EggRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 3 EggRoll, extra sauce, extra topping
+Total cost: 41.75
+
+Total payment for order by customer type up to the end of today: {business=1463.0, casual=1003.75, catering=3332.0}
+Total payment for order by customer type for today only: {business=0.0, casual=73.0, catering=726.5}
+Total rolls sold by type up to the end of today: {JellyRoll=90, EggRoll=84, PastryRoll=60, SpringRoll=60, SausageRoll=70}
+Total rolls sold by type up for today only: {JellyRoll=7, EggRoll=24, PastryRoll=7, SpringRoll=2, SausageRoll=10}
+Number of roll orders impacted by outages today: {business=30, casual=6, catering=21}
+Number of times inventory had to be filled for each roll up to this point: {JellyRoll=2, EggRoll=2, PastryRoll=1, SpringRoll=1, SausageRoll=2}
+The store didn't close today for no inventory.
+-------------------------------------------------------------------
+Day number: 8
+Amount of customers: 8
+Inventory at the beginning of the day: 
+{JellyRoll=30, EggRoll=6, PastryRoll=30, SpringRoll=30, SausageRoll=20}
+Inventory at the end of the day: 
+{JellyRoll=14, EggRoll=0, PastryRoll=17, SpringRoll=11, SausageRoll=12}
+Catering Customer's order: 
+Roll number: 1 JellyRoll, extra sauce, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 2 JellyRoll, extra topping, extra topping
+Roll number: 3 JellyRoll, extra sauce, extra sauce, extra filling
+Roll number: 4 JellyRoll, extra sauce, extra filling, extra topping, extra topping
+Roll number: 5 JellyRoll, extra sauce, extra filling
+Roll number: 6 SpringRoll, extra sauce, extra sauce
+Roll number: 7 SpringRoll, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 8 SpringRoll, extra sauce, extra sauce
+Roll number: 9 SpringRoll, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 10 SpringRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 11 PastryRoll, extra sauce, extra sauce
+Roll number: 12 PastryRoll, extra sauce, extra sauce, extra sauce, extra topping
+Roll number: 13 PastryRoll, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 14 PastryRoll, extra sauce, extra filling, extra topping
+Roll number: 15 PastryRoll, extra sauce, extra sauce, extra sauce, extra filling
+Total cost: 249.5
+
+Casual Customer's order: 
+Roll number: 1 SpringRoll, extra sauce, extra sauce, extra sauce, extra topping
+Total cost: 18.25
+
+Catering Customer's order: 
+Roll number: 1 SpringRoll, extra sauce, extra filling
+Roll number: 2 SpringRoll, extra sauce, extra sauce
+Roll number: 3 SpringRoll, extra filling, extra topping, extra topping
+Roll number: 4 SpringRoll, extra sauce, extra sauce, extra sauce, extra topping
+Roll number: 5 SpringRoll, extra sauce, extra filling, extra topping
+Roll number: 6 PastryRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 7 PastryRoll, extra sauce, extra filling
+Roll number: 8 PastryRoll, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 9 PastryRoll, extra sauce, extra topping, extra topping
+Roll number: 10 PastryRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 11 SausageRoll, extra sauce, extra sauce, extra sauce, extra filling
+Roll number: 12 SausageRoll, extra sauce, extra sauce, extra sauce, extra filling
+Roll number: 13 SausageRoll
+Roll number: 14 SausageRoll, extra sauce, extra topping
+Roll number: 15 SausageRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping
+Total cost: 283.0
+
+Business Customer's order: 
+Roll number: 1 EggRoll
+Roll number: 2 JellyRoll, extra sauce, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 3 SpringRoll, extra sauce, extra sauce, extra sauce, extra topping
+Roll number: 4 PastryRoll, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 5 SausageRoll, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 6 EggRoll, extra sauce, extra filling, extra topping
+Roll number: 7 JellyRoll, extra sauce, extra filling, extra topping, extra topping
+Roll number: 8 SpringRoll, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 9 PastryRoll, extra sauce, extra topping
+Roll number: 10 SausageRoll, extra sauce
+Total cost: 167.25
+
+Casual Customer's order: 
+Roll number: 1 JellyRoll, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 2 SpringRoll, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Total cost: 37.0
+
+Catering Customer's order: 
+Roll number: 1 EggRoll, extra topping, extra topping
+Roll number: 2 EggRoll, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 3 EggRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 4 EggRoll, extra sauce, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 5 JellyRoll, extra sauce, extra sauce
+Roll number: 6 JellyRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 7 JellyRoll, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 8 JellyRoll, extra sauce, extra topping, extra topping
+Roll number: 9 JellyRoll, extra sauce, extra sauce, extra filling
+Roll number: 10 JellyRoll, extra filling, extra topping, extra topping
+Roll number: 11 SpringRoll, extra sauce
+Roll number: 12 SpringRoll, extra sauce, extra sauce, extra sauce, extra topping
+Roll number: 13 SpringRoll
+Roll number: 14 SpringRoll, extra filling, extra topping
+Roll number: 15 SpringRoll, extra sauce, extra sauce, extra filling
+Total cost: 221.75
+
+Casual Customer's order: 
+Roll number: 1 PastryRoll, extra sauce, extra sauce, extra topping
+Roll number: 2 JellyRoll, extra sauce, extra filling, extra topping, extra topping
+Total cost: 33.25
+
+Casual Customer's order: 
+Roll number: 1 SausageRoll, extra sauce, extra topping, extra topping
+Roll number: 2 JellyRoll, extra sauce, extra filling, extra topping
+Total cost: 32.75
+
+Total payment for order by customer type up to the end of today: {business=1630.25, casual=1125.0, catering=4086.25}
+Total payment for order by customer type for today only: {business=167.25, casual=121.25, catering=754.25}
+Total rolls sold by type up to the end of today: {JellyRoll=106, EggRoll=90, PastryRoll=73, SpringRoll=79, SausageRoll=78}
+Total rolls sold by type up for today only: {JellyRoll=16, EggRoll=6, PastryRoll=13, SpringRoll=19, SausageRoll=8}
+Number of roll orders impacted by outages today: {business=0, casual=2, catering=1}
+Number of times inventory had to be filled for each roll up to this point: {JellyRoll=3, EggRoll=2, PastryRoll=2, SpringRoll=2, SausageRoll=2}
+The store didn't close today for no inventory.
+-------------------------------------------------------------------
+Day number: 9
+Amount of customers: 11
+Inventory at the beginning of the day: 
+{JellyRoll=14, EggRoll=30, PastryRoll=17, SpringRoll=11, SausageRoll=12}
+Inventory at the end of the day: 
+{JellyRoll=0, EggRoll=16, PastryRoll=12, SpringRoll=0, SausageRoll=3}
+Casual Customer's order: 
+Roll number: 1 JellyRoll, extra sauce
+Roll number: 2 PastryRoll, extra filling, extra topping
+Total cost: 26.75
+
+Casual Customer's order: 
+Roll number: 1 EggRoll, extra sauce, extra filling, extra topping, extra topping
+Roll number: 2 JellyRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Total cost: 34.0
+
+Business Customer's order: 
+Roll number: 1 EggRoll, extra sauce, extra sauce, extra topping
+Roll number: 2 JellyRoll, extra sauce, extra sauce, extra topping
+Roll number: 3 SpringRoll, extra filling, extra topping
+Roll number: 4 PastryRoll, extra sauce, extra sauce, extra filling
+Roll number: 5 SausageRoll, extra sauce, extra topping, extra topping
+Roll number: 6 EggRoll, extra sauce, extra topping, extra topping
+Roll number: 7 JellyRoll, extra topping, extra topping
+Roll number: 8 SpringRoll, extra sauce, extra filling, extra topping, extra topping
+Roll number: 9 PastryRoll, extra sauce, extra topping, extra topping
+Roll number: 10 SausageRoll, extra sauce, extra sauce, extra topping, extra topping
+Total cost: 164.25
+
+Catering Customer's order: 
+Roll number: 1 EggRoll, extra filling, extra topping, extra topping
+Roll number: 2 EggRoll, extra sauce, extra sauce, extra filling
+Roll number: 3 EggRoll, extra sauce
+Roll number: 4 EggRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 5 EggRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 6 JellyRoll, extra sauce, extra sauce, extra sauce, extra topping
+Roll number: 7 JellyRoll, extra sauce, extra sauce, extra sauce, extra topping
+Roll number: 8 JellyRoll, extra sauce, extra sauce, extra sauce
+Roll number: 9 JellyRoll, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 10 JellyRoll, extra sauce, extra sauce, extra sauce
+Roll number: 11 SpringRoll, extra sauce, extra sauce, extra sauce, extra topping
+Roll number: 12 SpringRoll, extra sauce, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 13 SpringRoll, extra sauce, extra filling
+Roll number: 14 SpringRoll, extra sauce, extra filling
+Roll number: 15 SpringRoll, extra sauce, extra sauce, extra filling, extra topping
+Total cost: 233.25
+
+Casual Customer's order: 
+Roll number: 1 PastryRoll, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Total cost: 22.0
+
+Casual Customer's order: 
+Roll number: 1 SpringRoll, extra sauce, extra sauce
+Total cost: 15.0
+
+Catering Customer's order: 
+Roll number: 1 JellyRoll, extra sauce, extra filling
+Roll number: 2 JellyRoll, extra sauce, extra sauce, extra sauce, extra topping
+Roll number: 3 JellyRoll, extra filling, extra topping
+Roll number: 4 JellyRoll, extra sauce, extra sauce, extra sauce, extra filling
+Roll number: 5 JellyRoll, extra filling, extra topping, extra topping
+Roll number: 6 SpringRoll, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 7 SpringRoll, extra filling, extra topping
+Roll number: 8 SpringRoll, extra sauce
+Roll number: 9 EggRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 10 EggRoll, extra filling, extra topping
+Roll number: 11 SausageRoll, extra filling, extra topping, extra topping
+Roll number: 12 SausageRoll, extra topping
+Roll number: 13 SausageRoll, extra topping
+Roll number: 14 SausageRoll, extra sauce, extra sauce, extra sauce, extra filling
+Roll number: 15 SausageRoll, extra sauce, extra topping, extra topping
+Total cost: 240.0
+
+Casual Customer's order: 
+Roll number: 1 SausageRoll, extra sauce, extra sauce
+Total cost: 17.5
+
+Casual Customer's order: 
+Roll number: 1 EggRoll, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Total cost: 17.5
+
+Casual Customer's order: 
+Roll number: 1 EggRoll, extra sauce, extra sauce, extra topping
+Roll number: 2 PastryRoll, extra sauce, extra filling, extra topping, extra topping
+Total cost: 34.25
+
+Casual Customer's order: 
+Roll number: 1 SausageRoll, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 2 EggRoll, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 3 EggRoll, extra sauce, extra filling, extra topping
+Total cost: 51.25
+
+Total payment for order by customer type up to the end of today: {business=1794.5, casual=1343.25, catering=4559.5}
+Total payment for order by customer type for today only: {business=164.25, casual=218.25, catering=473.25}
+Total rolls sold by type up to the end of today: {JellyRoll=120, EggRoll=104, PastryRoll=78, SpringRoll=90, SausageRoll=87}
+Total rolls sold by type up for today only: {JellyRoll=14, EggRoll=14, PastryRoll=5, SpringRoll=11, SausageRoll=9}
+Number of roll orders impacted by outages today: {business=0, casual=5, catering=2}
+Number of times inventory had to be filled for each roll up to this point: {JellyRoll=3, EggRoll=3, PastryRoll=2, SpringRoll=2, SausageRoll=2}
+The store didn't close today for no inventory.
+-------------------------------------------------------------------
+Day number: 10
+Amount of customers: 5
+Inventory at the beginning of the day: 
+{JellyRoll=30, EggRoll=16, PastryRoll=12, SpringRoll=30, SausageRoll=3}
+Inventory at the end of the day: 
+{JellyRoll=17, EggRoll=8, PastryRoll=10, SpringRoll=28, SausageRoll=0}
+Business Customer's order: 
+Roll number: 1 EggRoll, extra sauce, extra filling, extra topping, extra topping
+Roll number: 2 JellyRoll
+Roll number: 3 SpringRoll, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 4 PastryRoll, extra sauce, extra topping, extra topping
+Roll number: 5 SausageRoll, extra sauce, extra sauce
+Roll number: 6 EggRoll, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 7 JellyRoll, extra sauce, extra topping, extra topping
+Roll number: 8 SpringRoll, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 9 PastryRoll, extra topping, extra topping
+Roll number: 10 SausageRoll, extra sauce, extra topping, extra topping
+Total cost: 162.5
+
+Catering Customer's order: 
+Roll number: 1 EggRoll, extra sauce, extra sauce, extra filling
+Roll number: 2 EggRoll, extra sauce, extra sauce, extra sauce
+Roll number: 3 EggRoll, extra sauce, extra sauce
+Roll number: 4 EggRoll, extra topping
+Roll number: 5 EggRoll, extra topping
+Roll number: 6 JellyRoll, extra sauce, extra filling, extra topping, extra topping
+Roll number: 7 JellyRoll, extra sauce, extra sauce, extra sauce
+Roll number: 8 JellyRoll, extra sauce, extra sauce, extra sauce, extra filling
+Roll number: 9 JellyRoll, extra sauce, extra sauce, extra filling
+Roll number: 10 JellyRoll
+Roll number: 11 SausageRoll, extra sauce, extra sauce, extra sauce
+Roll number: 12 JellyRoll
+Roll number: 13 JellyRoll, extra sauce, extra sauce, extra sauce, extra filling
+Roll number: 14 JellyRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 15 JellyRoll, extra filling
+Total cost: 191.75
+
+Casual Customer's order: 
+Roll number: 1 JellyRoll, extra sauce, extra filling, extra topping, extra topping
+Roll number: 2 JellyRoll, extra filling
+Roll number: 3 EggRoll, extra sauce, extra sauce, extra sauce
+Total cost: 38.5
+
+Total payment for order by customer type up to the end of today: {business=1957.0, casual=1381.75, catering=4751.25}
+Total payment for order by customer type for today only: {business=162.5, casual=38.5, catering=191.75}
+Total rolls sold by type up to the end of today: {JellyRoll=133, EggRoll=112, PastryRoll=80, SpringRoll=92, SausageRoll=90}
+Total rolls sold by type up for today only: {JellyRoll=13, EggRoll=8, PastryRoll=2, SpringRoll=2, SausageRoll=3}
+Number of roll orders impacted by outages today: {business=20, casual=0, catering=4}
+Number of times inventory had to be filled for each roll up to this point: {JellyRoll=4, EggRoll=3, PastryRoll=2, SpringRoll=3, SausageRoll=2}
+The store didn't close today for no inventory.
+-------------------------------------------------------------------
+Day number: 11
+Amount of customers: 6
+Inventory at the beginning of the day: 
+{JellyRoll=17, EggRoll=8, PastryRoll=10, SpringRoll=28, SausageRoll=30}
+Inventory at the end of the day: 
+{JellyRoll=7, EggRoll=6, PastryRoll=2, SpringRoll=23, SausageRoll=20}
+Casual Customer's order: 
+Roll number: 1 SausageRoll, extra sauce, extra sauce
+Roll number: 2 JellyRoll, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 3 PastryRoll, extra sauce, extra sauce, extra topping
+Total cost: 50.5
+
+Catering Customer's order: 
+Roll number: 1 JellyRoll, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 2 JellyRoll, extra sauce, extra sauce, extra sauce, extra topping
+Roll number: 3 JellyRoll, extra sauce, extra sauce, extra filling
+Roll number: 4 JellyRoll, extra sauce, extra sauce, extra sauce
+Roll number: 5 JellyRoll, extra sauce, extra sauce, extra sauce
+Roll number: 6 PastryRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 7 PastryRoll, extra sauce, extra sauce, extra sauce, extra filling
+Roll number: 8 PastryRoll, extra sauce, extra sauce, extra sauce, extra filling
+Roll number: 9 PastryRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 10 PastryRoll, extra sauce, extra filling, extra topping
+Roll number: 11 SausageRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 12 SausageRoll, extra sauce, extra sauce, extra topping
+Roll number: 13 SausageRoll, extra filling, extra topping
+Roll number: 14 SausageRoll, extra sauce, extra sauce, extra filling
+Roll number: 15 SausageRoll, extra sauce, extra sauce, extra sauce, extra filling
+Total cost: 271.75
+
+Casual Customer's order: 
+Roll number: 1 JellyRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 2 SausageRoll, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 3 SausageRoll, extra topping
+Total cost: 53.75
+
+Casual Customer's order: 
+Roll number: 1 SpringRoll, extra sauce, extra filling
+Total cost: 15.5
+
+Casual Customer's order: 
+Roll number: 1 SpringRoll, extra sauce
+Roll number: 2 JellyRoll, extra sauce, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 3 SpringRoll, extra sauce, extra sauce
+Total cost: 44.5
+
+Business Customer's order: 
+Roll number: 1 EggRoll
+Roll number: 2 JellyRoll, extra filling
+Roll number: 3 SpringRoll, extra topping, extra topping
+Roll number: 4 PastryRoll, extra sauce, extra topping
+Roll number: 5 SausageRoll, extra filling, extra topping, extra topping
+Roll number: 6 EggRoll, extra sauce, extra sauce
+Roll number: 7 JellyRoll, extra sauce, extra sauce, extra sauce, extra topping
+Roll number: 8 SpringRoll, extra sauce, extra sauce
+Roll number: 9 PastryRoll, extra sauce, extra sauce, extra topping
+Roll number: 10 SausageRoll, extra sauce, extra sauce, extra sauce, extra topping, extra topping
+Total cost: 153.25
+
+Total payment for order by customer type up to the end of today: {business=2110.25, casual=1546.0, catering=5023.0}
+Total payment for order by customer type for today only: {business=153.25, casual=164.25, catering=271.75}
+Total rolls sold by type up to the end of today: {JellyRoll=143, EggRoll=114, PastryRoll=88, SpringRoll=97, SausageRoll=100}
+Total rolls sold by type up for today only: {JellyRoll=10, EggRoll=2, PastryRoll=8, SpringRoll=5, SausageRoll=10}
+Number of roll orders impacted by outages today: {business=0, casual=0, catering=0}
+Number of times inventory had to be filled for each roll up to this point: {JellyRoll=4, EggRoll=3, PastryRoll=2, SpringRoll=3, SausageRoll=3}
+The store didn't close today for no inventory.
+-------------------------------------------------------------------
+Day number: 12
+Amount of customers: 5
+Inventory at the beginning of the day: 
+{JellyRoll=7, EggRoll=6, PastryRoll=2, SpringRoll=23, SausageRoll=20}
+Inventory at the end of the day: 
+{JellyRoll=0, EggRoll=0, PastryRoll=0, SpringRoll=23, SausageRoll=1}
+Catering Customer's order: 
+Roll number: 1 EggRoll, extra sauce, extra topping
+Roll number: 2 EggRoll, extra sauce, extra sauce, extra filling
+Roll number: 3 EggRoll
+Roll number: 4 EggRoll
+Roll number: 5 EggRoll, extra sauce, extra sauce, extra sauce, extra filling
+Roll number: 6 JellyRoll, extra sauce, extra topping
+Roll number: 7 JellyRoll, extra sauce, extra filling
+Roll number: 8 JellyRoll, extra sauce, extra sauce, extra sauce
+Roll number: 9 JellyRoll, extra filling
+Roll number: 10 JellyRoll, extra sauce, extra sauce
+Roll number: 11 SausageRoll, extra sauce, extra sauce, extra filling
+Roll number: 12 SausageRoll, extra topping
+Roll number: 13 SausageRoll, extra sauce, extra sauce, extra sauce, extra topping
+Roll number: 14 SausageRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 15 SausageRoll, extra filling
+Total cost: 213.5
+
+Catering Customer's order: 
+Roll number: 1 EggRoll, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 2 JellyRoll, extra sauce, extra filling, extra topping, extra topping
+Roll number: 3 JellyRoll, extra sauce, extra sauce, extra sauce, extra filling
+Roll number: 4 PastryRoll, extra sauce, extra filling, extra topping, extra topping
+Roll number: 5 PastryRoll, extra sauce
+Roll number: 6 SausageRoll
+Roll number: 7 SausageRoll, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 8 SausageRoll, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 9 SausageRoll, extra sauce, extra sauce, extra sauce, extra topping
+Roll number: 10 SausageRoll, extra topping, extra topping
+Roll number: 11 SausageRoll, extra sauce, extra topping
+Roll number: 12 SausageRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 13 SausageRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 14 SausageRoll, extra filling, extra topping
+Roll number: 15 SausageRoll, extra sauce
+Total cost: 275.25
+
+Casual Customer's order: 
+Roll number: 1 SausageRoll, extra sauce, extra sauce, extra filling, extra topping
+Total cost: 21.25
+
+Casual Customer's order: 
+Roll number: 1 SausageRoll, extra sauce, extra topping, extra topping
+Roll number: 2 SausageRoll, extra topping, extra topping
+Roll number: 3 SausageRoll, extra filling, extra topping
+Total cost: 55.75
+
+Total payment for order by customer type up to the end of today: {business=2110.25, casual=1623.0, catering=5511.75}
+Total payment for order by customer type for today only: {business=0.0, casual=77.0, catering=488.75}
+Total rolls sold by type up to the end of today: {JellyRoll=150, EggRoll=120, PastryRoll=90, SpringRoll=97, SausageRoll=119}
+Total rolls sold by type up for today only: {JellyRoll=7, EggRoll=6, PastryRoll=2, SpringRoll=0, SausageRoll=19}
+Number of roll orders impacted by outages today: {business=10, casual=7, catering=14}
+Number of times inventory had to be filled for each roll up to this point: {JellyRoll=4, EggRoll=3, PastryRoll=2, SpringRoll=3, SausageRoll=3}
+The store didn't close today for no inventory.
+-------------------------------------------------------------------
+Day number: 13
+Amount of customers: 8
+Inventory at the beginning of the day: 
+{JellyRoll=30, EggRoll=30, PastryRoll=30, SpringRoll=23, SausageRoll=1}
+Inventory at the end of the day: 
+{JellyRoll=10, EggRoll=29, PastryRoll=25, SpringRoll=10, SausageRoll=0}
+Casual Customer's order: 
+Roll number: 1 EggRoll, extra filling
+Roll number: 2 SpringRoll, extra sauce, extra sauce, extra topping, extra topping
+Total cost: 29.5
+
+Casual Customer's order: 
+Roll number: 1 SausageRoll, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 2 JellyRoll, extra sauce, extra topping
+Total cost: 32.5
+
+Casual Customer's order: 
+Roll number: 1 SpringRoll, extra sauce, extra topping, extra topping
+Roll number: 2 JellyRoll, extra filling, extra topping
+Roll number: 3 SpringRoll, extra sauce, extra sauce, extra sauce, extra topping
+Total cost: 47.0
+
+Casual Customer's order: 
+Roll number: 1 JellyRoll, extra filling
+Roll number: 2 JellyRoll, extra sauce, extra filling, extra topping
+Roll number: 3 JellyRoll, extra topping, extra topping
+Total cost: 34.75
+
+Catering Customer's order: 
+Roll number: 1 SpringRoll, extra filling
+Roll number: 2 SpringRoll
+Roll number: 3 SpringRoll, extra topping
+Roll number: 4 SpringRoll, extra sauce, extra sauce, extra sauce, extra filling
+Roll number: 5 SpringRoll, extra filling
+Roll number: 6 PastryRoll, extra sauce, extra sauce, extra sauce, extra topping
+Roll number: 7 PastryRoll, extra sauce, extra sauce, extra sauce
+Roll number: 8 PastryRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 9 PastryRoll, extra sauce, extra topping
+Roll number: 10 PastryRoll, extra sauce, extra sauce, extra sauce, extra topping
+Roll number: 11 JellyRoll, extra topping
+Roll number: 12 JellyRoll, extra sauce, extra sauce, extra sauce, extra topping
+Roll number: 13 JellyRoll, extra filling, extra topping, extra topping
+Roll number: 14 JellyRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 15 JellyRoll, extra sauce, extra sauce, extra sauce, extra filling
+Total cost: 238.25
+
+Catering Customer's order: 
+Roll number: 1 JellyRoll, extra filling
+Roll number: 2 JellyRoll, extra topping
+Roll number: 3 JellyRoll, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 4 JellyRoll, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 5 JellyRoll
+Roll number: 6 SpringRoll, extra sauce, extra filling, extra topping, extra topping
+Roll number: 7 SpringRoll, extra sauce, extra filling, extra topping
+Roll number: 8 SpringRoll, extra sauce, extra sauce, extra sauce, extra filling
+Roll number: 9 SpringRoll, extra sauce, extra sauce, extra filling
+Roll number: 10 SpringRoll, extra sauce, extra topping, extra topping
+Roll number: 11 JellyRoll, extra filling, extra topping, extra topping
+Roll number: 12 JellyRoll, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 13 JellyRoll, extra sauce
+Roll number: 14 JellyRoll, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 15 JellyRoll, extra topping
+Total cost: 209.25
+
+Total payment for order by customer type up to the end of today: {business=2110.25, casual=1766.75, catering=5959.25}
+Total payment for order by customer type for today only: {business=0.0, casual=143.75, catering=447.5}
+Total rolls sold by type up to the end of today: {JellyRoll=170, EggRoll=121, PastryRoll=95, SpringRoll=110, SausageRoll=120}
+Total rolls sold by type up for today only: {JellyRoll=20, EggRoll=1, PastryRoll=5, SpringRoll=13, SausageRoll=1}
+Number of roll orders impacted by outages today: {business=20, casual=0, catering=10}
+Number of times inventory had to be filled for each roll up to this point: {JellyRoll=5, EggRoll=4, PastryRoll=3, SpringRoll=3, SausageRoll=3}
+The store didn't close today for no inventory.
+-------------------------------------------------------------------
+Day number: 14
+Amount of customers: 5
+Inventory at the beginning of the day: 
+{JellyRoll=10, EggRoll=29, PastryRoll=25, SpringRoll=10, SausageRoll=30}
+Inventory at the end of the day: 
+{JellyRoll=7, EggRoll=16, PastryRoll=16, SpringRoll=3, SausageRoll=18}
+Casual Customer's order: 
+Roll number: 1 EggRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 2 JellyRoll, extra sauce, extra sauce, extra sauce, extra topping, extra topping
+Total cost: 33.25
+
+Catering Customer's order: 
+Roll number: 1 EggRoll, extra topping, extra topping
+Roll number: 2 EggRoll, extra sauce, extra filling
+Roll number: 3 EggRoll, extra filling, extra topping
+Roll number: 4 EggRoll, extra sauce, extra filling, extra topping, extra topping
+Roll number: 5 EggRoll, extra sauce, extra topping, extra topping
+Roll number: 6 SpringRoll, extra sauce
+Roll number: 7 SpringRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 8 SpringRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 9 SpringRoll, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 10 SpringRoll, extra sauce, extra filling
+Roll number: 11 SausageRoll, extra sauce, extra filling, extra topping
+Roll number: 12 SausageRoll, extra sauce, extra topping
+Roll number: 13 SausageRoll, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 14 SausageRoll, extra sauce, extra sauce, extra sauce, extra topping
+Roll number: 15 SausageRoll, extra filling, extra topping, extra topping
+Total cost: 259.0
+
+Catering Customer's order: 
+Roll number: 1 EggRoll, extra topping, extra topping
+Roll number: 2 EggRoll, extra sauce, extra sauce, extra sauce, extra filling
+Roll number: 3 EggRoll, extra sauce, extra filling, extra topping, extra topping
+Roll number: 4 EggRoll, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 5 EggRoll, extra sauce, extra sauce, extra sauce, extra filling
+Roll number: 6 PastryRoll, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 7 PastryRoll, extra filling, extra topping, extra topping
+Roll number: 8 PastryRoll, extra sauce, extra sauce, extra sauce
+Roll number: 9 PastryRoll, extra sauce, extra sauce, extra sauce
+Roll number: 10 PastryRoll, extra topping, extra topping
+Roll number: 11 SausageRoll, extra sauce, extra sauce, extra sauce
+Roll number: 12 SausageRoll, extra sauce, extra sauce, extra filling
+Roll number: 13 SausageRoll, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 14 SausageRoll, extra sauce, extra filling, extra topping
+Roll number: 15 SausageRoll, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Total cost: 270.0
+
+Business Customer's order: 
+Roll number: 1 EggRoll, extra topping
+Roll number: 2 JellyRoll, extra filling
+Roll number: 3 SpringRoll
+Roll number: 4 PastryRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 5 SausageRoll, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 6 EggRoll, extra sauce, extra filling, extra topping
+Roll number: 7 JellyRoll, extra topping, extra topping
+Roll number: 8 SpringRoll, extra sauce, extra filling, extra topping
+Roll number: 9 PastryRoll, extra sauce, extra filling
+Roll number: 10 SausageRoll, extra sauce
+Total cost: 153.5
+
+Casual Customer's order: 
+Roll number: 1 PastryRoll, extra filling
+Roll number: 2 PastryRoll, extra filling, extra topping
+Total cost: 32.75
+
+Total payment for order by customer type up to the end of today: {business=2263.75, casual=1832.75, catering=6488.25}
+Total payment for order by customer type for today only: {business=153.5, casual=66.0, catering=529.0}
+Total rolls sold by type up to the end of today: {JellyRoll=173, EggRoll=134, PastryRoll=104, SpringRoll=117, SausageRoll=132}
+Total rolls sold by type up for today only: {JellyRoll=3, EggRoll=13, PastryRoll=9, SpringRoll=7, SausageRoll=12}
+Number of roll orders impacted by outages today: {business=0, casual=0, catering=0}
+Number of times inventory had to be filled for each roll up to this point: {JellyRoll=5, EggRoll=4, PastryRoll=3, SpringRoll=3, SausageRoll=4}
+The store didn't close today for no inventory.
+-------------------------------------------------------------------
+Day number: 15
+Amount of customers: 12
+Inventory at the beginning of the day: 
+{JellyRoll=7, EggRoll=16, PastryRoll=16, SpringRoll=3, SausageRoll=18}
+Inventory at the end of the day: 
+{JellyRoll=0, EggRoll=0, PastryRoll=0, SpringRoll=0, SausageRoll=12}
+Casual Customer's order: 
+Roll number: 1 SausageRoll, extra sauce, extra sauce, extra filling
+Roll number: 2 EggRoll, extra filling
+Roll number: 3 JellyRoll, extra topping, extra topping
+Total cost: 42.0
+
+Casual Customer's order: 
+Roll number: 1 SpringRoll, extra sauce
+Roll number: 2 SpringRoll, extra sauce, extra sauce, extra sauce, extra topping
+Total cost: 31.75
+
+Casual Customer's order: 
+Roll number: 1 SpringRoll, extra topping, extra topping
+Roll number: 2 JellyRoll, extra filling, extra topping, extra topping
+Roll number: 3 JellyRoll, extra sauce, extra sauce, extra filling, extra topping
+Total cost: 43.75
+
+Casual Customer's order: 
+Roll number: 1 JellyRoll, extra sauce
+Roll number: 2 JellyRoll, extra sauce, extra sauce
+Total cost: 20.5
+
+Casual Customer's order: 
+Roll number: 1 JellyRoll, extra sauce, extra filling
+Roll number: 2 JellyRoll, extra filling, extra topping
+Roll number: 3 PastryRoll, extra sauce, extra filling, extra topping
+Total cost: 42.0
+
+Casual Customer's order: 
+Roll number: 1 PastryRoll, extra sauce, extra filling
+Roll number: 2 EggRoll, extra sauce, extra topping
+Total cost: 29.25
+
+Catering Customer's order: 
+Roll number: 1 EggRoll, extra sauce, extra sauce, extra filling
+Roll number: 2 EggRoll, extra sauce, extra filling, extra topping, extra topping
+Roll number: 3 EggRoll, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 4 EggRoll, extra sauce, extra filling, extra topping
+Roll number: 5 EggRoll, extra filling, extra topping
+Roll number: 6 EggRoll, extra sauce, extra sauce, extra filling
+Roll number: 7 EggRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 8 EggRoll, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 9 EggRoll, extra sauce, extra sauce, extra sauce, extra filling
+Roll number: 10 EggRoll, extra sauce, extra sauce, extra topping
+Roll number: 11 PastryRoll, extra topping
+Roll number: 12 PastryRoll, extra sauce, extra sauce
+Roll number: 13 PastryRoll, extra sauce, extra topping, extra topping
+Roll number: 14 PastryRoll, extra sauce, extra sauce, extra sauce, extra topping
+Roll number: 15 PastryRoll, extra sauce, extra filling
+Total cost: 237.5
+
+Catering Customer's order: 
+Roll number: 1 EggRoll, extra sauce, extra topping, extra topping
+Roll number: 2 EggRoll, extra sauce, extra sauce, extra sauce
+Roll number: 3 EggRoll, extra sauce, extra topping
+Roll number: 4 EggRoll, extra filling
+Roll number: 5 PastryRoll, extra sauce, extra sauce, extra sauce, extra topping
+Roll number: 6 PastryRoll, extra sauce, extra filling, extra topping, extra topping
+Roll number: 7 PastryRoll, extra sauce, extra sauce, extra sauce, extra topping
+Roll number: 8 PastryRoll, extra sauce, extra sauce, extra topping
+Roll number: 9 PastryRoll, extra sauce, extra filling
+Roll number: 10 PastryRoll, extra sauce, extra filling, extra topping
+Roll number: 11 PastryRoll, extra topping
+Roll number: 12 PastryRoll, extra sauce, extra filling
+Roll number: 13 PastryRoll, extra filling, extra topping, extra topping
+Roll number: 14 SausageRoll, extra sauce, extra sauce
+Roll number: 15 SausageRoll, extra sauce, extra sauce, extra topping
+Total cost: 252.75
+
+Casual Customer's order: 
+Roll number: 1 SausageRoll, extra sauce, extra sauce, extra topping
+Roll number: 2 SausageRoll, extra sauce, extra topping
+Roll number: 3 SausageRoll
+Total cost: 51.5
+
+Total payment for order by customer type up to the end of today: {business=2263.75, casual=2093.5, catering=6978.5}
+Total payment for order by customer type for today only: {business=0.0, casual=260.75, catering=490.25}
+Total rolls sold by type up to the end of today: {JellyRoll=180, EggRoll=150, PastryRoll=120, SpringRoll=120, SausageRoll=138}
+Total rolls sold by type up for today only: {JellyRoll=7, EggRoll=16, PastryRoll=16, SpringRoll=3, SausageRoll=6}
+Number of roll orders impacted by outages today: {business=30, casual=13, catering=22}
+Number of times inventory had to be filled for each roll up to this point: {JellyRoll=5, EggRoll=4, PastryRoll=3, SpringRoll=3, SausageRoll=4}
+The store didn't close today for no inventory.
+-------------------------------------------------------------------
+Day number: 16
+Amount of customers: 6
+Inventory at the beginning of the day: 
+{JellyRoll=30, EggRoll=30, PastryRoll=30, SpringRoll=30, SausageRoll=12}
+Inventory at the end of the day: 
+{JellyRoll=14, EggRoll=19, PastryRoll=19, SpringRoll=13, SausageRoll=5}
+Catering Customer's order: 
+Roll number: 1 JellyRoll, extra sauce, extra sauce, extra sauce
+Roll number: 2 JellyRoll, extra filling
+Roll number: 3 JellyRoll, extra sauce, extra sauce, extra sauce
+Roll number: 4 JellyRoll, extra sauce, extra filling, extra topping, extra topping
+Roll number: 5 JellyRoll, extra sauce, extra topping
+Roll number: 6 SpringRoll, extra sauce, extra filling, extra topping, extra topping
+Roll number: 7 SpringRoll, extra sauce, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 8 SpringRoll, extra sauce
+Roll number: 9 SpringRoll, extra topping
+Roll number: 10 SpringRoll, extra sauce, extra sauce, extra sauce, extra topping
+Roll number: 11 PastryRoll, extra sauce, extra sauce, extra sauce
+Roll number: 12 PastryRoll, extra sauce, extra filling, extra topping
+Roll number: 13 PastryRoll, extra sauce, extra filling
+Roll number: 14 PastryRoll, extra sauce, extra sauce
+Roll number: 15 PastryRoll, extra sauce
+Total cost: 231.0
+
+Business Customer's order: 
+Roll number: 1 EggRoll, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 2 JellyRoll, extra sauce
+Roll number: 3 SpringRoll, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 4 PastryRoll, extra sauce, extra sauce, extra sauce, extra filling
+Roll number: 5 SausageRoll, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 6 EggRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 7 JellyRoll, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 8 SpringRoll
+Roll number: 9 PastryRoll, extra sauce, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 10 SausageRoll, extra filling, extra topping
+Total cost: 172.25
+
+Business Customer's order: 
+Roll number: 1 EggRoll, extra topping, extra topping
+Roll number: 2 JellyRoll, extra sauce, extra filling
+Roll number: 3 SpringRoll, extra sauce, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 4 PastryRoll, extra topping, extra topping
+Roll number: 5 SausageRoll, extra sauce, extra sauce, extra topping
+Roll number: 6 EggRoll, extra sauce, extra sauce, extra topping
+Roll number: 7 JellyRoll, extra topping, extra topping
+Roll number: 8 SpringRoll, extra sauce, extra sauce, extra filling
+Roll number: 9 PastryRoll, extra sauce, extra topping, extra topping
+Roll number: 10 SausageRoll, extra sauce, extra sauce, extra sauce
+Total cost: 160.0
+
+Business Customer's order: 
+Roll number: 1 EggRoll, extra sauce, extra sauce, extra topping
+Roll number: 2 JellyRoll, extra sauce, extra sauce, extra sauce, extra filling
+Roll number: 3 SpringRoll, extra sauce, extra sauce, extra sauce, extra topping
+Roll number: 4 PastryRoll, extra topping, extra topping
+Roll number: 5 SausageRoll, extra sauce, extra filling
+Roll number: 6 EggRoll, extra sauce, extra topping
+Roll number: 7 JellyRoll, extra sauce
+Roll number: 8 SpringRoll, extra sauce, extra sauce
+Roll number: 9 PastryRoll, extra sauce, extra topping
+Roll number: 10 SausageRoll, extra sauce, extra sauce, extra filling, extra topping
+Total cost: 156.25
+
+Casual Customer's order: 
+Roll number: 1 SpringRoll, extra sauce, extra filling, extra topping, extra topping
+Roll number: 2 SausageRoll, extra sauce, extra sauce, extra sauce, extra topping, extra topping
+Total cost: 41.5
+
+Catering Customer's order: 
+Roll number: 1 EggRoll, extra topping
+Roll number: 2 EggRoll, extra sauce, extra topping, extra topping
+Roll number: 3 EggRoll, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 4 EggRoll, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 5 EggRoll, extra topping
+Roll number: 6 JellyRoll, extra sauce, extra sauce
+Roll number: 7 JellyRoll, extra topping, extra topping
+Roll number: 8 JellyRoll, extra sauce, extra topping, extra topping
+Roll number: 9 JellyRoll, extra sauce, extra sauce, extra filling
+Roll number: 10 JellyRoll, extra sauce, extra filling, extra topping, extra topping
+Roll number: 11 SpringRoll, extra topping
+Roll number: 12 SpringRoll, extra sauce, extra sauce
+Roll number: 13 SpringRoll, extra filling, extra topping, extra topping
+Roll number: 14 SpringRoll, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 15 SpringRoll, extra sauce, extra sauce, extra sauce
+Total cost: 211.25
+
+Total payment for order by customer type up to the end of today: {business=2752.25, casual=2135.0, catering=7420.75}
+Total payment for order by customer type for today only: {business=488.5, casual=41.5, catering=442.25}
+Total rolls sold by type up to the end of today: {JellyRoll=196, EggRoll=161, PastryRoll=131, SpringRoll=137, SausageRoll=145}
+Total rolls sold by type up for today only: {JellyRoll=16, EggRoll=11, PastryRoll=11, SpringRoll=17, SausageRoll=7}
+Number of roll orders impacted by outages today: {business=0, casual=0, catering=0}
+Number of times inventory had to be filled for each roll up to this point: {JellyRoll=6, EggRoll=5, PastryRoll=4, SpringRoll=4, SausageRoll=4}
+The store didn't close today for no inventory.
+-------------------------------------------------------------------
+Day number: 17
+Amount of customers: 6
+Inventory at the beginning of the day: 
+{JellyRoll=14, EggRoll=19, PastryRoll=19, SpringRoll=13, SausageRoll=5}
+Inventory at the end of the day: 
+{JellyRoll=1, EggRoll=15, PastryRoll=14, SpringRoll=1, SausageRoll=0}
+Casual Customer's order: 
+Roll number: 1 SpringRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 2 PastryRoll, extra sauce, extra filling, extra topping, extra topping
+Total cost: 40.75
+
+Casual Customer's order: 
+Roll number: 1 SpringRoll, extra sauce, extra sauce, extra sauce, extra topping
+Total cost: 18.25
+
+Business Customer's order: 
+Roll number: 1 EggRoll, extra sauce, extra filling, extra topping, extra topping
+Roll number: 2 JellyRoll
+Roll number: 3 SpringRoll, extra sauce, extra filling
+Roll number: 4 PastryRoll
+Roll number: 5 SausageRoll, extra sauce, extra topping
+Roll number: 6 EggRoll, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 7 JellyRoll, extra sauce, extra sauce, extra topping
+Roll number: 8 SpringRoll
+Roll number: 9 PastryRoll, extra filling
+Roll number: 10 SausageRoll, extra sauce
+Total cost: 142.5
+
+Business Customer's order: 
+Roll number: 1 EggRoll, extra sauce, extra topping
+Roll number: 2 JellyRoll, extra sauce, extra sauce, extra sauce, extra filling
+Roll number: 3 SpringRoll, extra sauce, extra filling
+Roll number: 4 PastryRoll, extra sauce, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 5 SausageRoll, extra topping
+Roll number: 6 EggRoll, extra sauce, extra filling, extra topping, extra topping
+Roll number: 7 JellyRoll, extra sauce, extra sauce, extra sauce
+Roll number: 8 SpringRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 9 PastryRoll, extra topping
+Roll number: 10 SausageRoll, extra sauce, extra sauce, extra sauce
+Total cost: 163.0
+
+Casual Customer's order: 
+Roll number: 1 SpringRoll, extra topping
+Total cost: 13.75
+
+Catering Customer's order: 
+Roll number: 1 JellyRoll, extra sauce, extra sauce, extra sauce
+Roll number: 2 JellyRoll, extra sauce
+Roll number: 3 JellyRoll, extra sauce, extra filling, extra topping
+Roll number: 4 JellyRoll, extra sauce, extra filling, extra topping
+Roll number: 5 JellyRoll, extra sauce, extra sauce, extra topping
+Roll number: 6 SpringRoll, extra topping
+Roll number: 7 SpringRoll, extra filling
+Roll number: 8 SpringRoll, extra sauce, extra sauce, extra sauce, extra topping
+Roll number: 9 SpringRoll, extra sauce
+Roll number: 10 SpringRoll, extra sauce, extra sauce, extra sauce, extra topping
+Roll number: 11 SausageRoll, extra filling
+Roll number: 12 JellyRoll, extra sauce, extra filling
+Roll number: 13 JellyRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 14 JellyRoll, extra topping
+Roll number: 15 JellyRoll, extra sauce, extra topping, extra topping
+Total cost: 206.0
+
+Total payment for order by customer type up to the end of today: {business=3057.75, casual=2207.75, catering=7626.75}
+Total payment for order by customer type for today only: {business=305.5, casual=72.75, catering=206.0}
+Total rolls sold by type up to the end of today: {JellyRoll=209, EggRoll=165, PastryRoll=136, SpringRoll=149, SausageRoll=150}
+Total rolls sold by type up for today only: {JellyRoll=13, EggRoll=4, PastryRoll=5, SpringRoll=12, SausageRoll=5}
+Number of roll orders impacted by outages today: {business=0, casual=0, catering=4}
+Number of times inventory had to be filled for each roll up to this point: {JellyRoll=6, EggRoll=5, PastryRoll=4, SpringRoll=4, SausageRoll=4}
+The store didn't close today for no inventory.
+-------------------------------------------------------------------
+Day number: 18
+Amount of customers: 15
+Inventory at the beginning of the day: 
+{JellyRoll=1, EggRoll=15, PastryRoll=14, SpringRoll=1, SausageRoll=30}
+Store is out of stock today. Please come back tomorrow for fresh rolls!
+Inventory at the end of the day: 
+{JellyRoll=0, EggRoll=0, PastryRoll=0, SpringRoll=0, SausageRoll=0}
+Casual Customer's order: 
+Roll number: 1 JellyRoll, extra filling, extra topping, extra topping
+Roll number: 2 PastryRoll, extra sauce, extra topping, extra topping
+Total cost: 32.0
+
+Casual Customer's order: 
+Roll number: 1 SausageRoll, extra sauce, extra filling, extra topping, extra topping
+Total cost: 21.5
+
+Catering Customer's order: 
+Roll number: 1 EggRoll, extra sauce, extra topping
+Roll number: 2 EggRoll, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 3 EggRoll, extra sauce, extra filling
+Roll number: 4 EggRoll, extra sauce, extra sauce, extra filling
+Roll number: 5 EggRoll, extra sauce, extra sauce, extra sauce, extra topping
+Roll number: 6 SpringRoll, extra sauce, extra filling, extra topping, extra topping
+Roll number: 7 EggRoll, extra topping, extra topping
+Roll number: 8 EggRoll, extra topping, extra topping
+Roll number: 9 EggRoll, extra sauce, extra sauce, extra topping
+Roll number: 10 EggRoll, extra filling
+Roll number: 11 SausageRoll, extra topping, extra topping
+Roll number: 12 SausageRoll, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 13 SausageRoll, extra filling, extra topping, extra topping
+Roll number: 14 SausageRoll, extra filling, extra topping
+Roll number: 15 SausageRoll, extra sauce, extra sauce, extra sauce, extra topping, extra topping
+Total cost: 240.25
+
+Casual Customer's order: 
+Roll number: 1 SausageRoll, extra filling, extra topping
+Roll number: 2 SausageRoll, extra sauce, extra filling, extra topping
+Roll number: 3 EggRoll, extra topping
+Total cost: 48.75
+
+Catering Customer's order: 
+Roll number: 1 EggRoll, extra filling
+Roll number: 2 EggRoll, extra filling
+Roll number: 3 EggRoll, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 4 EggRoll, extra sauce
+Roll number: 5 EggRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 6 PastryRoll, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 7 PastryRoll, extra filling, extra topping
+Roll number: 8 PastryRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 9 PastryRoll, extra topping
+Roll number: 10 PastryRoll, extra sauce, extra topping
+Roll number: 11 SausageRoll, extra sauce, extra sauce, extra topping
+Roll number: 12 SausageRoll, extra filling
+Roll number: 13 SausageRoll, extra sauce, extra sauce, extra topping
+Roll number: 14 SausageRoll, extra sauce, extra topping
+Roll number: 15 SausageRoll, extra sauce, extra sauce, extra sauce, extra filling
+Total cost: 255.75
+
+Casual Customer's order: 
+Roll number: 1 PastryRoll, extra sauce, extra sauce, extra topping
+Total cost: 18.25
+
+Catering Customer's order: 
+Roll number: 1 PastryRoll, extra sauce, extra filling
+Roll number: 2 PastryRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 3 PastryRoll, extra sauce, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 4 PastryRoll, extra topping, extra topping
+Roll number: 5 PastryRoll, extra sauce, extra topping
+Roll number: 6 PastryRoll, extra sauce, extra sauce, extra sauce, extra topping
+Roll number: 7 PastryRoll, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 8 SausageRoll, extra sauce, extra filling, extra topping, extra topping
+Roll number: 9 SausageRoll, extra sauce
+Roll number: 10 SausageRoll, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 11 SausageRoll, extra sauce, extra sauce, extra sauce, extra filling
+Roll number: 12 SausageRoll, extra sauce
+Roll number: 13 SausageRoll, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 14 SausageRoll, extra sauce, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 15 SausageRoll, extra sauce, extra sauce, extra sauce, extra topping, extra topping
+Total cost: 299.25
+
+Casual Customer's order: 
+Roll number: 1 SausageRoll, extra sauce, extra sauce, extra sauce, extra topping
+Roll number: 2 SausageRoll
+Roll number: 3 SausageRoll, extra sauce, extra filling, extra topping
+Total cost: 55.0
+
+Casual Customer's order: 
+Roll number: 1 SausageRoll, extra topping, extra topping
+Total cost: 18.0
+
+Casual Customer's order: 
+Roll number: 1 SausageRoll, extra sauce, extra sauce
+Roll number: 2 SausageRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 3 SausageRoll, extra topping
+Total cost: 58.25
+
+Casual Customer's order: 
+Roll number: 1 SausageRoll, extra sauce, extra sauce, extra topping
+Roll number: 2 SausageRoll, extra sauce, extra sauce, extra sauce, extra filling
+Total cost: 40.25
+
+Total payment for order by customer type up to the end of today: {business=3057.75, casual=2499.75, catering=8422.0}
+Total payment for order by customer type for today only: {business=0.0, casual=292.0, catering=795.25}
+Total rolls sold by type up to the end of today: {JellyRoll=210, EggRoll=180, PastryRoll=150, SpringRoll=150, SausageRoll=180}
+Total rolls sold by type up for today only: {JellyRoll=1, EggRoll=15, PastryRoll=14, SpringRoll=1, SausageRoll=30}
+Number of roll orders impacted by outages today: {business=10, casual=18, catering=12}
+Number of times inventory had to be filled for each roll up to this point: {JellyRoll=6, EggRoll=5, PastryRoll=4, SpringRoll=4, SausageRoll=5}
+The store did close today for no inventory.
+-------------------------------------------------------------------
+Day number: 19
+Amount of customers: 14
+Inventory at the beginning of the day: 
+{JellyRoll=30, EggRoll=30, PastryRoll=30, SpringRoll=30, SausageRoll=30}
+Inventory at the end of the day: 
+{JellyRoll=22, EggRoll=19, PastryRoll=21, SpringRoll=18, SausageRoll=12}
+Casual Customer's order: 
+Roll number: 1 SausageRoll, extra sauce, extra sauce
+Roll number: 2 JellyRoll, extra topping, extra topping
+Total cost: 29.0
+
+Casual Customer's order: 
+Roll number: 1 SausageRoll, extra sauce, extra sauce, extra sauce
+Total cost: 19.0
+
+Business Customer's order: 
+Roll number: 1 EggRoll, extra sauce, extra sauce, extra sauce, extra filling
+Roll number: 2 JellyRoll, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 3 SpringRoll, extra sauce, extra sauce
+Roll number: 4 PastryRoll, extra sauce, extra sauce, extra sauce
+Roll number: 5 SausageRoll, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 6 EggRoll, extra sauce, extra sauce, extra sauce, extra topping
+Roll number: 7 JellyRoll, extra filling
+Roll number: 8 SpringRoll, extra sauce, extra topping
+Roll number: 9 PastryRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 10 SausageRoll, extra sauce, extra sauce, extra sauce, extra topping
+Total cost: 172.75
+
+Casual Customer's order: 
+Roll number: 1 SausageRoll, extra filling, extra topping, extra topping
+Roll number: 2 JellyRoll, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Total cost: 36.5
+
+Casual Customer's order: 
+Roll number: 1 SausageRoll, extra topping
+Roll number: 2 SpringRoll, extra sauce, extra sauce, extra topping
+Roll number: 3 JellyRoll, extra sauce, extra topping
+Total cost: 44.25
+
+Casual Customer's order: 
+Roll number: 1 SausageRoll, extra sauce, extra sauce
+Roll number: 2 JellyRoll, extra sauce, extra sauce, extra filling
+Total cost: 30.5
+
+Casual Customer's order: 
+Roll number: 1 PastryRoll
+Roll number: 2 PastryRoll, extra filling
+Roll number: 3 EggRoll, extra topping, extra topping
+Total cost: 41.5
+
+Catering Customer's order: 
+Roll number: 1 EggRoll, extra topping
+Roll number: 2 EggRoll, extra filling, extra topping, extra topping
+Roll number: 3 EggRoll, extra sauce
+Roll number: 4 EggRoll, extra sauce, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 5 EggRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 6 SpringRoll, extra sauce, extra sauce, extra topping
+Roll number: 7 SpringRoll, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 8 SpringRoll, extra sauce, extra filling, extra topping
+Roll number: 9 SpringRoll, extra sauce, extra sauce, extra sauce, extra topping
+Roll number: 10 SpringRoll, extra sauce, extra sauce, extra sauce
+Roll number: 11 SausageRoll, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 12 SausageRoll, extra filling, extra topping
+Roll number: 13 SausageRoll, extra sauce, extra sauce, extra topping
+Roll number: 14 SausageRoll, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 15 SausageRoll, extra sauce, extra sauce, extra filling
+Total cost: 260.25
+
+Casual Customer's order: 
+Roll number: 1 SausageRoll, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 2 PastryRoll, extra sauce, extra sauce, extra sauce, extra filling
+Total cost: 41.0
+
+Business Customer's order: 
+Roll number: 1 EggRoll, extra sauce, extra topping
+Roll number: 2 JellyRoll, extra sauce
+Roll number: 3 SpringRoll, extra topping, extra topping
+Roll number: 4 PastryRoll, extra sauce, extra sauce, extra sauce
+Roll number: 5 SausageRoll, extra filling, extra topping
+Roll number: 6 EggRoll, extra sauce, extra filling, extra topping
+Roll number: 7 JellyRoll, extra sauce, extra topping, extra topping
+Roll number: 8 SpringRoll, extra topping
+Roll number: 9 PastryRoll, extra sauce, extra topping
+Roll number: 10 SausageRoll, extra sauce, extra sauce, extra filling, extra topping
+Total cost: 152.5
+
+Casual Customer's order: 
+Roll number: 1 PastryRoll, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 2 PastryRoll, extra sauce, extra filling
+Total cost: 37.25
+
+Casual Customer's order: 
+Roll number: 1 SpringRoll, extra sauce, extra sauce, extra sauce, extra topping
+Roll number: 2 SausageRoll, extra sauce, extra filling, extra topping, extra topping
+Total cost: 39.75
+
+Casual Customer's order: 
+Roll number: 1 SpringRoll, extra sauce, extra sauce, extra sauce, extra topping
+Total cost: 18.25
+
+Casual Customer's order: 
+Roll number: 1 SausageRoll, extra sauce, extra sauce, extra sauce
+Roll number: 2 SausageRoll, extra sauce, extra topping, extra topping
+Roll number: 3 EggRoll, extra sauce
+Total cost: 49.0
+
+Total payment for order by customer type up to the end of today: {business=3383.0, casual=2885.75, catering=8682.25}
+Total payment for order by customer type for today only: {business=325.25, casual=386.0, catering=260.25}
+Total rolls sold by type up to the end of today: {JellyRoll=218, EggRoll=191, PastryRoll=159, SpringRoll=162, SausageRoll=198}
+Total rolls sold by type up for today only: {JellyRoll=8, EggRoll=11, PastryRoll=9, SpringRoll=12, SausageRoll=18}
+Number of roll orders impacted by outages today: {business=0, casual=0, catering=0}
+Number of times inventory had to be filled for each roll up to this point: {JellyRoll=7, EggRoll=6, PastryRoll=5, SpringRoll=5, SausageRoll=6}
+The store didn't close today for no inventory.
+-------------------------------------------------------------------
+Day number: 20
+Amount of customers: 10
+Inventory at the beginning of the day: 
+{JellyRoll=22, EggRoll=19, PastryRoll=21, SpringRoll=18, SausageRoll=12}
+Inventory at the end of the day: 
+{JellyRoll=11, EggRoll=15, PastryRoll=11, SpringRoll=9, SausageRoll=7}
+Business Customer's order: 
+Roll number: 1 EggRoll, extra filling, extra topping, extra topping
+Roll number: 2 JellyRoll, extra sauce, extra sauce, extra sauce, extra filling
+Roll number: 3 SpringRoll, extra filling
+Roll number: 4 PastryRoll, extra filling, extra topping
+Roll number: 5 SausageRoll, extra sauce, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 6 EggRoll, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 7 JellyRoll, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 8 SpringRoll, extra filling, extra topping, extra topping
+Roll number: 9 PastryRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 10 SausageRoll, extra sauce, extra topping
+Total cost: 170.0
+
+Casual Customer's order: 
+Roll number: 1 SpringRoll, extra sauce, extra sauce, extra sauce, extra filling
+Total cost: 18.5
+
+Casual Customer's order: 
+Roll number: 1 PastryRoll, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 2 SpringRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 3 JellyRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Total cost: 60.25
+
+Casual Customer's order: 
+Roll number: 1 PastryRoll, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 2 PastryRoll, extra sauce, extra sauce, extra topping
+Total cost: 38.5
+
+Catering Customer's order: 
+Roll number: 1 JellyRoll, extra sauce, extra filling
+Roll number: 2 JellyRoll, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 3 JellyRoll, extra sauce
+Roll number: 4 JellyRoll, extra sauce, extra sauce, extra topping
+Roll number: 5 JellyRoll, extra sauce, extra topping
+Roll number: 6 SpringRoll, extra sauce, extra sauce, extra sauce, extra filling
+Roll number: 7 SpringRoll, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 8 SpringRoll, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 9 SpringRoll, extra topping, extra topping
+Roll number: 10 SpringRoll, extra sauce, extra filling, extra topping
+Roll number: 11 PastryRoll, extra sauce, extra sauce, extra sauce, extra filling
+Roll number: 12 PastryRoll, extra topping, extra topping
+Roll number: 13 PastryRoll, extra sauce, extra topping, extra topping
+Roll number: 14 PastryRoll, extra sauce, extra filling
+Roll number: 15 PastryRoll, extra filling
+Total cost: 240.0
+
+Casual Customer's order: 
+Roll number: 1 JellyRoll
+Total cost: 8.0
+
+Casual Customer's order: 
+Roll number: 1 EggRoll, extra sauce, extra sauce, extra topping
+Total cost: 13.75
+
+Casual Customer's order: 
+Roll number: 1 SausageRoll, extra sauce, extra sauce, extra sauce, extra filling
+Total cost: 21.0
+
+Casual Customer's order: 
+Roll number: 1 EggRoll, extra sauce, extra topping, extra topping
+Roll number: 2 JellyRoll, extra sauce, extra filling, extra topping, extra topping
+Total cost: 29.0
+
+Casual Customer's order: 
+Roll number: 1 SausageRoll, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 2 SausageRoll, extra topping
+Roll number: 3 JellyRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Total cost: 57.25
+
+Total payment for order by customer type up to the end of today: {business=3553.0, casual=3132.0, catering=8922.25}
+Total payment for order by customer type for today only: {business=170.0, casual=246.25, catering=240.0}
+Total rolls sold by type up to the end of today: {JellyRoll=229, EggRoll=195, PastryRoll=169, SpringRoll=171, SausageRoll=203}
+Total rolls sold by type up for today only: {JellyRoll=11, EggRoll=4, PastryRoll=10, SpringRoll=9, SausageRoll=5}
+Number of roll orders impacted by outages today: {business=0, casual=0, catering=0}
+Number of times inventory had to be filled for each roll up to this point: {JellyRoll=7, EggRoll=6, PastryRoll=5, SpringRoll=5, SausageRoll=6}
+The store didn't close today for no inventory.
+-------------------------------------------------------------------
+Day number: 21
+Amount of customers: 9
+Inventory at the beginning of the day: 
+{JellyRoll=11, EggRoll=15, PastryRoll=11, SpringRoll=9, SausageRoll=7}
+Inventory at the end of the day: 
+{JellyRoll=8, EggRoll=6, PastryRoll=3, SpringRoll=8, SausageRoll=0}
+Casual Customer's order: 
+Roll number: 1 EggRoll, extra topping
+Total cost: 10.75
+
+Casual Customer's order: 
+Roll number: 1 PastryRoll, extra topping, extra topping
+Roll number: 2 EggRoll, extra sauce, extra sauce
+Roll number: 3 JellyRoll, extra sauce, extra sauce, extra sauce, extra filling
+Total cost: 43.5
+
+Casual Customer's order: 
+Roll number: 1 PastryRoll, extra sauce, extra sauce, extra sauce
+Total cost: 18.0
+
+Casual Customer's order: 
+Roll number: 1 JellyRoll, extra sauce, extra sauce, extra filling, extra topping
+Total cost: 14.75
+
+Casual Customer's order: 
+Roll number: 1 SpringRoll, extra sauce, extra sauce, extra sauce, extra topping
+Roll number: 2 SausageRoll, extra sauce, extra filling
+Roll number: 3 JellyRoll, extra filling, extra topping, extra topping
+Total cost: 49.75
+
+Catering Customer's order: 
+Roll number: 1 EggRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 2 EggRoll, extra sauce, extra filling, extra topping
+Roll number: 3 EggRoll, extra sauce, extra sauce, extra sauce
+Roll number: 4 EggRoll, extra sauce, extra sauce, extra sauce, extra topping
+Roll number: 5 EggRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 6 PastryRoll, extra sauce, extra filling, extra topping, extra topping
+Roll number: 7 PastryRoll, extra topping, extra topping
+Roll number: 8 PastryRoll, extra topping, extra topping
+Roll number: 9 PastryRoll, extra sauce, extra filling, extra topping, extra topping
+Roll number: 10 PastryRoll, extra sauce, extra sauce, extra sauce
+Roll number: 11 SausageRoll, extra topping
+Roll number: 12 SausageRoll, extra sauce, extra sauce, extra sauce, extra filling
+Roll number: 13 SausageRoll, extra sauce, extra sauce, extra topping
+Roll number: 14 SausageRoll, extra sauce, extra sauce, extra sauce, extra topping
+Roll number: 15 SausageRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Total cost: 274.0
+
+Casual Customer's order: 
+Roll number: 1 EggRoll, extra sauce
+Roll number: 2 SausageRoll, extra sauce, extra sauce, extra filling, extra topping
+Total cost: 31.75
+
+Casual Customer's order: 
+Roll number: 1 PastryRoll, extra sauce, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 2 EggRoll, extra sauce, extra sauce
+Total cost: 33.5
+
+Total payment for order by customer type up to the end of today: {business=3553.0, casual=3334.0, catering=9196.25}
+Total payment for order by customer type for today only: {business=0.0, casual=202.0, catering=274.0}
+Total rolls sold by type up to the end of today: {JellyRoll=232, EggRoll=204, PastryRoll=177, SpringRoll=172, SausageRoll=210}
+Total rolls sold by type up for today only: {JellyRoll=3, EggRoll=9, PastryRoll=8, SpringRoll=1, SausageRoll=7}
+Number of roll orders impacted by outages today: {business=10, casual=0, catering=0}
+Number of times inventory had to be filled for each roll up to this point: {JellyRoll=7, EggRoll=6, PastryRoll=5, SpringRoll=5, SausageRoll=6}
+The store didn't close today for no inventory.
+-------------------------------------------------------------------
+Day number: 22
+Amount of customers: 6
+Inventory at the beginning of the day: 
+{JellyRoll=8, EggRoll=6, PastryRoll=3, SpringRoll=8, SausageRoll=30}
+Store is out of stock today. Please come back tomorrow for fresh rolls!
+Inventory at the end of the day: 
+{JellyRoll=0, EggRoll=0, PastryRoll=0, SpringRoll=0, SausageRoll=0}
+Business Customer's order: 
+Roll number: 1 EggRoll, extra sauce, extra topping, extra topping
+Roll number: 2 JellyRoll, extra topping
+Roll number: 3 SpringRoll, extra sauce, extra sauce, extra sauce
+Roll number: 4 PastryRoll, extra topping, extra topping
+Roll number: 5 SausageRoll, extra sauce
+Roll number: 6 EggRoll, extra sauce, extra sauce, extra sauce, extra topping
+Roll number: 7 JellyRoll, extra sauce, extra sauce, extra filling
+Roll number: 8 SpringRoll, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 9 PastryRoll, extra topping, extra topping
+Roll number: 10 SausageRoll, extra sauce, extra sauce, extra sauce, extra topping, extra topping
+Total cost: 159.75
+
+Catering Customer's order: 
+Roll number: 1 EggRoll, extra sauce, extra filling, extra topping, extra topping
+Roll number: 2 EggRoll, extra filling, extra topping, extra topping
+Roll number: 3 EggRoll, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 4 EggRoll
+Roll number: 5 JellyRoll, extra sauce, extra filling, extra topping
+Roll number: 6 SpringRoll, extra topping, extra topping
+Roll number: 7 SpringRoll, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 8 SpringRoll, extra sauce, extra sauce, extra sauce, extra topping
+Roll number: 9 SpringRoll, extra sauce, extra sauce, extra filling
+Roll number: 10 SpringRoll, extra sauce, extra sauce
+Roll number: 11 SausageRoll, extra sauce
+Roll number: 12 SausageRoll, extra sauce, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 13 SausageRoll, extra sauce, extra sauce, extra sauce
+Roll number: 14 SausageRoll, extra topping, extra topping
+Roll number: 15 SausageRoll, extra sauce, extra sauce, extra filling
+Total cost: 249.75
+
+Catering Customer's order: 
+Roll number: 1 JellyRoll, extra sauce, extra sauce, extra sauce, extra filling
+Roll number: 2 JellyRoll, extra sauce, extra sauce, extra sauce, extra topping
+Roll number: 3 JellyRoll, extra sauce, extra sauce, extra topping
+Roll number: 4 JellyRoll, extra sauce, extra sauce, extra sauce, extra filling
+Roll number: 5 JellyRoll, extra sauce, extra sauce, extra sauce, extra topping
+Roll number: 6 SpringRoll, extra topping
+Roll number: 7 PastryRoll, extra sauce, extra sauce
+Roll number: 8 SausageRoll, extra filling, extra topping, extra topping
+Roll number: 9 SausageRoll, extra sauce, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 10 SausageRoll
+Roll number: 11 SausageRoll, extra sauce, extra topping, extra topping
+Roll number: 12 SausageRoll, extra sauce
+Roll number: 13 SausageRoll, extra sauce, extra sauce, extra sauce, extra topping
+Roll number: 14 SausageRoll, extra filling
+Roll number: 15 SausageRoll, extra sauce, extra filling
+Total cost: 248.25
+
+Casual Customer's order: 
+Roll number: 1 SausageRoll, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 2 SausageRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 3 SausageRoll, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Total cost: 68.5
+
+Catering Customer's order: 
+Roll number: 1 SausageRoll, extra topping, extra topping
+Roll number: 2 SausageRoll, extra filling, extra topping
+Roll number: 3 SausageRoll, extra sauce, extra sauce, extra sauce
+Roll number: 4 SausageRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 5 SausageRoll, extra sauce, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 6 SausageRoll, extra sauce, extra filling
+Roll number: 7 SausageRoll, extra sauce
+Roll number: 8 SausageRoll, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 9 SausageRoll, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 10 SausageRoll, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 11 SausageRoll, extra sauce, extra topping
+Roll number: 12 SausageRoll, extra sauce, extra sauce, extra filling, extra topping
+Total cost: 237.0
+
+Total payment for order by customer type up to the end of today: {business=3712.75, casual=3402.5, catering=9931.25}
+Total payment for order by customer type for today only: {business=159.75, casual=68.5, catering=735.0}
+Total rolls sold by type up to the end of today: {JellyRoll=240, EggRoll=210, PastryRoll=180, SpringRoll=180, SausageRoll=240}
+Total rolls sold by type up for today only: {JellyRoll=8, EggRoll=6, PastryRoll=3, SpringRoll=8, SausageRoll=30}
+Number of roll orders impacted by outages today: {business=0, casual=6, catering=30}
+Number of times inventory had to be filled for each roll up to this point: {JellyRoll=7, EggRoll=6, PastryRoll=5, SpringRoll=5, SausageRoll=7}
+The store did close today for no inventory.
+-------------------------------------------------------------------
+Day number: 23
+Amount of customers: 9
+Inventory at the beginning of the day: 
+{JellyRoll=30, EggRoll=30, PastryRoll=30, SpringRoll=30, SausageRoll=30}
+Inventory at the end of the day: 
+{JellyRoll=19, EggRoll=10, PastryRoll=12, SpringRoll=13, SausageRoll=12}
+Catering Customer's order: 
+Roll number: 1 EggRoll, extra filling, extra topping, extra topping
+Roll number: 2 EggRoll, extra sauce, extra sauce
+Roll number: 3 EggRoll, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 4 EggRoll, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 5 EggRoll, extra sauce, extra topping
+Roll number: 6 JellyRoll
+Roll number: 7 JellyRoll, extra sauce, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 8 JellyRoll, extra sauce, extra filling, extra topping, extra topping
+Roll number: 9 JellyRoll, extra sauce, extra topping
+Roll number: 10 JellyRoll, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 11 SausageRoll, extra filling, extra topping, extra topping
+Roll number: 12 SausageRoll, extra topping
+Roll number: 13 SausageRoll, extra sauce, extra topping, extra topping
+Roll number: 14 SausageRoll, extra sauce, extra sauce, extra sauce, extra filling
+Roll number: 15 SausageRoll, extra sauce, extra sauce, extra sauce, extra topping, extra topping
+Total cost: 234.0
+
+Business Customer's order: 
+Roll number: 1 EggRoll, extra sauce, extra sauce, extra sauce, extra topping
+Roll number: 2 JellyRoll, extra sauce, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 3 SpringRoll, extra filling, extra topping
+Roll number: 4 PastryRoll, extra filling
+Roll number: 5 SausageRoll, extra sauce, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 6 EggRoll, extra topping, extra topping
+Roll number: 7 JellyRoll, extra sauce, extra sauce, extra sauce
+Roll number: 8 SpringRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 9 PastryRoll, extra sauce, extra topping
+Roll number: 10 SausageRoll, extra sauce, extra sauce, extra topping
+Total cost: 168.0
+
+Casual Customer's order: 
+Roll number: 1 EggRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 2 PastryRoll, extra sauce, extra sauce, extra topping
+Roll number: 3 SausageRoll, extra sauce, extra sauce, extra filling
+Total cost: 56.75
+
+Casual Customer's order: 
+Roll number: 1 PastryRoll, extra filling
+Roll number: 2 EggRoll, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 3 SpringRoll, extra sauce, extra sauce, extra sauce, extra topping
+Total cost: 49.5
+
+Business Customer's order: 
+Roll number: 1 EggRoll, extra sauce, extra sauce, extra sauce, extra filling
+Roll number: 2 JellyRoll, extra sauce, extra sauce, extra sauce, extra filling
+Roll number: 3 SpringRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 4 PastryRoll, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 5 SausageRoll, extra sauce
+Roll number: 6 EggRoll, extra sauce, extra filling, extra topping
+Roll number: 7 JellyRoll, extra sauce, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 8 SpringRoll, extra filling
+Roll number: 9 PastryRoll, extra sauce
+Roll number: 10 SausageRoll, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Total cost: 170.5
+
+Catering Customer's order: 
+Roll number: 1 SpringRoll, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 2 SpringRoll, extra topping, extra topping
+Roll number: 3 SpringRoll, extra sauce, extra filling, extra topping, extra topping
+Roll number: 4 SpringRoll, extra sauce, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 5 SpringRoll, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 6 PastryRoll, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 7 PastryRoll, extra sauce, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 8 PastryRoll, extra filling, extra topping, extra topping
+Roll number: 9 PastryRoll, extra sauce, extra topping, extra topping
+Roll number: 10 PastryRoll, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 11 SausageRoll, extra filling, extra topping
+Roll number: 12 SausageRoll, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 13 SausageRoll, extra sauce, extra topping
+Roll number: 14 SausageRoll
+Roll number: 15 SausageRoll, extra sauce, extra sauce, extra topping, extra topping
+Total cost: 285.25
+
+Business Customer's order: 
+Roll number: 1 EggRoll, extra sauce, extra filling
+Roll number: 2 JellyRoll, extra topping
+Roll number: 3 SpringRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 4 PastryRoll, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 5 SausageRoll, extra sauce, extra sauce, extra sauce
+Roll number: 6 EggRoll
+Roll number: 7 JellyRoll, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 8 SpringRoll, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 9 PastryRoll, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 10 SausageRoll, extra sauce, extra sauce, extra filling
+Total cost: 169.0
+
+Catering Customer's order: 
+Roll number: 1 EggRoll, extra sauce, extra topping, extra topping
+Roll number: 2 EggRoll, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 3 EggRoll, extra sauce, extra sauce, extra sauce
+Roll number: 4 EggRoll, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 5 EggRoll, extra sauce, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 6 SpringRoll, extra sauce, extra sauce, extra topping
+Roll number: 7 SpringRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 8 SpringRoll, extra sauce, extra sauce
+Roll number: 9 SpringRoll, extra sauce
+Roll number: 10 SpringRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 11 PastryRoll, extra topping
+Roll number: 12 PastryRoll, extra sauce, extra sauce, extra sauce, extra filling
+Roll number: 13 PastryRoll, extra sauce, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 14 PastryRoll, extra filling
+Roll number: 15 PastryRoll
+Total cost: 250.75
+
+Casual Customer's order: 
+Roll number: 1 EggRoll, extra sauce, extra topping
+Roll number: 2 SausageRoll, extra filling
+Roll number: 3 EggRoll
+Total cost: 37.75
+
+Total payment for order by customer type up to the end of today: {business=4220.25, casual=3546.5, catering=10701.25}
+Total payment for order by customer type for today only: {business=507.5, casual=144.0, catering=770.0}
+Total rolls sold by type up to the end of today: {JellyRoll=251, EggRoll=230, PastryRoll=198, SpringRoll=197, SausageRoll=258}
+Total rolls sold by type up for today only: {JellyRoll=11, EggRoll=20, PastryRoll=18, SpringRoll=17, SausageRoll=18}
+Number of roll orders impacted by outages today: {business=0, casual=0, catering=0}
+Number of times inventory had to be filled for each roll up to this point: {JellyRoll=8, EggRoll=7, PastryRoll=6, SpringRoll=6, SausageRoll=8}
+The store didn't close today for no inventory.
+-------------------------------------------------------------------
+Day number: 24
+Amount of customers: 12
+Inventory at the beginning of the day: 
+{JellyRoll=19, EggRoll=10, PastryRoll=12, SpringRoll=13, SausageRoll=12}
+Inventory at the end of the day: 
+{JellyRoll=1, EggRoll=0, PastryRoll=3, SpringRoll=0, SausageRoll=3}
+Business Customer's order: 
+Roll number: 1 EggRoll, extra sauce, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 2 JellyRoll, extra topping, extra topping
+Roll number: 3 SpringRoll
+Roll number: 4 PastryRoll, extra sauce, extra sauce
+Roll number: 5 SausageRoll, extra sauce, extra filling, extra topping
+Roll number: 6 EggRoll, extra filling, extra topping
+Roll number: 7 JellyRoll, extra filling
+Roll number: 8 SpringRoll, extra sauce, extra sauce, extra sauce, extra filling
+Roll number: 9 PastryRoll, extra filling, extra topping
+Roll number: 10 SausageRoll, extra sauce, extra sauce, extra topping, extra topping
+Total cost: 156.25
+
+Catering Customer's order: 
+Roll number: 1 EggRoll, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 2 EggRoll, extra sauce, extra sauce
+Roll number: 3 EggRoll, extra sauce, extra sauce, extra sauce, extra topping
+Roll number: 4 EggRoll, extra filling, extra topping
+Roll number: 5 EggRoll, extra sauce, extra filling, extra topping, extra topping
+Roll number: 6 JellyRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 7 JellyRoll, extra filling
+Roll number: 8 JellyRoll, extra sauce, extra sauce
+Roll number: 9 JellyRoll, extra sauce, extra sauce, extra sauce, extra topping
+Roll number: 10 JellyRoll, extra sauce, extra sauce, extra filling
+Roll number: 11 PastryRoll, extra filling, extra topping
+Roll number: 12 PastryRoll, extra sauce, extra sauce, extra topping
+Roll number: 13 PastryRoll, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 14 PastryRoll, extra sauce, extra sauce, extra filling
+Roll number: 15 PastryRoll, extra sauce, extra filling, extra topping
+Total cost: 229.25
+
+Casual Customer's order: 
+Roll number: 1 SausageRoll, extra sauce, extra sauce, extra topping
+Roll number: 2 SpringRoll, extra sauce, extra sauce
+Roll number: 3 SpringRoll, extra sauce, extra filling, extra topping, extra topping
+Total cost: 53.25
+
+Catering Customer's order: 
+Roll number: 1 EggRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 2 EggRoll, extra sauce, extra filling, extra topping, extra topping
+Roll number: 3 EggRoll, extra sauce, extra filling, extra topping
+Roll number: 4 JellyRoll, extra sauce, extra sauce, extra sauce
+Roll number: 5 JellyRoll, extra sauce, extra topping
+Roll number: 6 SpringRoll, extra sauce, extra topping
+Roll number: 7 SpringRoll, extra filling, extra topping
+Roll number: 8 SpringRoll, extra sauce
+Roll number: 9 SpringRoll, extra sauce, extra topping, extra topping
+Roll number: 10 SpringRoll, extra sauce, extra topping, extra topping
+Roll number: 11 SausageRoll, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 12 SausageRoll, extra sauce, extra sauce
+Roll number: 13 SausageRoll, extra sauce, extra filling, extra topping
+Roll number: 14 SausageRoll, extra filling, extra topping
+Roll number: 15 SausageRoll, extra sauce, extra topping
+Total cost: 245.75
+
+Casual Customer's order: 
+Roll number: 1 JellyRoll, extra topping
+Total cost: 9.75
+
+Casual Customer's order: 
+Roll number: 1 JellyRoll, extra sauce, extra sauce, extra sauce, extra topping
+Roll number: 2 SpringRoll, extra sauce, extra topping, extra topping
+Roll number: 3 SpringRoll, extra sauce, extra sauce, extra sauce, extra topping
+Total cost: 49.5
+
+Casual Customer's order: 
+Roll number: 1 SausageRoll, extra sauce, extra filling
+Roll number: 2 SpringRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Total cost: 40.0
+
+Casual Customer's order: 
+Roll number: 1 JellyRoll, extra sauce, extra sauce, extra sauce
+Roll number: 2 JellyRoll, extra sauce, extra sauce
+Roll number: 3 PastryRoll, extra sauce, extra topping, extra topping
+Total cost: 42.0
+
+Casual Customer's order: 
+Roll number: 1 JellyRoll, extra sauce
+Roll number: 2 SpringRoll, extra sauce, extra sauce, extra topping, extra topping
+Total cost: 28.0
+
+Casual Customer's order: 
+Roll number: 1 JellyRoll, extra sauce, extra filling, extra topping, extra topping
+Roll number: 2 PastryRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Total cost: 38.5
+
+Casual Customer's order: 
+Roll number: 1 JellyRoll, extra sauce, extra sauce, extra sauce
+Roll number: 2 JellyRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 3 JellyRoll, extra sauce, extra topping, extra topping
+Total cost: 43.5
+
+Total payment for order by customer type up to the end of today: {business=4376.5, casual=3851.0, catering=11176.25}
+Total payment for order by customer type for today only: {business=156.25, casual=304.5, catering=475.0}
+Total rolls sold by type up to the end of today: {JellyRoll=269, EggRoll=240, PastryRoll=207, SpringRoll=210, SausageRoll=267}
+Total rolls sold by type up for today only: {JellyRoll=18, EggRoll=10, PastryRoll=9, SpringRoll=13, SausageRoll=9}
+Number of roll orders impacted by outages today: {business=10, casual=10, catering=2}
+Number of times inventory had to be filled for each roll up to this point: {JellyRoll=8, EggRoll=7, PastryRoll=6, SpringRoll=6, SausageRoll=8}
+The store didn't close today for no inventory.
+-------------------------------------------------------------------
+Day number: 25
+Amount of customers: 7
+Inventory at the beginning of the day: 
+{JellyRoll=1, EggRoll=30, PastryRoll=3, SpringRoll=30, SausageRoll=3}
+Inventory at the end of the day: 
+{JellyRoll=0, EggRoll=15, PastryRoll=0, SpringRoll=29, SausageRoll=0}
+Casual Customer's order: 
+Roll number: 1 EggRoll, extra sauce, extra sauce, extra topping
+Total cost: 13.75
+
+Casual Customer's order: 
+Roll number: 1 EggRoll, extra filling, extra topping
+Roll number: 2 JellyRoll, extra sauce, extra filling, extra topping
+Total cost: 26.0
+
+Casual Customer's order: 
+Roll number: 1 EggRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 2 SausageRoll
+Roll number: 3 SpringRoll, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Total cost: 54.0
+
+Casual Customer's order: 
+Roll number: 1 PastryRoll, extra sauce, extra filling
+Roll number: 2 SausageRoll, extra sauce, extra sauce, extra topping, extra topping
+Total cost: 38.0
+
+Catering Customer's order: 
+Roll number: 1 EggRoll, extra sauce, extra topping
+Roll number: 2 EggRoll, extra sauce, extra topping, extra topping
+Roll number: 3 EggRoll, extra sauce, extra filling, extra topping
+Roll number: 4 EggRoll, extra sauce, extra sauce, extra topping
+Roll number: 5 EggRoll, extra sauce, extra sauce, extra sauce, extra topping
+Roll number: 6 PastryRoll, extra sauce, extra filling, extra topping, extra topping
+Roll number: 7 PastryRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 8 EggRoll, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 9 EggRoll, extra sauce, extra sauce, extra topping
+Roll number: 10 EggRoll, extra filling
+Roll number: 11 SausageRoll, extra sauce, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 12 EggRoll, extra sauce, extra sauce, extra topping
+Roll number: 13 EggRoll, extra filling, extra topping
+Roll number: 14 EggRoll, extra sauce, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 15 EggRoll, extra sauce, extra sauce
+Total cost: 233.75
+
+Total payment for order by customer type up to the end of today: {business=4376.5, casual=3982.75, catering=11410.0}
+Total payment for order by customer type for today only: {business=0.0, casual=131.75, catering=233.75}
+Total rolls sold by type up to the end of today: {JellyRoll=270, EggRoll=255, PastryRoll=210, SpringRoll=211, SausageRoll=270}
+Total rolls sold by type up for today only: {JellyRoll=1, EggRoll=15, PastryRoll=3, SpringRoll=1, SausageRoll=3}
+Number of roll orders impacted by outages today: {business=20, casual=0, catering=7}
+Number of times inventory had to be filled for each roll up to this point: {JellyRoll=8, EggRoll=8, PastryRoll=6, SpringRoll=7, SausageRoll=8}
+The store didn't close today for no inventory.
+-------------------------------------------------------------------
+Day number: 26
+Amount of customers: 7
+Inventory at the beginning of the day: 
+{JellyRoll=30, EggRoll=15, PastryRoll=30, SpringRoll=29, SausageRoll=30}
+Inventory at the end of the day: 
+{JellyRoll=16, EggRoll=0, PastryRoll=10, SpringRoll=19, SausageRoll=19}
+Casual Customer's order: 
+Roll number: 1 SpringRoll, extra sauce, extra sauce, extra sauce, extra filling
+Roll number: 2 PastryRoll, extra sauce, extra sauce, extra sauce, extra topping
+Total cost: 38.25
+
+Casual Customer's order: 
+Roll number: 1 EggRoll
+Roll number: 2 SausageRoll, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 3 SausageRoll, extra sauce, extra sauce, extra filling, extra topping
+Total cost: 51.25
+
+Business Customer's order: 
+Roll number: 1 EggRoll, extra filling, extra topping, extra topping
+Roll number: 2 JellyRoll, extra filling
+Roll number: 3 SpringRoll, extra filling, extra topping
+Roll number: 4 PastryRoll
+Roll number: 5 SausageRoll, extra sauce, extra topping
+Roll number: 6 EggRoll, extra sauce, extra topping
+Roll number: 7 JellyRoll, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 8 SpringRoll, extra sauce, extra topping, extra topping
+Roll number: 9 PastryRoll, extra filling, extra topping
+Roll number: 10 SausageRoll, extra sauce, extra filling, extra topping
+Total cost: 154.25
+
+Business Customer's order: 
+Roll number: 1 EggRoll, extra sauce, extra sauce, extra sauce
+Roll number: 2 JellyRoll, extra sauce, extra filling, extra topping
+Roll number: 3 SpringRoll, extra filling, extra topping
+Roll number: 4 PastryRoll, extra sauce, extra sauce, extra topping
+Roll number: 5 SausageRoll, extra filling, extra topping, extra topping
+Roll number: 6 EggRoll, extra sauce, extra filling
+Roll number: 7 JellyRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 8 SpringRoll, extra filling, extra topping, extra topping
+Roll number: 9 PastryRoll, extra sauce, extra filling
+Roll number: 10 SausageRoll, extra sauce, extra sauce, extra sauce, extra topping
+Total cost: 164.75
+
+Catering Customer's order: 
+Roll number: 1 EggRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 2 EggRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 3 EggRoll, extra sauce, extra sauce, extra sauce, extra filling
+Roll number: 4 EggRoll, extra sauce, extra topping, extra topping
+Roll number: 5 EggRoll, extra sauce, extra sauce, extra sauce, extra topping
+Roll number: 6 SpringRoll, extra topping, extra topping
+Roll number: 7 SpringRoll, extra sauce, extra sauce, extra filling
+Roll number: 8 SpringRoll, extra sauce, extra sauce, extra sauce, extra filling
+Roll number: 9 SpringRoll, extra sauce, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 10 SpringRoll, extra sauce, extra filling
+Roll number: 11 PastryRoll, extra filling, extra topping, extra topping
+Roll number: 12 PastryRoll, extra sauce, extra filling, extra topping
+Roll number: 13 PastryRoll, extra sauce, extra topping, extra topping
+Roll number: 14 PastryRoll, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 15 PastryRoll, extra sauce, extra topping
+Total cost: 258.75
+
+Catering Customer's order: 
+Roll number: 1 EggRoll, extra filling
+Roll number: 2 EggRoll, extra sauce
+Roll number: 3 EggRoll, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 4 EggRoll, extra sauce, extra topping, extra topping
+Roll number: 5 EggRoll, extra sauce, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 6 JellyRoll, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 7 JellyRoll, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 8 JellyRoll, extra sauce
+Roll number: 9 JellyRoll, extra sauce, extra sauce, extra topping
+Roll number: 10 JellyRoll, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 11 PastryRoll, extra sauce, extra filling, extra topping, extra topping
+Roll number: 12 PastryRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 13 PastryRoll, extra filling, extra topping
+Roll number: 14 PastryRoll, extra filling, extra topping
+Roll number: 15 PastryRoll, extra sauce, extra sauce, extra filling, extra topping
+Total cost: 232.75
+
+Catering Customer's order: 
+Roll number: 1 JellyRoll, extra sauce, extra sauce
+Roll number: 2 JellyRoll, extra filling, extra topping
+Roll number: 3 JellyRoll, extra sauce, extra topping, extra topping
+Roll number: 4 JellyRoll, extra topping, extra topping
+Roll number: 5 JellyRoll, extra topping
+Roll number: 6 PastryRoll, extra sauce
+Roll number: 7 PastryRoll, extra sauce
+Roll number: 8 PastryRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 9 PastryRoll, extra filling
+Roll number: 10 PastryRoll, extra sauce, extra sauce
+Roll number: 11 SausageRoll, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 12 SausageRoll, extra sauce, extra topping
+Roll number: 13 SausageRoll, extra filling, extra topping, extra topping
+Roll number: 14 SausageRoll, extra filling, extra topping, extra topping
+Roll number: 15 SausageRoll, extra sauce, extra sauce, extra filling
+Total cost: 240.75
+
+Total payment for order by customer type up to the end of today: {business=4695.5, casual=4072.25, catering=12142.25}
+Total payment for order by customer type for today only: {business=319.0, casual=89.5, catering=732.25}
+Total rolls sold by type up to the end of today: {JellyRoll=284, EggRoll=270, PastryRoll=230, SpringRoll=221, SausageRoll=281}
+Total rolls sold by type up for today only: {JellyRoll=14, EggRoll=15, PastryRoll=20, SpringRoll=10, SausageRoll=11}
+Number of roll orders impacted by outages today: {business=0, casual=0, catering=5}
+Number of times inventory had to be filled for each roll up to this point: {JellyRoll=9, EggRoll=8, PastryRoll=7, SpringRoll=7, SausageRoll=9}
+The store didn't close today for no inventory.
+-------------------------------------------------------------------
+Day number: 27
+Amount of customers: 15
+Inventory at the beginning of the day: 
+{JellyRoll=16, EggRoll=30, PastryRoll=10, SpringRoll=19, SausageRoll=19}
+Inventory at the end of the day: 
+{JellyRoll=0, EggRoll=0, PastryRoll=0, SpringRoll=0, SausageRoll=5}
+Catering Customer's order: 
+Roll number: 1 EggRoll, extra sauce, extra sauce
+Roll number: 2 EggRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 3 EggRoll, extra sauce, extra sauce, extra sauce, extra filling
+Roll number: 4 EggRoll
+Roll number: 5 EggRoll
+Roll number: 6 SpringRoll, extra sauce, extra sauce, extra sauce, extra topping
+Roll number: 7 SpringRoll, extra sauce, extra filling
+Roll number: 8 SpringRoll, extra sauce, extra topping, extra topping
+Roll number: 9 SpringRoll, extra sauce, extra filling
+Roll number: 10 SpringRoll, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 11 PastryRoll, extra sauce
+Roll number: 12 PastryRoll, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 13 PastryRoll, extra sauce, extra filling, extra topping, extra topping
+Roll number: 14 PastryRoll, extra topping
+Roll number: 15 PastryRoll, extra sauce, extra filling
+Total cost: 235.5
+
+Casual Customer's order: 
+Roll number: 1 JellyRoll, extra sauce, extra filling, extra topping, extra topping
+Roll number: 2 SpringRoll, extra sauce, extra filling
+Roll number: 3 JellyRoll, extra sauce, extra topping, extra topping
+Total cost: 43.5
+
+Business Customer's order: 
+Roll number: 1 EggRoll, extra sauce, extra filling, extra topping
+Roll number: 2 JellyRoll, extra sauce, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 3 SpringRoll, extra sauce, extra filling, extra topping, extra topping
+Roll number: 4 PastryRoll, extra sauce, extra sauce
+Roll number: 5 SausageRoll, extra sauce, extra sauce, extra sauce, extra topping
+Roll number: 6 EggRoll, extra sauce, extra filling
+Roll number: 7 JellyRoll, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 8 SpringRoll, extra filling, extra topping, extra topping
+Roll number: 9 PastryRoll, extra sauce, extra topping, extra topping
+Roll number: 10 SausageRoll, extra sauce, extra sauce
+Total cost: 169.0
+
+Casual Customer's order: 
+Roll number: 1 SpringRoll, extra sauce, extra sauce, extra sauce
+Roll number: 2 SausageRoll, extra topping, extra topping
+Roll number: 3 EggRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Total cost: 53.5
+
+Casual Customer's order: 
+Roll number: 1 JellyRoll, extra sauce, extra topping, extra topping
+Roll number: 2 SpringRoll, extra sauce, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 3 EggRoll, extra sauce, extra sauce, extra topping
+Total cost: 46.75
+
+Casual Customer's order: 
+Roll number: 1 SpringRoll, extra sauce, extra filling, extra topping, extra topping
+Total cost: 19.0
+
+Catering Customer's order: 
+Roll number: 1 EggRoll, extra filling, extra topping, extra topping
+Roll number: 2 EggRoll, extra topping
+Roll number: 3 EggRoll, extra filling, extra topping
+Roll number: 4 EggRoll, extra filling, extra topping, extra topping
+Roll number: 5 EggRoll, extra topping, extra topping
+Roll number: 6 JellyRoll
+Roll number: 7 JellyRoll, extra filling, extra topping
+Roll number: 8 JellyRoll, extra sauce, extra sauce, extra sauce, extra filling
+Roll number: 9 JellyRoll, extra topping
+Roll number: 10 JellyRoll, extra sauce, extra filling, extra topping
+Roll number: 11 SausageRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 12 SausageRoll, extra sauce, extra topping, extra topping
+Roll number: 13 SausageRoll, extra sauce, extra sauce, extra sauce, extra topping
+Roll number: 14 SausageRoll, extra sauce, extra filling, extra topping, extra topping
+Roll number: 15 SausageRoll, extra filling, extra topping
+Total cost: 226.75
+
+Business Customer's order: 
+Roll number: 1 EggRoll, extra sauce, extra sauce, extra topping
+Roll number: 2 JellyRoll, extra topping, extra topping
+Roll number: 3 SpringRoll, extra sauce, extra sauce, extra sauce, extra filling
+Roll number: 4 PastryRoll, extra sauce, extra sauce, extra filling
+Roll number: 5 SausageRoll, extra topping
+Roll number: 6 EggRoll, extra sauce, extra topping, extra topping
+Roll number: 7 JellyRoll
+Roll number: 8 SpringRoll, extra sauce, extra topping, extra topping
+Roll number: 9 PastryRoll, extra sauce, extra sauce, extra filling
+Roll number: 10 SausageRoll, extra sauce, extra filling
+Total cost: 154.0
+
+Catering Customer's order: 
+Roll number: 1 EggRoll, extra sauce
+Roll number: 2 EggRoll, extra topping
+Roll number: 3 EggRoll
+Roll number: 4 EggRoll, extra sauce, extra sauce, extra sauce, extra topping
+Roll number: 5 EggRoll, extra sauce, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 6 SpringRoll, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 7 SpringRoll, extra filling, extra topping
+Roll number: 8 SpringRoll, extra filling, extra topping, extra topping
+Roll number: 9 SpringRoll, extra sauce, extra filling
+Roll number: 10 SpringRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 11 PastryRoll, extra sauce, extra sauce, extra filling
+Roll number: 12 JellyRoll, extra sauce, extra sauce, extra topping
+Roll number: 13 JellyRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 14 JellyRoll, extra topping
+Roll number: 15 JellyRoll, extra sauce, extra sauce, extra sauce, extra filling
+Total cost: 223.5
+
+Casual Customer's order: 
+Roll number: 1 EggRoll, extra filling, extra topping
+Total cost: 12.75
+
+Casual Customer's order: 
+Roll number: 1 SausageRoll, extra sauce, extra sauce, extra sauce
+Roll number: 2 EggRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping
+Total cost: 36.25
+
+Casual Customer's order: 
+Roll number: 1 SausageRoll, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 2 EggRoll, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 3 SpringRoll, extra sauce, extra sauce, extra filling
+Total cost: 57.5
+
+Casual Customer's order: 
+Roll number: 1 SausageRoll, extra filling
+Roll number: 2 EggRoll, extra sauce, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 3 SausageRoll, extra sauce, extra sauce, extra sauce, extra topping, extra topping
+Total cost: 56.0
+
+Casual Customer's order: 
+Roll number: 1 EggRoll, extra sauce, extra sauce
+Roll number: 2 EggRoll, extra sauce, extra sauce, extra topping
+Roll number: 3 EggRoll, extra filling, extra topping
+Total cost: 38.5
+
+Casual Customer's order: 
+Roll number: 1 EggRoll, extra sauce, extra sauce
+Roll number: 2 EggRoll, extra sauce, extra sauce, extra topping
+Total cost: 25.75
+
+Total payment for order by customer type up to the end of today: {business=5018.5, casual=4461.75, catering=12828.0}
+Total payment for order by customer type for today only: {business=323.0, casual=389.5, catering=685.75}
+Total rolls sold by type up to the end of today: {JellyRoll=300, EggRoll=300, PastryRoll=240, SpringRoll=240, SausageRoll=295}
+Total rolls sold by type up for today only: {JellyRoll=16, EggRoll=30, PastryRoll=10, SpringRoll=19, SausageRoll=14}
+Number of roll orders impacted by outages today: {business=0, casual=11, catering=4}
+Number of times inventory had to be filled for each roll up to this point: {JellyRoll=9, EggRoll=9, PastryRoll=7, SpringRoll=7, SausageRoll=9}
+The store didn't close today for no inventory.
+-------------------------------------------------------------------
+Day number: 28
+Amount of customers: 6
+Inventory at the beginning of the day: 
+{JellyRoll=30, EggRoll=30, PastryRoll=30, SpringRoll=30, SausageRoll=5}
+Inventory at the end of the day: 
+{JellyRoll=22, EggRoll=25, PastryRoll=19, SpringRoll=24, SausageRoll=0}
+Catering Customer's order: 
+Roll number: 1 EggRoll, extra sauce, extra filling
+Roll number: 2 EggRoll, extra topping
+Roll number: 3 EggRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 4 EggRoll, extra sauce
+Roll number: 5 EggRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 6 PastryRoll, extra sauce, extra sauce
+Roll number: 7 PastryRoll, extra sauce, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 8 PastryRoll, extra topping, extra topping
+Roll number: 9 PastryRoll, extra sauce
+Roll number: 10 PastryRoll, extra filling, extra topping, extra topping
+Roll number: 11 SausageRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 12 SausageRoll, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 13 SausageRoll, extra sauce, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 14 SausageRoll, extra filling, extra topping, extra topping
+Roll number: 15 SausageRoll, extra sauce, extra sauce, extra sauce, extra topping
+Total cost: 267.75
+
+Catering Customer's order: 
+Roll number: 1 SpringRoll, extra topping
+Roll number: 2 SpringRoll, extra sauce, extra sauce, extra sauce, extra topping
+Roll number: 3 SpringRoll, extra sauce, extra sauce, extra sauce
+Roll number: 4 SpringRoll, extra sauce, extra sauce, extra filling
+Roll number: 5 SpringRoll, extra sauce, extra sauce, extra sauce, extra topping
+Roll number: 6 PastryRoll, extra topping
+Roll number: 7 PastryRoll, extra sauce, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 8 PastryRoll, extra sauce, extra sauce, extra sauce, extra topping
+Roll number: 9 PastryRoll, extra sauce, extra filling, extra topping, extra topping
+Roll number: 10 PastryRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 11 JellyRoll, extra sauce, extra sauce, extra filling
+Roll number: 12 JellyRoll, extra filling, extra topping, extra topping
+Roll number: 13 JellyRoll, extra filling
+Roll number: 14 JellyRoll, extra sauce
+Roll number: 15 JellyRoll, extra filling, extra topping
+Total cost: 240.25
+
+Casual Customer's order: 
+Roll number: 1 JellyRoll, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 2 SpringRoll, extra topping, extra topping
+Total cost: 32.0
+
+Casual Customer's order: 
+Roll number: 1 JellyRoll, extra sauce, extra filling, extra topping
+Total cost: 13.25
+
+Casual Customer's order: 
+Roll number: 1 JellyRoll, extra sauce, extra filling, extra topping
+Roll number: 2 PastryRoll, extra sauce, extra sauce, extra sauce, extra filling
+Total cost: 33.25
+
+Total payment for order by customer type up to the end of today: {business=5018.5, casual=4540.25, catering=13336.0}
+Total payment for order by customer type for today only: {business=0.0, casual=78.5, catering=508.0}
+Total rolls sold by type up to the end of today: {JellyRoll=308, EggRoll=305, PastryRoll=251, SpringRoll=246, SausageRoll=300}
+Total rolls sold by type up for today only: {JellyRoll=8, EggRoll=5, PastryRoll=11, SpringRoll=6, SausageRoll=5}
+Number of roll orders impacted by outages today: {business=10, casual=3, catering=5}
+Number of times inventory had to be filled for each roll up to this point: {JellyRoll=10, EggRoll=10, PastryRoll=8, SpringRoll=8, SausageRoll=9}
+The store didn't close today for no inventory.
+-------------------------------------------------------------------
+Day number: 29
+Amount of customers: 14
+Inventory at the beginning of the day: 
+{JellyRoll=22, EggRoll=25, PastryRoll=19, SpringRoll=24, SausageRoll=30}
+Inventory at the end of the day: 
+{JellyRoll=9, EggRoll=14, PastryRoll=7, SpringRoll=14, SausageRoll=16}
+Casual Customer's order: 
+Roll number: 1 JellyRoll, extra sauce, extra sauce, extra sauce
+Roll number: 2 EggRoll, extra sauce
+Total cost: 23.0
+
+Casual Customer's order: 
+Roll number: 1 PastryRoll, extra sauce, extra sauce
+Total cost: 16.5
+
+Casual Customer's order: 
+Roll number: 1 SausageRoll, extra sauce, extra topping
+Roll number: 2 PastryRoll, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Total cost: 39.75
+
+Catering Customer's order: 
+Roll number: 1 JellyRoll, extra sauce, extra sauce, extra topping
+Roll number: 2 JellyRoll, extra filling, extra topping, extra topping
+Roll number: 3 JellyRoll, extra sauce, extra sauce, extra topping
+Roll number: 4 JellyRoll, extra sauce, extra sauce, extra sauce, extra topping
+Roll number: 5 JellyRoll, extra sauce, extra sauce, extra topping
+Roll number: 6 SpringRoll, extra sauce, extra topping, extra topping
+Roll number: 7 SpringRoll
+Roll number: 8 SpringRoll, extra topping
+Roll number: 9 SpringRoll, extra sauce, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 10 SpringRoll, extra sauce, extra sauce, extra sauce
+Roll number: 11 SausageRoll, extra sauce, extra sauce, extra sauce, extra topping
+Roll number: 12 SausageRoll, extra sauce, extra sauce, extra sauce, extra filling
+Roll number: 13 SausageRoll, extra filling
+Roll number: 14 SausageRoll, extra sauce, extra sauce, extra sauce, extra topping
+Roll number: 15 SausageRoll, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Total cost: 247.25
+
+Catering Customer's order: 
+Roll number: 1 EggRoll, extra sauce
+Roll number: 2 EggRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 3 EggRoll, extra sauce
+Roll number: 4 EggRoll, extra sauce, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 5 EggRoll, extra filling, extra topping
+Roll number: 6 PastryRoll, extra topping, extra topping
+Roll number: 7 PastryRoll
+Roll number: 8 PastryRoll, extra sauce, extra filling, extra topping, extra topping
+Roll number: 9 PastryRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 10 PastryRoll, extra sauce, extra sauce, extra sauce, extra topping
+Roll number: 11 SausageRoll, extra filling
+Roll number: 12 SausageRoll, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 13 SausageRoll, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 14 SausageRoll, extra topping
+Roll number: 15 SausageRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Total cost: 265.5
+
+Casual Customer's order: 
+Roll number: 1 SpringRoll, extra sauce, extra topping
+Roll number: 2 EggRoll, extra topping
+Total cost: 26.0
+
+Casual Customer's order: 
+Roll number: 1 JellyRoll, extra sauce, extra sauce, extra topping
+Roll number: 2 SpringRoll, extra topping, extra topping
+Total cost: 28.25
+
+Casual Customer's order: 
+Roll number: 1 JellyRoll, extra filling, extra topping, extra topping
+Roll number: 2 SausageRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping
+Total cost: 36.25
+
+Casual Customer's order: 
+Roll number: 1 EggRoll, extra filling, extra topping, extra topping
+Total cost: 14.5
+
+Casual Customer's order: 
+Roll number: 1 PastryRoll
+Total cost: 13.5
+
+Business Customer's order: 
+Roll number: 1 EggRoll, extra sauce, extra sauce
+Roll number: 2 JellyRoll, extra sauce, extra topping
+Roll number: 3 SpringRoll, extra sauce, extra filling
+Roll number: 4 PastryRoll, extra sauce, extra sauce, extra topping
+Roll number: 5 SausageRoll, extra filling, extra topping
+Roll number: 6 EggRoll
+Roll number: 7 JellyRoll, extra sauce, extra sauce, extra sauce
+Roll number: 8 SpringRoll, extra sauce, extra filling, extra topping, extra topping
+Roll number: 9 PastryRoll, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 10 SausageRoll, extra sauce, extra filling
+Total cost: 154.0
+
+Casual Customer's order: 
+Roll number: 1 JellyRoll, extra sauce, extra filling
+Roll number: 2 JellyRoll, extra sauce, extra topping
+Roll number: 3 SpringRoll, extra sauce, extra topping, extra topping
+Total cost: 39.75
+
+Casual Customer's order: 
+Roll number: 1 PastryRoll, extra sauce, extra filling
+Roll number: 2 JellyRoll, extra sauce
+Total cost: 26.5
+
+Casual Customer's order: 
+Roll number: 1 EggRoll, extra sauce, extra sauce, extra sauce, extra filling
+Roll number: 2 PastryRoll, extra sauce, extra sauce, extra sauce, extra topping, extra topping
+Total cost: 37.0
+
+Total payment for order by customer type up to the end of today: {business=5172.5, casual=4841.25, catering=13848.75}
+Total payment for order by customer type for today only: {business=154.0, casual=301.0, catering=512.75}
+Total rolls sold by type up to the end of today: {JellyRoll=321, EggRoll=316, PastryRoll=263, SpringRoll=256, SausageRoll=314}
+Total rolls sold by type up for today only: {JellyRoll=13, EggRoll=11, PastryRoll=12, SpringRoll=10, SausageRoll=14}
+Number of roll orders impacted by outages today: {business=0, casual=0, catering=0}
+Number of times inventory had to be filled for each roll up to this point: {JellyRoll=10, EggRoll=10, PastryRoll=8, SpringRoll=8, SausageRoll=10}
+The store didn't close today for no inventory.
+-------------------------------------------------------------------
+Day number: 30
+Amount of customers: 8
+Inventory at the beginning of the day: 
+{JellyRoll=9, EggRoll=14, PastryRoll=7, SpringRoll=14, SausageRoll=16}
+Inventory at the end of the day: 
+{JellyRoll=0, EggRoll=0, PastryRoll=0, SpringRoll=3, SausageRoll=4}
+Casual Customer's order: 
+Roll number: 1 PastryRoll, extra sauce, extra sauce, extra sauce
+Roll number: 2 JellyRoll, extra sauce, extra filling, extra topping
+Roll number: 3 PastryRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Total cost: 54.75
+
+Catering Customer's order: 
+Roll number: 1 EggRoll, extra sauce, extra sauce
+Roll number: 2 EggRoll, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 3 EggRoll, extra sauce, extra filling, extra topping, extra topping
+Roll number: 4 EggRoll, extra sauce, extra filling, extra topping, extra topping
+Roll number: 5 EggRoll, extra sauce, extra filling, extra topping
+Roll number: 6 JellyRoll, extra filling, extra topping
+Roll number: 7 JellyRoll
+Roll number: 8 JellyRoll, extra sauce, extra topping
+Roll number: 9 JellyRoll, extra topping
+Roll number: 10 JellyRoll, extra sauce, extra sauce, extra topping
+Roll number: 11 SpringRoll, extra sauce, extra sauce, extra filling
+Roll number: 12 SpringRoll, extra filling, extra topping
+Roll number: 13 SpringRoll, extra topping
+Roll number: 14 SpringRoll, extra sauce
+Roll number: 15 SpringRoll, extra topping, extra topping
+Total cost: 202.75
+
+Casual Customer's order: 
+Roll number: 1 JellyRoll, extra sauce, extra sauce, extra topping
+Roll number: 2 SpringRoll, extra sauce, extra filling
+Total cost: 28.25
+
+Catering Customer's order: 
+Roll number: 1 EggRoll
+Roll number: 2 EggRoll, extra topping
+Roll number: 3 EggRoll, extra filling, extra topping
+Roll number: 4 EggRoll, extra topping, extra topping
+Roll number: 5 EggRoll, extra sauce, extra filling
+Roll number: 6 JellyRoll
+Roll number: 7 JellyRoll, extra sauce, extra sauce, extra topping
+Roll number: 8 EggRoll, extra topping, extra topping
+Roll number: 9 EggRoll, extra sauce, extra sauce, extra filling
+Roll number: 10 EggRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 11 PastryRoll, extra topping, extra topping
+Roll number: 12 PastryRoll, extra filling, extra topping, extra topping
+Roll number: 13 PastryRoll, extra sauce, extra filling
+Roll number: 14 PastryRoll, extra sauce, extra sauce, extra sauce
+Roll number: 15 PastryRoll, extra sauce, extra filling, extra topping, extra topping
+Total cost: 213.5
+
+Casual Customer's order: 
+Roll number: 1 EggRoll, extra sauce, extra sauce, extra sauce
+Roll number: 2 SausageRoll, extra sauce, extra filling, extra topping, extra topping
+Roll number: 3 SausageRoll, extra sauce, extra topping, extra topping
+Total cost: 54.5
+
+Catering Customer's order: 
+Roll number: 1 SausageRoll, extra sauce, extra sauce, extra filling, extra topping
+Roll number: 2 SausageRoll, extra sauce, extra sauce, extra sauce, extra topping
+Roll number: 3 SausageRoll, extra sauce, extra topping
+Roll number: 4 SausageRoll, extra filling, extra topping, extra topping
+Roll number: 5 SausageRoll, extra sauce, extra sauce, extra sauce, extra filling, extra topping, extra topping
+Roll number: 6 SpringRoll, extra sauce, extra filling
+Roll number: 7 SpringRoll, extra sauce, extra sauce, extra topping
+Roll number: 8 SpringRoll, extra filling, extra topping, extra topping
+Roll number: 9 SpringRoll, extra sauce, extra topping, extra topping
+Roll number: 10 SpringRoll, extra sauce, extra sauce, extra sauce, extra filling
+Roll number: 11 SausageRoll, extra sauce, extra sauce, extra sauce
+Roll number: 12 SausageRoll, extra topping, extra topping
+Roll number: 13 SausageRoll, extra sauce, extra sauce, extra topping, extra topping
+Roll number: 14 SausageRoll
+Roll number: 15 SausageRoll, extra sauce, extra sauce, extra topping, extra topping
+Total cost: 283.0
+
+Total payment for order by customer type up to the end of today: {business=5172.5, casual=4978.75, catering=14548.0}
+Total payment for order by customer type for today only: {business=0.0, casual=137.5, catering=699.25}
+Total rolls sold by type up to the end of today: {JellyRoll=330, EggRoll=330, PastryRoll=270, SpringRoll=267, SausageRoll=326}
+Total rolls sold by type up for today only: {JellyRoll=9, EggRoll=14, PastryRoll=7, SpringRoll=11, SausageRoll=12}
+Number of roll orders impacted by outages today: {business=20, casual=3, catering=13}
+Number of times inventory had to be filled for each roll up to this point: {JellyRoll=10, EggRoll=10, PastryRoll=8, SpringRoll=8, SausageRoll=10}
+The store didn't close today for no inventory.
+-------------------------------------------------------------------
+End of simulation statistics:
+Total rolls sold: {JellyRoll=330, EggRoll=330, PastryRoll=270, SpringRoll=267, SausageRoll=326}
+Total earnings: {business=5172.5, casual=4978.75, catering=14548.0}
+Total earnings summed:24699.25
+Total number of roll outage impacts by type: {business=220, casual=98, catering=168}
+-------------------------------------------------------------------
