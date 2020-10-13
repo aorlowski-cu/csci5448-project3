@@ -13,6 +13,10 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
  * the large number of tests. For 10 tests a single file should be fine.
  */
 public class MyUnitTest {
+
+    public MyUnitTest(){
+
+    }
     // Testing setup found here - https://www.jetbrains.com/help/idea/testing.html
     @Test
     public void EggRollCostsNine() {

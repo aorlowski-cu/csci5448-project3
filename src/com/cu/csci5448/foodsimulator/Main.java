@@ -3,7 +3,9 @@ package com.cu.csci5448.foodsimulator;
 import rolls.*;
 import customers.*;
 
+import java.io.*;
 import java.util.List;
+import java.io.PrintStream;
 
 public class Main {
 
@@ -11,7 +13,14 @@ public class Main {
         return "My Roll: " + roll.getDescription() + ", cost: " + roll.cost();
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
+
+        // https://www.tutorialspoint.com/redirecting-system-out-println-output-to-a-file-in-java#:~:text=Instantiate%20a%20PrintStream%20class%20by,created%20in%20the%20first%20step.
+        // Direct output stream to file 'out.txt'
+        File file = new File("30DaysOutput.txt");
+        PrintStream stream = new PrintStream(file);
+        System.setOut(stream);
+
         final int numOfDays = 30;
         RollFactory factory = new RollFactory();
         RollStore store = new RollStore(factory);
